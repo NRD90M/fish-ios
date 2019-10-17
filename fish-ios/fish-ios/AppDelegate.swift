@@ -8,16 +8,48 @@
 
 import UIKit
 
+/// 提供统一的获取 KeyWindow 的方法
+public func FishKeyWindow() -> UIWindow {
+    return _keyWindow
+}
+private var _keyWindow: UIWindow!
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        /// set key window
+        let keyWindow = UIWindow.init(frame: UIScreen.main.bounds)
+        
+        keyWindow.backgroundColor = UIColor.white
+        
+        self.window = keyWindow
+        
+        /// 配置全局 SMKeyWindow
+        _keyWindow = keyWindow
+        
+        switchRootToTabbar(nil)
+        
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
+    
+    func switchRootToLogin() {
+        FishKeyWindow().rootViewController = FishNavigationController.init(rootViewController: LoginViewController())
+    }
+    
+    func switchRootToTabbar(_ params:[String: Any]?) {
+        let tabBar: FishTabBarController = FishTabBarController(params: params)
+        FishKeyWindow().rootViewController =  FishNavigationController.init(rootViewController:tabBar)
+        
+    }
+    
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -8,26 +8,58 @@
 
 /* Begin PBXBuildFile section */
 		2E6C029788C421EB798F8D52 /* Pods_fish_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983D90265C84D847D3F1675F /* Pods_fish_ios.framework */; };
+		DB6C634C2356F2FE00673584 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C634B2356F2FE00673584 /* UIColorExtension.swift */; };
+		DB6C63512356F54700673584 /* STApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C634F2356F54600673584 /* STApi.swift */; };
+		DB6C63522356F54700673584 /* STApi_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C63502356F54600673584 /* STApi_Extension.swift */; };
+		DB6C6356235817C000673584 /* FishUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C6355235817C000673584 /* FishUserInfo.swift */; };
+		DBB913DB23545C2E001C20E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB913D923545C2E001C20E4 /* LoginViewController.swift */; };
+		DBB913DC23545C2E001C20E4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB913DA23545C2E001C20E4 /* LoginViewController.xib */; };
+		DBB913DF23545F20001C20E4 /* FishNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB913DE23545F20001C20E4 /* FishNavigationController.swift */; };
+		DBB913E12354605C001C20E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB913E02354605C001C20E4 /* Assets.xcassets */; };
+		DBB913E3235561DA001C20E4 /* FishTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB913E2235561DA001C20E4 /* FishTabBarController.swift */; };
+		DBB913EA235574FB001C20E4 /* PondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB913E8235574FB001C20E4 /* PondViewController.swift */; };
+		DBB913EB235574FB001C20E4 /* PondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB913E9235574FB001C20E4 /* PondViewController.xib */; };
+		DBB913EE23557531001C20E4 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB913EC23557531001C20E4 /* TimerViewController.swift */; };
+		DBB913EF23557531001C20E4 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB913ED23557531001C20E4 /* TimerViewController.xib */; };
+		DBB913F22355753D001C20E4 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB913F02355753D001C20E4 /* UserViewController.swift */; };
+		DBB913F32355753D001C20E4 /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB913F12355753D001C20E4 /* UserViewController.xib */; };
+		DBB913F62355754A001C20E4 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB913F42355754A001C20E4 /* AlertViewController.swift */; };
+		DBB913F72355754A001C20E4 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB913F52355754A001C20E4 /* AlertViewController.xib */; };
 		DBE5444F2354282B005ECA14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5444E2354282B005ECA14 /* AppDelegate.swift */; };
 		DBE544512354282B005ECA14 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE544502354282B005ECA14 /* FirstViewController.swift */; };
 		DBE544532354282B005ECA14 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE544522354282B005ECA14 /* SecondViewController.swift */; };
-		DBE544562354282B005ECA14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE544542354282B005ECA14 /* Main.storyboard */; };
-		DBE544582354282C005ECA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE544572354282C005ECA14 /* Assets.xcassets */; };
 		DBE5445B2354282C005ECA14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE544592354282C005ECA14 /* LaunchScreen.storyboard */; };
+		DBE54463235450DA005ECA14 /* launchNew.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE54462235450DA005ECA14 /* launchNew.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6899C252E4F20195CEEE2B0A /* Pods-fish-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fish-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fish-ios/Pods-fish-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		983D90265C84D847D3F1675F /* Pods_fish_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fish_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A691BA0FFD068A850B9889EC /* Pods-fish-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fish-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-fish-ios/Pods-fish-ios.release.xcconfig"; sourceTree = "<group>"; };
+		DB6C634B2356F2FE00673584 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		DB6C634F2356F54600673584 /* STApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STApi.swift; sourceTree = "<group>"; };
+		DB6C63502356F54600673584 /* STApi_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STApi_Extension.swift; sourceTree = "<group>"; };
+		DB6C6355235817C000673584 /* FishUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishUserInfo.swift; sourceTree = "<group>"; };
+		DBB913D923545C2E001C20E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DBB913DA23545C2E001C20E4 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		DBB913DE23545F20001C20E4 /* FishNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishNavigationController.swift; sourceTree = "<group>"; };
+		DBB913E02354605C001C20E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBB913E2235561DA001C20E4 /* FishTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishTabBarController.swift; sourceTree = "<group>"; };
+		DBB913E8235574FB001C20E4 /* PondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondViewController.swift; sourceTree = "<group>"; };
+		DBB913E9235574FB001C20E4 /* PondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PondViewController.xib; sourceTree = "<group>"; };
+		DBB913EC23557531001C20E4 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		DBB913ED23557531001C20E4 /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
+		DBB913F02355753D001C20E4 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		DBB913F12355753D001C20E4 /* UserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
+		DBB913F42355754A001C20E4 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		DBB913F52355754A001C20E4 /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
 		DBE5444B2354282B005ECA14 /* fish-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fish-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE5444E2354282B005ECA14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBE544502354282B005ECA14 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		DBE544522354282B005ECA14 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		DBE544552354282B005ECA14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DBE544572354282C005ECA14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBE5445A2354282C005ECA14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBE5445C2354282C005ECA14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBE54462235450DA005ECA14 /* launchNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchNew.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +83,130 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DB6C63482356F2E100673584 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				DB6C63492356F2E100673584 /* Extension */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		DB6C63492356F2E100673584 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DB6C634A2356F2E100673584 /* UI */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DB6C634A2356F2E100673584 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DB6C634B2356F2FE00673584 /* UIColorExtension.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DB6C634D2356F51700673584 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DB6C63532356FA8A00673584 /* FishGlobalManager */,
+				DB6C634E2356F53400673584 /* FishApi */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DB6C634E2356F53400673584 /* FishApi */ = {
+			isa = PBXGroup;
+			children = (
+				DB6C63502356F54600673584 /* STApi_Extension.swift */,
+				DB6C634F2356F54600673584 /* STApi.swift */,
+			);
+			path = FishApi;
+			sourceTree = "<group>";
+		};
+		DB6C63532356FA8A00673584 /* FishGlobalManager */ = {
+			isa = PBXGroup;
+			children = (
+				DB6C63542357131200673584 /* UserInfo */,
+			);
+			path = FishGlobalManager;
+			sourceTree = "<group>";
+		};
+		DB6C63542357131200673584 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DB6C6355235817C000673584 /* FishUserInfo.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		DBB913D523545BA5001C20E4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DBB913E5235574AB001C20E4 /* Alert */,
+				DBB913E7235574AB001C20E4 /* Pond */,
+				DBB913E6235574AB001C20E4 /* Timer */,
+				DBB913E4235574AB001C20E4 /* User */,
+				DBB913D623545BB2001C20E4 /* Login */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DBB913D623545BB2001C20E4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DBB913D923545C2E001C20E4 /* LoginViewController.swift */,
+				DBB913DA23545C2E001C20E4 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DBB913DD23545F08001C20E4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DBB913E2235561DA001C20E4 /* FishTabBarController.swift */,
+				DBB913DE23545F20001C20E4 /* FishNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DBB913E4235574AB001C20E4 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				DBB913F02355753D001C20E4 /* UserViewController.swift */,
+				DBB913F12355753D001C20E4 /* UserViewController.xib */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		DBB913E5235574AB001C20E4 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				DBB913F42355754A001C20E4 /* AlertViewController.swift */,
+				DBB913F52355754A001C20E4 /* AlertViewController.xib */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		DBB913E6235574AB001C20E4 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				DBB913EC23557531001C20E4 /* TimerViewController.swift */,
+				DBB913ED23557531001C20E4 /* TimerViewController.xib */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		DBB913E7235574AB001C20E4 /* Pond */ = {
+			isa = PBXGroup;
+			children = (
+				DBB913E8235574FB001C20E4 /* PondViewController.swift */,
+				DBB913E9235574FB001C20E4 /* PondViewController.xib */,
+			);
+			path = Pond;
+			sourceTree = "<group>";
+		};
 		DBE544422354282B005ECA14 = {
 			isa = PBXGroup;
 			children = (
@@ -72,13 +228,17 @@
 		DBE5444D2354282B005ECA14 /* fish-ios */ = {
 			isa = PBXGroup;
 			children = (
+				DB6C634D2356F51700673584 /* Common */,
+				DB6C63482356F2E100673584 /* Libs */,
+				DBB913DD23545F08001C20E4 /* Base */,
+				DBB913D523545BA5001C20E4 /* Main */,
+				DBE54462235450DA005ECA14 /* launchNew.png */,
 				DBE5444E2354282B005ECA14 /* AppDelegate.swift */,
 				DBE544502354282B005ECA14 /* FirstViewController.swift */,
 				DBE544522354282B005ECA14 /* SecondViewController.swift */,
-				DBE544542354282B005ECA14 /* Main.storyboard */,
-				DBE544572354282C005ECA14 /* Assets.xcassets */,
 				DBE544592354282C005ECA14 /* LaunchScreen.storyboard */,
 				DBE5445C2354282C005ECA14 /* Info.plist */,
+				DBB913E02354605C001C20E4 /* Assets.xcassets */,
 			);
 			path = "fish-ios";
 			sourceTree = "<group>";
@@ -151,9 +311,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB913F32355753D001C20E4 /* UserViewController.xib in Resources */,
+				DBB913EF23557531001C20E4 /* TimerViewController.xib in Resources */,
+				DBB913DC23545C2E001C20E4 /* LoginViewController.xib in Resources */,
 				DBE5445B2354282C005ECA14 /* LaunchScreen.storyboard in Resources */,
-				DBE544582354282C005ECA14 /* Assets.xcassets in Resources */,
-				DBE544562354282B005ECA14 /* Main.storyboard in Resources */,
+				DBE54463235450DA005ECA14 /* launchNew.png in Resources */,
+				DBB913E12354605C001C20E4 /* Assets.xcassets in Resources */,
+				DBB913EB235574FB001C20E4 /* PondViewController.xib in Resources */,
+				DBB913F72355754A001C20E4 /* AlertViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,8 +329,6 @@
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-fish-ios/Pods-fish-ios-frameworks.sh",
@@ -179,8 +342,6 @@
 				"${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
@@ -201,15 +362,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-fish-ios-checkManifestLockResult.txt",
 			);
@@ -225,8 +382,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB6C63522356F54700673584 /* STApi_Extension.swift in Sources */,
+				DBB913DB23545C2E001C20E4 /* LoginViewController.swift in Sources */,
+				DBB913F22355753D001C20E4 /* UserViewController.swift in Sources */,
 				DBE544532354282B005ECA14 /* SecondViewController.swift in Sources */,
+				DB6C63512356F54700673584 /* STApi.swift in Sources */,
+				DBB913F62355754A001C20E4 /* AlertViewController.swift in Sources */,
+				DBB913E3235561DA001C20E4 /* FishTabBarController.swift in Sources */,
+				DBB913DF23545F20001C20E4 /* FishNavigationController.swift in Sources */,
+				DBB913EE23557531001C20E4 /* TimerViewController.swift in Sources */,
 				DBE5444F2354282B005ECA14 /* AppDelegate.swift in Sources */,
+				DB6C634C2356F2FE00673584 /* UIColorExtension.swift in Sources */,
+				DB6C6356235817C000673584 /* FishUserInfo.swift in Sources */,
+				DBB913EA235574FB001C20E4 /* PondViewController.swift in Sources */,
 				DBE544512354282B005ECA14 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,14 +402,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DBE544542354282B005ECA14 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBE544552354282B005ECA14 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DBE544592354282C005ECA14 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -372,16 +532,18 @@
 			baseConfigurationReference = 6899C252E4F20195CEEE2B0A /* Pods-fish-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9Z5827E9LL;
 				INFOPLIST_FILE = "fish-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenmajr.fish-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenmajr.ev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE = "01874ba5-27a1-40ec-b28b-3404b3aebc96";
+				PROVISIONING_PROFILE_SPECIFIER = all_develop;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -391,16 +553,19 @@
 			baseConfigurationReference = A691BA0FFD068A850B9889EC /* Pods-fish-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9Z5827E9LL;
 				INFOPLIST_FILE = "fish-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shenmajr.fish-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenmajr.ev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE = "01874ba5-27a1-40ec-b28b-3404b3aebc96";
+				PROVISIONING_PROFILE_SPECIFIER = all_develop;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
