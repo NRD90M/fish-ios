@@ -25,7 +25,7 @@ extension AppDelegate {
             NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.alterRootToLogin(notification:)), name: NSNotification.Name.AlterLoginToRootViewController, object: nil)
             NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.alterRootToTabBar(notification:)), name: NSNotification.Name.AlterTabBarToRootViewController, object: nil)
             /// 只要是通过 SMURLResponseProtocol 解析类解析的 tokenFail 都会发送此通知
-//            NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.alterRootToLogin(notification:)), name: NSNotification.Name.SMHTTPResponseParseTokenFail, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.alterRootToLogin(notification:)), name: NSNotification.Name.FishHTTPResponseParseTokenFail, object: nil)
         }
     }
     

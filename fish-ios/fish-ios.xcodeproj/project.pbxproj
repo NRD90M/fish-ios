@@ -20,6 +20,7 @@
 		DB5FFC1C2361B71400E4E8D7 /* AlamofireLoggers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC1B2361B71400E4E8D7 /* AlamofireLoggers.swift */; };
 		DB5FFC202362C9BF00E4E8D7 /* FishAlamofireLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC1F2362C9BF00E4E8D7 /* FishAlamofireLogger.swift */; };
 		DB5FFC242362CE2B00E4E8D7 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC232362CE2B00E4E8D7 /* Logger.swift */; };
+		DB5FFC262362D96600E4E8D7 /* FishHttpResponseModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC252362D96600E4E8D7 /* FishHttpResponseModelProtocol.swift */; };
 		DB6C634C2356F2FE00673584 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C634B2356F2FE00673584 /* UIColorExtension.swift */; };
 		DB6C63512356F54700673584 /* STApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C634F2356F54600673584 /* STApi.swift */; };
 		DB6C63522356F54700673584 /* STApi_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C63502356F54600673584 /* STApi_Extension.swift */; };
@@ -60,6 +61,7 @@
 		DB5FFC1B2361B71400E4E8D7 /* AlamofireLoggers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireLoggers.swift; sourceTree = "<group>"; };
 		DB5FFC1F2362C9BF00E4E8D7 /* FishAlamofireLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishAlamofireLogger.swift; sourceTree = "<group>"; };
 		DB5FFC232362CE2B00E4E8D7 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		DB5FFC252362D96600E4E8D7 /* FishHttpResponseModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishHttpResponseModelProtocol.swift; sourceTree = "<group>"; };
 		DB6C634B2356F2FE00673584 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		DB6C634F2356F54600673584 /* STApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STApi.swift; sourceTree = "<group>"; };
 		DB6C63502356F54600673584 /* STApi_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STApi_Extension.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				DB5FFC042361A30600E4E8D7 /* Model */,
 				DB5FFC0123618C8800E4E8D7 /* FishMainApi.swift */,
+				DB5FFC252362D96600E4E8D7 /* FishHttpResponseModelProtocol.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				DBB913E3235561DA001C20E4 /* FishTabBarController.swift in Sources */,
 				DB5FFC1C2361B71400E4E8D7 /* AlamofireLoggers.swift in Sources */,
 				DB5FFC0F2361AA9E00E4E8D7 /* KKHintView.swift in Sources */,
+				DB5FFC262362D96600E4E8D7 /* FishHttpResponseModelProtocol.swift in Sources */,
 				DBB913DF23545F20001C20E4 /* FishNavigationController.swift in Sources */,
 				DB5FFC122361AAFF00E4E8D7 /* FishBaseViewController.swift in Sources */,
 				DB5FFC202362C9BF00E4E8D7 /* FishAlamofireLogger.swift in Sources */,

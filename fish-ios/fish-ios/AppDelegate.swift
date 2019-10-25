@@ -29,6 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AlamofireLoggers.shareInstance.addLogger(logger: FishAlamofireLogger())
         AlamofireLoggers.shareInstance.startLogging()
         
+        /// 增加跳转通知
+        setRootAlterNotification()
+        
         /// set key window
         let keyWindow = UIWindow.init(frame: UIScreen.main.bounds)
         

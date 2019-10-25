@@ -29,4 +29,9 @@ class FishMainApi: STJSONApi {
         self.post(path: safeJoinURL(pre: baseURL(), suf: "api/user/send_vali_sms"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
     }
     
+    /// 登录
+    func login(params: [String: Any], callBack: ((FishCodeMsgResponseAnyModel<String>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/user/login"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+    
 }
