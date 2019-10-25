@@ -8,9 +8,15 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: FishPreViewController {
 
     @IBOutlet weak var loginButton:UIButton!
+    @IBOutlet weak var verifyButton:UIButton!
+    
+    @IBOutlet weak var mobileTextInput:UITextField!
+    @IBOutlet weak var verifyTextInput:UITextField!
+    
+    var client: FishMainApi = FishMainApi()
     
     init() {
         super.init(nibName: "LoginViewController", bundle: Bundle.main)
@@ -39,6 +45,16 @@ class LoginViewController: UIViewController {
     // MARK: - action
     @IBAction func loginButtonTouchUpInside(_ sender: Any) {
         
+    }
+    
+    @IBAction func verifyButtonTouchUpInside(_ sender: Any) {
+        
+        let phoneNum = self.mobileTextInput.text
+        
+        self.client.sendVerifyCode(params: ["mobile": phoneNum]) { (data, error) in
+            
+            self.makeActivity(data?.message)
+        }
     }
     
     /*

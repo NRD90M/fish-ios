@@ -23,7 +23,7 @@ target 'fish-ios' do
     pod 'Kingfisher', '3.13.1'
     
     # DDLog
-    pod 'CocoaLumberjack','~>2.4.0'
+    pod 'CocoaLumberjack/Swift','3.4.2'
 
   	# net request
 	pod 'Alamofire', '~> 4.5.0'

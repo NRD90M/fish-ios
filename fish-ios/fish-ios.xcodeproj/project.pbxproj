@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2E6C029788C421EB798F8D52 /* Pods_fish_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983D90265C84D847D3F1675F /* Pods_fish_ios.framework */; };
+		DB5FFC0223618C8800E4E8D7 /* FishMainApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC0123618C8800E4E8D7 /* FishMainApi.swift */; };
+		DB5FFC062361A31500E4E8D7 /* FishCodeMsgResponseAnyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC052361A31500E4E8D7 /* FishCodeMsgResponseAnyModel.swift */; };
+		DB5FFC0D2361AA9E00E4E8D7 /* KKHint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC092361AA9E00E4E8D7 /* KKHint.swift */; };
+		DB5FFC0E2361AA9E00E4E8D7 /* KKHintResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DB5FFC0A2361AA9E00E4E8D7 /* KKHintResource.bundle */; };
+		DB5FFC0F2361AA9E00E4E8D7 /* KKHintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC0B2361AA9E00E4E8D7 /* KKHintView.swift */; };
+		DB5FFC102361AA9E00E4E8D7 /* UIViewHintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC0C2361AA9E00E4E8D7 /* UIViewHintExtension.swift */; };
+		DB5FFC122361AAFF00E4E8D7 /* FishBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC112361AAFF00E4E8D7 /* FishBaseViewController.swift */; };
+		DB5FFC142361AB6D00E4E8D7 /* AppDelegate+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC132361AB6D00E4E8D7 /* AppDelegate+extension.swift */; };
+		DB5FFC172361AC6000E4E8D7 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC162361AC5F00E4E8D7 /* Tool.swift */; };
+		DB5FFC1C2361B71400E4E8D7 /* AlamofireLoggers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC1B2361B71400E4E8D7 /* AlamofireLoggers.swift */; };
+		DB5FFC202362C9BF00E4E8D7 /* FishAlamofireLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC1F2362C9BF00E4E8D7 /* FishAlamofireLogger.swift */; };
+		DB5FFC242362CE2B00E4E8D7 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC232362CE2B00E4E8D7 /* Logger.swift */; };
 		DB6C634C2356F2FE00673584 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C634B2356F2FE00673584 /* UIColorExtension.swift */; };
 		DB6C63512356F54700673584 /* STApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C634F2356F54600673584 /* STApi.swift */; };
 		DB6C63522356F54700673584 /* STApi_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C63502356F54600673584 /* STApi_Extension.swift */; };
@@ -36,6 +48,18 @@
 		6899C252E4F20195CEEE2B0A /* Pods-fish-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fish-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fish-ios/Pods-fish-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		983D90265C84D847D3F1675F /* Pods_fish_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fish_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A691BA0FFD068A850B9889EC /* Pods-fish-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fish-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-fish-ios/Pods-fish-ios.release.xcconfig"; sourceTree = "<group>"; };
+		DB5FFC0123618C8800E4E8D7 /* FishMainApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishMainApi.swift; sourceTree = "<group>"; };
+		DB5FFC052361A31500E4E8D7 /* FishCodeMsgResponseAnyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishCodeMsgResponseAnyModel.swift; sourceTree = "<group>"; };
+		DB5FFC092361AA9E00E4E8D7 /* KKHint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKHint.swift; sourceTree = "<group>"; };
+		DB5FFC0A2361AA9E00E4E8D7 /* KKHintResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KKHintResource.bundle; sourceTree = "<group>"; };
+		DB5FFC0B2361AA9E00E4E8D7 /* KKHintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKHintView.swift; sourceTree = "<group>"; };
+		DB5FFC0C2361AA9E00E4E8D7 /* UIViewHintExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewHintExtension.swift; sourceTree = "<group>"; };
+		DB5FFC112361AAFF00E4E8D7 /* FishBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishBaseViewController.swift; sourceTree = "<group>"; };
+		DB5FFC132361AB6D00E4E8D7 /* AppDelegate+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+extension.swift"; sourceTree = "<group>"; };
+		DB5FFC162361AC5F00E4E8D7 /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		DB5FFC1B2361B71400E4E8D7 /* AlamofireLoggers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireLoggers.swift; sourceTree = "<group>"; };
+		DB5FFC1F2362C9BF00E4E8D7 /* FishAlamofireLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishAlamofireLogger.swift; sourceTree = "<group>"; };
+		DB5FFC232362CE2B00E4E8D7 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		DB6C634B2356F2FE00673584 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		DB6C634F2356F54600673584 /* STApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STApi.swift; sourceTree = "<group>"; };
 		DB6C63502356F54600673584 /* STApi_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STApi_Extension.swift; sourceTree = "<group>"; };
@@ -83,9 +107,72 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DB5FFC0323618CC200E4E8D7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DB5FFC042361A30600E4E8D7 /* Model */,
+				DB5FFC0123618C8800E4E8D7 /* FishMainApi.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DB5FFC042361A30600E4E8D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB5FFC052361A31500E4E8D7 /* FishCodeMsgResponseAnyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB5FFC072361AA9E00E4E8D7 /* PrivatePods */ = {
+			isa = PBXGroup;
+			children = (
+				DB5FFC082361AA9E00E4E8D7 /* KKHint */,
+			);
+			path = PrivatePods;
+			sourceTree = "<group>";
+		};
+		DB5FFC082361AA9E00E4E8D7 /* KKHint */ = {
+			isa = PBXGroup;
+			children = (
+				DB5FFC092361AA9E00E4E8D7 /* KKHint.swift */,
+				DB5FFC0A2361AA9E00E4E8D7 /* KKHintResource.bundle */,
+				DB5FFC0B2361AA9E00E4E8D7 /* KKHintView.swift */,
+				DB5FFC0C2361AA9E00E4E8D7 /* UIViewHintExtension.swift */,
+			);
+			path = KKHint;
+			sourceTree = "<group>";
+		};
+		DB5FFC152361AC3800E4E8D7 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				DB5FFC162361AC5F00E4E8D7 /* Tool.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		DB5FFC1A2361B71400E4E8D7 /* AlamofireLoggers */ = {
+			isa = PBXGroup;
+			children = (
+				DB5FFC1B2361B71400E4E8D7 /* AlamofireLoggers.swift */,
+			);
+			path = AlamofireLoggers;
+			sourceTree = "<group>";
+		};
+		DB5FFC1E2362C9A700E4E8D7 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				DB5FFC1F2362C9BF00E4E8D7 /* FishAlamofireLogger.swift */,
+				DB5FFC232362CE2B00E4E8D7 /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
 		DB6C63482356F2E100673584 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				DB5FFC1A2361B71400E4E8D7 /* AlamofireLoggers */,
+				DB5FFC072361AA9E00E4E8D7 /* PrivatePods */,
 				DB6C63492356F2E100673584 /* Extension */,
 			);
 			path = Libs;
@@ -94,6 +181,7 @@
 		DB6C63492356F2E100673584 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DB5FFC152361AC3800E4E8D7 /* Foundation */,
 				DB6C634A2356F2E100673584 /* UI */,
 			);
 			path = Extension;
@@ -110,6 +198,7 @@
 		DB6C634D2356F51700673584 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				DB5FFC1E2362C9A700E4E8D7 /* Logger */,
 				DB6C63532356FA8A00673584 /* FishGlobalManager */,
 				DB6C634E2356F53400673584 /* FishApi */,
 			);
@@ -144,6 +233,7 @@
 		DBB913D523545BA5001C20E4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				DB5FFC0323618CC200E4E8D7 /* Network */,
 				DBB913E5235574AB001C20E4 /* Alert */,
 				DBB913E7235574AB001C20E4 /* Pond */,
 				DBB913E6235574AB001C20E4 /* Timer */,
@@ -167,6 +257,7 @@
 			children = (
 				DBB913E2235561DA001C20E4 /* FishTabBarController.swift */,
 				DBB913DE23545F20001C20E4 /* FishNavigationController.swift */,
+				DB5FFC112361AAFF00E4E8D7 /* FishBaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -234,6 +325,7 @@
 				DBB913D523545BA5001C20E4 /* Main */,
 				DBE54462235450DA005ECA14 /* launchNew.png */,
 				DBE5444E2354282B005ECA14 /* AppDelegate.swift */,
+				DB5FFC132361AB6D00E4E8D7 /* AppDelegate+extension.swift */,
 				DBE544502354282B005ECA14 /* FirstViewController.swift */,
 				DBE544522354282B005ECA14 /* SecondViewController.swift */,
 				DBE544592354282C005ECA14 /* LaunchScreen.storyboard */,
@@ -319,6 +411,7 @@
 				DBB913E12354605C001C20E4 /* Assets.xcassets in Resources */,
 				DBB913EB235574FB001C20E4 /* PondViewController.xib in Resources */,
 				DBB913F72355754A001C20E4 /* AlertViewController.xib in Resources */,
+				DB5FFC0E2361AA9E00E4E8D7 /* KKHintResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,20 +475,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB5FFC0D2361AA9E00E4E8D7 /* KKHint.swift in Sources */,
+				DB5FFC062361A31500E4E8D7 /* FishCodeMsgResponseAnyModel.swift in Sources */,
 				DB6C63522356F54700673584 /* STApi_Extension.swift in Sources */,
 				DBB913DB23545C2E001C20E4 /* LoginViewController.swift in Sources */,
 				DBB913F22355753D001C20E4 /* UserViewController.swift in Sources */,
 				DBE544532354282B005ECA14 /* SecondViewController.swift in Sources */,
 				DB6C63512356F54700673584 /* STApi.swift in Sources */,
+				DB5FFC172361AC6000E4E8D7 /* Tool.swift in Sources */,
 				DBB913F62355754A001C20E4 /* AlertViewController.swift in Sources */,
 				DBB913E3235561DA001C20E4 /* FishTabBarController.swift in Sources */,
+				DB5FFC1C2361B71400E4E8D7 /* AlamofireLoggers.swift in Sources */,
+				DB5FFC0F2361AA9E00E4E8D7 /* KKHintView.swift in Sources */,
 				DBB913DF23545F20001C20E4 /* FishNavigationController.swift in Sources */,
+				DB5FFC122361AAFF00E4E8D7 /* FishBaseViewController.swift in Sources */,
+				DB5FFC202362C9BF00E4E8D7 /* FishAlamofireLogger.swift in Sources */,
 				DBB913EE23557531001C20E4 /* TimerViewController.swift in Sources */,
 				DBE5444F2354282B005ECA14 /* AppDelegate.swift in Sources */,
+				DB5FFC0223618C8800E4E8D7 /* FishMainApi.swift in Sources */,
 				DB6C634C2356F2FE00673584 /* UIColorExtension.swift in Sources */,
 				DB6C6356235817C000673584 /* FishUserInfo.swift in Sources */,
+				DB5FFC242362CE2B00E4E8D7 /* Logger.swift in Sources */,
 				DBB913EA235574FB001C20E4 /* PondViewController.swift in Sources */,
+				DB5FFC102361AA9E00E4E8D7 /* UIViewHintExtension.swift in Sources */,
 				DBE544512354282B005ECA14 /* FirstViewController.swift in Sources */,
+				DB5FFC142361AB6D00E4E8D7 /* AppDelegate+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +639,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9Z5827E9LL;
 				INFOPLIST_FILE = "fish-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -557,6 +662,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9Z5827E9LL;
 				INFOPLIST_FILE = "fish-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
