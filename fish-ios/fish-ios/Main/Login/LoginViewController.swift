@@ -32,6 +32,7 @@ class LoginViewController: FishPreViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.mobileTextInput.text  = "18616514687"
         self.verifyTextInput.text  = "805225"
         // Do any additional setup after loading the view.

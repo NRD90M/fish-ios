@@ -57,7 +57,11 @@ extension AppDelegate {
     
     func switchRootToTabBar(_ params:[String: Any]?) {
         let tabBar: FishTabBarController = FishTabBarController(params: params)
-        FishKeyWindow().rootViewController =  FishNavigationController.init(rootViewController:tabBar)
+        let navi:FishNavigationController = FishNavigationController.init(rootViewController:tabBar)
+        navi.setNavigationBarHidden(true, animated: false)
+        FishKeyWindow().rootViewController = navi
+        
+        
         
     }
 }

@@ -58,6 +58,8 @@ class FishTabBarController: UITabBarController {
         super.viewDidLoad()
 //        self.sm_prefersNavigationBarHidden = true
 
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
         self.delegate = self;
         setTabbarAppearance()
         
@@ -119,7 +121,7 @@ class FishTabBarController: UITabBarController {
         }
         
         // 新的个数与当前的一致，则只更换数据源，不能改索引
-         self.setViewControllers(vcs, animated: true)
+         self.setViewControllers(vcs, animated: false)
         
     }
     

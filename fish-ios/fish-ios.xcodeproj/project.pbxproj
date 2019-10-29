@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2E6C029788C421EB798F8D52 /* Pods_fish_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983D90265C84D847D3F1675F /* Pods_fish_ios.framework */; };
+		DB5433C82367E21D00F05D17 /* PondContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5433C62367E21D00F05D17 /* PondContentViewController.swift */; };
+		DB5433C92367E21D00F05D17 /* PondContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB5433C72367E21D00F05D17 /* PondContentViewController.xib */; };
+		DB5433CC236814E600F05D17 /* PondDeviceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5433CA236814E600F05D17 /* PondDeviceCollectionViewCell.swift */; };
+		DB5433CD236814E600F05D17 /* PondDeviceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB5433CB236814E600F05D17 /* PondDeviceCollectionViewCell.xib */; };
 		DB5FFC0223618C8800E4E8D7 /* FishMainApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC0123618C8800E4E8D7 /* FishMainApi.swift */; };
 		DB5FFC062361A31500E4E8D7 /* FishCodeMsgResponseAnyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC052361A31500E4E8D7 /* FishCodeMsgResponseAnyModel.swift */; };
 		DB5FFC0D2361AA9E00E4E8D7 /* KKHint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC092361AA9E00E4E8D7 /* KKHint.swift */; };
@@ -49,6 +53,10 @@
 		6899C252E4F20195CEEE2B0A /* Pods-fish-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fish-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fish-ios/Pods-fish-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		983D90265C84D847D3F1675F /* Pods_fish_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fish_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A691BA0FFD068A850B9889EC /* Pods-fish-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fish-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-fish-ios/Pods-fish-ios.release.xcconfig"; sourceTree = "<group>"; };
+		DB5433C62367E21D00F05D17 /* PondContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondContentViewController.swift; sourceTree = "<group>"; };
+		DB5433C72367E21D00F05D17 /* PondContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PondContentViewController.xib; sourceTree = "<group>"; };
+		DB5433CA236814E600F05D17 /* PondDeviceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondDeviceCollectionViewCell.swift; sourceTree = "<group>"; };
+		DB5433CB236814E600F05D17 /* PondDeviceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PondDeviceCollectionViewCell.xib; sourceTree = "<group>"; };
 		DB5FFC0123618C8800E4E8D7 /* FishMainApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishMainApi.swift; sourceTree = "<group>"; };
 		DB5FFC052361A31500E4E8D7 /* FishCodeMsgResponseAnyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishCodeMsgResponseAnyModel.swift; sourceTree = "<group>"; };
 		DB5FFC092361AA9E00E4E8D7 /* KKHint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKHint.swift; sourceTree = "<group>"; };
@@ -107,6 +115,17 @@
 				A691BA0FFD068A850B9889EC /* Pods-fish-ios.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB5433C52367E1FF00F05D17 /* ContentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DB5433C62367E21D00F05D17 /* PondContentViewController.swift */,
+				DB5433C72367E21D00F05D17 /* PondContentViewController.xib */,
+				DB5433CA236814E600F05D17 /* PondDeviceCollectionViewCell.swift */,
+				DB5433CB236814E600F05D17 /* PondDeviceCollectionViewCell.xib */,
+			);
+			path = ContentViewController;
 			sourceTree = "<group>";
 		};
 		DB5FFC0323618CC200E4E8D7 /* Network */ = {
@@ -295,6 +314,7 @@
 		DBB913E7235574AB001C20E4 /* Pond */ = {
 			isa = PBXGroup;
 			children = (
+				DB5433C52367E1FF00F05D17 /* ContentViewController */,
 				DBB913E8235574FB001C20E4 /* PondViewController.swift */,
 				DBB913E9235574FB001C20E4 /* PondViewController.xib */,
 			);
@@ -413,7 +433,9 @@
 				DBE54463235450DA005ECA14 /* launchNew.png in Resources */,
 				DBB913E12354605C001C20E4 /* Assets.xcassets in Resources */,
 				DBB913EB235574FB001C20E4 /* PondViewController.xib in Resources */,
+				DB5433C92367E21D00F05D17 /* PondContentViewController.xib in Resources */,
 				DBB913F72355754A001C20E4 /* AlertViewController.xib in Resources */,
+				DB5433CD236814E600F05D17 /* PondDeviceCollectionViewCell.xib in Resources */,
 				DB5FFC0E2361AA9E00E4E8D7 /* KKHintResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,8 +455,11 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Tabman/Tabman.framework",
 				"${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -444,8 +469,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pageboy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tabman.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebViewJavascriptBridge.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +511,7 @@
 				DB6C63522356F54700673584 /* STApi_Extension.swift in Sources */,
 				DBB913DB23545C2E001C20E4 /* LoginViewController.swift in Sources */,
 				DBB913F22355753D001C20E4 /* UserViewController.swift in Sources */,
+				DB5433C82367E21D00F05D17 /* PondContentViewController.swift in Sources */,
 				DBE544532354282B005ECA14 /* SecondViewController.swift in Sources */,
 				DB6C63512356F54700673584 /* STApi.swift in Sources */,
 				DB5FFC172361AC6000E4E8D7 /* Tool.swift in Sources */,
@@ -494,6 +523,7 @@
 				DBB913DF23545F20001C20E4 /* FishNavigationController.swift in Sources */,
 				DB5FFC122361AAFF00E4E8D7 /* FishBaseViewController.swift in Sources */,
 				DB5FFC202362C9BF00E4E8D7 /* FishAlamofireLogger.swift in Sources */,
+				DB5433CC236814E600F05D17 /* PondDeviceCollectionViewCell.swift in Sources */,
 				DBB913EE23557531001C20E4 /* TimerViewController.swift in Sources */,
 				DBE5444F2354282B005ECA14 /* AppDelegate.swift in Sources */,
 				DB5FFC0223618C8800E4E8D7 /* FishMainApi.swift in Sources */,

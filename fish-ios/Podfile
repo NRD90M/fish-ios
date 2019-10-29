@@ -35,5 +35,8 @@ target 'fish-ios' do
     pod 'MJRefresh', '~> 3.0.0'
     
     pod 'WebViewJavascriptBridge', '6.0.2'
-  
+    
+    pod 'Pageboy'
+    
+    pod 'Tabman'
 end
