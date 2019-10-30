@@ -16,18 +16,19 @@ class PondViewController:  TabmanViewController, PageboyViewControllerDataSource
         var viewControllers = [PondContentViewController]()
         for i in 0 ..< 5 {
             let vc = PondContentViewController();
-            
-            let view = UIView()
-            view.frame = CGRect(x: 0, y: 0, width: 100, height: 50);
-            view.backgroundColor = UIColor.darkText
-            vc.view.addSubview(view)
-//            vc.automaticallyAdjustsScrollViewInsets = true
-            vc.view.backgroundColor = i % 2 == 0 ? UIColor.red : UIColor.yellow
+//            let view = UIView()
+//            view.frame = CGRect(x: 0, y: 0, width: 100, height: 50);
+//            view.backgroundColor = UIColor.darkText
+//            vc.view.addSubview(view)
+////            vc.automaticallyAdjustsScrollViewInsets = true
+//            vc.view.backgroundColor = i % 2 == 0 ? UIColor.red : UIColor.yellow
             viewControllers.append(vc)
         }
         return viewControllers
     }()
     
+    
+    // modify TabmanScrollingButtonBar
     override func viewDidLoad() {
         super.viewDidLoad()
 

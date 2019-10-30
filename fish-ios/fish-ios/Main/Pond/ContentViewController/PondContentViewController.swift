@@ -8,7 +8,9 @@
 
 import UIKit
 
-class PondContentViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+let PondDeviceHeaderCollectionViewCellReuseID = "PondDeviceHeaderCollectionViewCellReuseID"
+
+class PondContentViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView:UICollectionView!
     
@@ -17,8 +19,9 @@ class PondContentViewController: UIViewController, UICollectionViewDelegate, UIC
 
         // Do any additional setup after loading the view.
         
-        
         self.collectionView.register(UINib.init(nibName: "PondDeviceCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: PondDeviceCollectionViewCellReuseID)
+        
+        self.collectionView.register(UINib.init(nibName: "PondDeviceHeaderCollectionViewCell", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: PondDeviceHeaderCollectionViewCellReuseID)
         
         let flayout = UICollectionViewFlowLayout()
         flayout.itemSize = self.itemSize()
@@ -63,7 +66,43 @@ class PondContentViewController: UIViewController, UICollectionViewDelegate, UIC
     }
     
     
+    
     // MARK: - CollectionViewDelegate
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let reusableView:UICollectionReusableView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: PondDeviceHeaderCollectionViewCellReuseID, for: indexPath)
+                return reusableView
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize{
+        
+        return CGSize(width: SCREEN_WIDTH, height: 200)
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, didEndDisplayingSupplementaryView view: UICollectionReusableView, forElementOfKind elementKind: String, at indexPath: IndexPath) {
+
+//    }
+    
+//    - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+//
+//    UICollectionReusableView *reusableView = nil;
+//    if (kind == UICollectionElementKindSectionHeader) {       //头视图
+//    _headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"Header" forIndexPath:indexPath];
+//    reusableView = _headerView;
+//    }else if (kind == UICollectionElementKindSectionFooter) {    //尾视图
+//    _footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"Footer" forIndexPath:indexPath];
+//    _footerView.delegate = self;
+//    reusableView = _footerView;
+//    }
+//    return reusableView;
+//    }
+//
+//    - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+//    return CGSizeMake(头视图的宽, 头视图的高);
+//    }
+
+    
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }

@@ -29,6 +29,16 @@
 		DB6C63512356F54700673584 /* STApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C634F2356F54600673584 /* STApi.swift */; };
 		DB6C63522356F54700673584 /* STApi_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C63502356F54600673584 /* STApi_Extension.swift */; };
 		DB6C6356235817C000673584 /* FishUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C6355235817C000673584 /* FishUserInfo.swift */; };
+		DBA9D1F42369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9D1F22369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.swift */; };
+		DBA9D1F52369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA9D1F32369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.xib */; };
+		DBA9D1F92369866A00C32A7B /* TimerClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9D1F72369866A00C32A7B /* TimerClockViewController.swift */; };
+		DBA9D1FA2369866A00C32A7B /* TimerClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA9D1F82369866A00C32A7B /* TimerClockViewController.xib */; };
+		DBA9D1FD23698D0500C32A7B /* TimerClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9D1FB23698D0500C32A7B /* TimerClockTableViewCell.swift */; };
+		DBA9D1FE23698D0500C32A7B /* TimerClockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA9D1FC23698D0500C32A7B /* TimerClockTableViewCell.xib */; };
+		DBA9D20323698F4700C32A7B /* TimerTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9D20123698F4700C32A7B /* TimerTriggerViewController.swift */; };
+		DBA9D20423698F4700C32A7B /* TimerTriggerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA9D20223698F4700C32A7B /* TimerTriggerViewController.xib */; };
+		DBA9D20723698F5500C32A7B /* TimerTriggerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9D20523698F5500C32A7B /* TimerTriggerTableViewCell.swift */; };
+		DBA9D20823698F5500C32A7B /* TimerTriggerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA9D20623698F5500C32A7B /* TimerTriggerTableViewCell.xib */; };
 		DBB913DB23545C2E001C20E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB913D923545C2E001C20E4 /* LoginViewController.swift */; };
 		DBB913DC23545C2E001C20E4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB913DA23545C2E001C20E4 /* LoginViewController.xib */; };
 		DBB913DF23545F20001C20E4 /* FishNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB913DE23545F20001C20E4 /* FishNavigationController.swift */; };
@@ -74,6 +84,16 @@
 		DB6C634F2356F54600673584 /* STApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STApi.swift; sourceTree = "<group>"; };
 		DB6C63502356F54600673584 /* STApi_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STApi_Extension.swift; sourceTree = "<group>"; };
 		DB6C6355235817C000673584 /* FishUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishUserInfo.swift; sourceTree = "<group>"; };
+		DBA9D1F22369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondDeviceHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		DBA9D1F32369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PondDeviceHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
+		DBA9D1F72369866A00C32A7B /* TimerClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerClockViewController.swift; sourceTree = "<group>"; };
+		DBA9D1F82369866A00C32A7B /* TimerClockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerClockViewController.xib; sourceTree = "<group>"; };
+		DBA9D1FB23698D0500C32A7B /* TimerClockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerClockTableViewCell.swift; sourceTree = "<group>"; };
+		DBA9D1FC23698D0500C32A7B /* TimerClockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerClockTableViewCell.xib; sourceTree = "<group>"; };
+		DBA9D20123698F4700C32A7B /* TimerTriggerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTriggerViewController.swift; sourceTree = "<group>"; };
+		DBA9D20223698F4700C32A7B /* TimerTriggerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerTriggerViewController.xib; sourceTree = "<group>"; };
+		DBA9D20523698F5500C32A7B /* TimerTriggerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTriggerTableViewCell.swift; sourceTree = "<group>"; };
+		DBA9D20623698F5500C32A7B /* TimerTriggerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerTriggerTableViewCell.xib; sourceTree = "<group>"; };
 		DBB913D923545C2E001C20E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DBB913DA23545C2E001C20E4 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		DBB913DE23545F20001C20E4 /* FishNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishNavigationController.swift; sourceTree = "<group>"; };
@@ -124,6 +144,8 @@
 				DB5433C72367E21D00F05D17 /* PondContentViewController.xib */,
 				DB5433CA236814E600F05D17 /* PondDeviceCollectionViewCell.swift */,
 				DB5433CB236814E600F05D17 /* PondDeviceCollectionViewCell.xib */,
+				DBA9D1F22369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.swift */,
+				DBA9D1F32369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.xib */,
 			);
 			path = ContentViewController;
 			sourceTree = "<group>";
@@ -252,6 +274,37 @@
 			path = UserInfo;
 			sourceTree = "<group>";
 		};
+		DBA9D1F62369864A00C32A7B /* ContentViewContoller */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9D20023698F1F00C32A7B /* Trigger */,
+				DBA9D1FF23698F0B00C32A7B /* Clock */,
+			);
+			path = ContentViewContoller;
+			sourceTree = "<group>";
+		};
+		DBA9D1FF23698F0B00C32A7B /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9D1F72369866A00C32A7B /* TimerClockViewController.swift */,
+				DBA9D1F82369866A00C32A7B /* TimerClockViewController.xib */,
+				DBA9D1FB23698D0500C32A7B /* TimerClockTableViewCell.swift */,
+				DBA9D1FC23698D0500C32A7B /* TimerClockTableViewCell.xib */,
+			);
+			path = Clock;
+			sourceTree = "<group>";
+		};
+		DBA9D20023698F1F00C32A7B /* Trigger */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9D20123698F4700C32A7B /* TimerTriggerViewController.swift */,
+				DBA9D20223698F4700C32A7B /* TimerTriggerViewController.xib */,
+				DBA9D20523698F5500C32A7B /* TimerTriggerTableViewCell.swift */,
+				DBA9D20623698F5500C32A7B /* TimerTriggerTableViewCell.xib */,
+			);
+			path = Trigger;
+			sourceTree = "<group>";
+		};
 		DBB913D523545BA5001C20E4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +358,7 @@
 		DBB913E6235574AB001C20E4 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				DBA9D1F62369864A00C32A7B /* ContentViewContoller */,
 				DBB913EC23557531001C20E4 /* TimerViewController.swift */,
 				DBB913ED23557531001C20E4 /* TimerViewController.xib */,
 			);
@@ -428,13 +482,18 @@
 			files = (
 				DBB913F32355753D001C20E4 /* UserViewController.xib in Resources */,
 				DBB913EF23557531001C20E4 /* TimerViewController.xib in Resources */,
+				DBA9D1FE23698D0500C32A7B /* TimerClockTableViewCell.xib in Resources */,
 				DBB913DC23545C2E001C20E4 /* LoginViewController.xib in Resources */,
 				DBE5445B2354282C005ECA14 /* LaunchScreen.storyboard in Resources */,
+				DBA9D1F52369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.xib in Resources */,
+				DBA9D20823698F5500C32A7B /* TimerTriggerTableViewCell.xib in Resources */,
 				DBE54463235450DA005ECA14 /* launchNew.png in Resources */,
 				DBB913E12354605C001C20E4 /* Assets.xcassets in Resources */,
 				DBB913EB235574FB001C20E4 /* PondViewController.xib in Resources */,
 				DB5433C92367E21D00F05D17 /* PondContentViewController.xib in Resources */,
+				DBA9D20423698F4700C32A7B /* TimerTriggerViewController.xib in Resources */,
 				DBB913F72355754A001C20E4 /* AlertViewController.xib in Resources */,
+				DBA9D1FA2369866A00C32A7B /* TimerClockViewController.xib in Resources */,
 				DB5433CD236814E600F05D17 /* PondDeviceCollectionViewCell.xib in Resources */,
 				DB5FFC0E2361AA9E00E4E8D7 /* KKHintResource.bundle in Resources */,
 			);
@@ -509,6 +568,7 @@
 				DB5FFC0D2361AA9E00E4E8D7 /* KKHint.swift in Sources */,
 				DB5FFC062361A31500E4E8D7 /* FishCodeMsgResponseAnyModel.swift in Sources */,
 				DB6C63522356F54700673584 /* STApi_Extension.swift in Sources */,
+				DBA9D1FD23698D0500C32A7B /* TimerClockTableViewCell.swift in Sources */,
 				DBB913DB23545C2E001C20E4 /* LoginViewController.swift in Sources */,
 				DBB913F22355753D001C20E4 /* UserViewController.swift in Sources */,
 				DB5433C82367E21D00F05D17 /* PondContentViewController.swift in Sources */,
@@ -521,6 +581,7 @@
 				DB5FFC0F2361AA9E00E4E8D7 /* KKHintView.swift in Sources */,
 				DB5FFC262362D96600E4E8D7 /* FishHttpResponseModelProtocol.swift in Sources */,
 				DBB913DF23545F20001C20E4 /* FishNavigationController.swift in Sources */,
+				DBA9D1F42369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.swift in Sources */,
 				DB5FFC122361AAFF00E4E8D7 /* FishBaseViewController.swift in Sources */,
 				DB5FFC202362C9BF00E4E8D7 /* FishAlamofireLogger.swift in Sources */,
 				DB5433CC236814E600F05D17 /* PondDeviceCollectionViewCell.swift in Sources */,
@@ -528,11 +589,14 @@
 				DBE5444F2354282B005ECA14 /* AppDelegate.swift in Sources */,
 				DB5FFC0223618C8800E4E8D7 /* FishMainApi.swift in Sources */,
 				DB6C634C2356F2FE00673584 /* UIColorExtension.swift in Sources */,
+				DBA9D20723698F5500C32A7B /* TimerTriggerTableViewCell.swift in Sources */,
+				DBA9D1F92369866A00C32A7B /* TimerClockViewController.swift in Sources */,
 				DB6C6356235817C000673584 /* FishUserInfo.swift in Sources */,
 				DB5FFC242362CE2B00E4E8D7 /* Logger.swift in Sources */,
 				DBB913EA235574FB001C20E4 /* PondViewController.swift in Sources */,
 				DB5FFC102361AA9E00E4E8D7 /* UIViewHintExtension.swift in Sources */,
 				DBE544512354282B005ECA14 /* FirstViewController.swift in Sources */,
+				DBA9D20323698F4700C32A7B /* TimerTriggerViewController.swift in Sources */,
 				DB5FFC142361AB6D00E4E8D7 /* AppDelegate+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

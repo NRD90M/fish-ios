@@ -94,7 +94,7 @@ class FishTabBarController: UITabBarController {
             vcs.append(timer)
         } else {
             let shopCart: TimerViewController = TimerViewController()
-            setupChildViewController(shopCart, title: "进货单", image: "icon_tabbar_timer", selectedImage: "icon_tabbar_timer")
+            setupChildViewController(shopCart, title: "计划", image: "icon_tabbar_timer", selectedImage: "icon_tabbar_timer")
             let shopCartNa = FishNavigationController(rootViewController: shopCart)
             vcs.append(shopCartNa)
             self.timer = shopCartNa
