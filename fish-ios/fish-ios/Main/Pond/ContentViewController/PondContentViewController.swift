@@ -8,11 +8,19 @@
 
 import UIKit
 
+import MJRefresh
+
 let PondDeviceHeaderCollectionViewCellReuseID = "PondDeviceHeaderCollectionViewCellReuseID"
 
-class PondContentViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class PondContentViewController: FishPreViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView:UICollectionView!
+    
+    var pondSceneModel:PondSceneModel?
+    
+    var client: FishMainApi = FishMainApi()
+    
+    var ioDevicesList:[PondIOInfoModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +41,63 @@ class PondContentViewController: UIViewController, UICollectionViewDelegate, UIC
         self.collectionView.collectionViewLayout = flayout
         
         
+        NotificationCenter.default.addObserver(self, selector: #selector(websocketNewDataNotification(nf:)), name: Notification.Name.FishWebSocketNotification, object: nil)
+        
+        
+        self.collectionView.mj_header = MJRefreshNormalHeader(refreshingBlock: {
+            self.collectionView.mj_header.endRefreshing()
+             self.loadData()
+        })
+        
+        self.loadData()
+//        self.collectionView.reloadData()
+    }
+    
+    func websocketNewDataNotification(nf: Notification) {
+        guard let obj = nf.object else {
+            return
+        }
+        
+        
+        // 只要接收到刷新都会刷新页面数据
+        
         self.collectionView.reloadData()
+        
+//        if self.isViewLoaded && (self.view.window != nil) {
+//           // viewController is visible
+//            print ("PondContentViewController display")
+//        }
+        
+        
+        
+    }
+    
+    
+    func loadData() -> Void {
+        
+        self.client.getIOInfo(params: ["device_mac":pondSceneModel?.deviceMac], callBack: { (data, error) in
+            
+            if let err = Parse.parseResponse(data, error) {
+                self.view.makeHint(err.showMessage)
+                return
+            }
+            if let d = data?.data, !d.isEmpty {
+                self.ioDevicesList = d
+                var enableDevicesList:[PondIOInfoModel] = []
+                for model in d {
+                    if let enable = model.enabled {
+                        if (enable) {
+                            enableDevicesList.append(model)
+                        }
+                    }
+                }
+                self.ioDevicesList = enableDevicesList
+                self.collectionView.reloadData()
+            } else {
+                self.view.makeHint("数据获取失败，请稍后再试")
+            }
+        })
+        
     }
 
     private func itemSize() -> CGSize {
@@ -71,12 +135,18 @@ class PondContentViewController: UIViewController, UICollectionViewDelegate, UIC
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let reusableView:UICollectionReusableView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: PondDeviceHeaderCollectionViewCellReuseID, for: indexPath)
-                return reusableView
+        
+        guard let eReusableView = reusableView as? PondDeviceHeaderCollectionViewCell,
+            let deviceMac = pondSceneModel?.deviceMac else {
+            return reusableView
+        }
+        eReusableView.reloadData(deviceMac:deviceMac)
+        return eReusableView
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize{
         
-        return CGSize(width: SCREEN_WIDTH, height: 200)
+        return CGSize(width: SCREEN_WIDTH, height: 354)
     }
     
 //    func collectionView(_ collectionView: UICollectionView, didEndDisplayingSupplementaryView view: UICollectionReusableView, forElementOfKind elementKind: String, at indexPath: IndexPath) {
@@ -108,7 +178,7 @@ class PondContentViewController: UIViewController, UICollectionViewDelegate, UIC
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 12
+        return self.ioDevicesList.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -117,10 +187,14 @@ class PondContentViewController: UIViewController, UICollectionViewDelegate, UIC
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PondDeviceCollectionViewCellReuseID, for: indexPath)
         
+        
+        guard let eCell = cell as? PondDeviceCollectionViewCell, let deviceMac = pondSceneModel?.deviceMac else {
+            return cell
+        }
 //        guard let eCell = cell as? KKAutoCollectionViewCell,   indexPath.row < count * KKAutoCycle, let models = self.privateImageModels else {
 //            return cell
 //        }
-//        eCell.showData(models[indexPath.row % count])
+        eCell.showData(model: self.ioDevicesList[indexPath.row], deviceMac:deviceMac)
         return cell
     }
     

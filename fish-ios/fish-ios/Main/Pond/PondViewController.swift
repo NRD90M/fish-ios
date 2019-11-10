@@ -8,25 +8,18 @@
 
 import UIKit
 import Pageboy
-import Tabman
+//import Tabman
+//import SwiftPopMenu
 
-class PondViewController:  TabmanViewController, PageboyViewControllerDataSource {
+class PondViewController:TabmanViewController,PageboyViewControllerDataSource {
     
-    lazy var viewControllers: [PondContentViewController] = {
-        var viewControllers = [PondContentViewController]()
-        for i in 0 ..< 5 {
-            let vc = PondContentViewController();
-//            let view = UIView()
-//            view.frame = CGRect(x: 0, y: 0, width: 100, height: 50);
-//            view.backgroundColor = UIColor.darkText
-//            vc.view.addSubview(view)
-////            vc.automaticallyAdjustsScrollViewInsets = true
-//            vc.view.backgroundColor = i % 2 == 0 ? UIColor.red : UIColor.yellow
-            viewControllers.append(vc)
-        }
-        return viewControllers
-    }()
+     var client: FishMainApi = FishMainApi()
     
+    var sceneList:[PondSceneModel] = [];
+    
+    var viewControllers: [PondContentViewController] = []
+    
+    var popMenu:SwiftPopMenu!
     
     // modify TabmanScrollingButtonBar
     override func viewDidLoad() {
@@ -37,8 +30,7 @@ class PondViewController:  TabmanViewController, PageboyViewControllerDataSource
         self.dataSource = self
         self.automaticallyAdjustsChildScrollViewInsets = true
         // configure the bar
-        self.bar.items = [Item(title: "Page 1"),
-                          Item(title: "Page 2"), Item(title: "Page 2"), Item(title: "Page 2"), Item(title: "Page 2"), Item(title: "Page 2"),  Item(title: "Page 2")]
+       
         
         self.bar.style = .scrollingButtonBar
         self.bar.location = .top
@@ -53,8 +45,89 @@ class PondViewController:  TabmanViewController, PageboyViewControllerDataSource
         })
         
         self.embedBar(in: (self.navigationController?.navigationBar)!)
-//        self.embeddingView =
+        
+        
+        if let bar =  self.tabmanBar as? TabmanScrollingButtonBar {
+            
+            let button = UIButton(type: UIButtonType.custom)
+            bar.rightView.addSubview(button)
+            button.autoPinEdgesToSuperviewEdges()
+            button.setImage( UIImage(named: "icon_lamp"), for: UIControlState.normal)
+            
+            button.addTarget(self, action: #selector(showMenuBtnClick(btn:)), for: UIControlEvents.touchUpInside)
+            
+        }
+        
+        self.client.getAllScene() { (data, error) in
+            
+            if let err = Parse.parseResponse(data, error) {
+                self.view.makeHint(err.showMessage)
+                return
+            }
+            
+            if let d = data?.data, !d.isEmpty {
+              self.sceneList = d
+                
+                self.viewControllers.removeAll()
+                var barItems:[TabmanBar.Item] = []
+                for model in self.sceneList {
+//                    print(model)
+                    let vc = PondContentViewController()
+                    vc.pondSceneModel = model
+
+                    self.viewControllers.append(vc)
+                    
+                   let sceneName = model.sceneName ?? "-"
+                     barItems.append(Item(title: sceneName))
+                }
+                
+                self.bar.items = barItems
+                self.reloadPages()
+            } else {
+                self.view.makeHint("数据获取失败，请稍后再试")
+            }
+        }
+        
+        websocketSetup()
     }
+    
+    func showMenuBtnClick(btn:UIButton) {
+        
+        let point = btn.convert(CGPoint(x: 0, y: 0), to: FishKeyWindow())
+        //数据源（icon可不填）
+        let popData = [("添加鱼塘"),
+                       ("鱼塘配置"),
+                       ("鱼塘重命名")]
+        
+        //设置Parameter（可不写）
+        popMenu = SwiftPopMenu(frame:  CGRect(x: SCREEN_WIDTH - 105, y: point.y + 40, width: 100, height: 126))
+        popMenu.popTextColor = UIColor.colorWithHexString("#FFFFFF")!
+        popMenu.popMenuBgColor = UIColor.colorWithHexString("#1F1F1F")!
+        popMenu.popData = popData
+       
+        //click
+        popMenu.didSelectMenuBlock = { [weak self](index:Int)->Void in
+            print("block select \(index)")
+            self?.popMenu.dismiss()
+            self?.popMenu = nil
+            
+            
+            
+            let share = TestViewController()
+            share.modalTransitionStyle = .crossDissolve
+            share.modalPresentationStyle = .overFullScreen
+            self?.present(share, animated: true, completion: nil)
+        }
+        
+        //show
+        popMenu.show()
+    }
+    
+    func websocketSetup() {
+        /// 注: 端口后面必须要带/
+        FishWebSocket.socketConnect(urlStr: nil)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

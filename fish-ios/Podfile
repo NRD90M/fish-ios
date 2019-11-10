@@ -38,5 +38,10 @@ target 'fish-ios' do
     
     pod 'Pageboy'
     
-    pod 'Tabman'
+#    pod 'Tabman'
+    pod 'PureLayout', '~> 3.1.4'
+    
+    pod 'Starscream', '3.0.2'
+    
+#    pod 'SwiftPopMenu'
 end

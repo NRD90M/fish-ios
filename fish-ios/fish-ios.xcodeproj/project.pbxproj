@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E6C029788C421EB798F8D52 /* Pods_fish_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983D90265C84D847D3F1675F /* Pods_fish_ios.framework */; };
+		DB4C5C502377EE1F002C6724 /* FishWebSocketDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C5C4F2377EE1F002C6724 /* FishWebSocketDataHelper.swift */; };
 		DB5433C82367E21D00F05D17 /* PondContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5433C62367E21D00F05D17 /* PondContentViewController.swift */; };
 		DB5433C92367E21D00F05D17 /* PondContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB5433C72367E21D00F05D17 /* PondContentViewController.xib */; };
 		DB5433CC236814E600F05D17 /* PondDeviceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5433CA236814E600F05D17 /* PondDeviceCollectionViewCell.swift */; };
@@ -25,10 +26,75 @@
 		DB5FFC202362C9BF00E4E8D7 /* FishAlamofireLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC1F2362C9BF00E4E8D7 /* FishAlamofireLogger.swift */; };
 		DB5FFC242362CE2B00E4E8D7 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC232362CE2B00E4E8D7 /* Logger.swift */; };
 		DB5FFC262362D96600E4E8D7 /* FishHttpResponseModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC252362D96600E4E8D7 /* FishHttpResponseModelProtocol.swift */; };
+		DB63EEBB2378146000D96FC8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DB63EEB72378146000D96FC8 /* LICENSE */; };
+		DB63EEBC2378146000D96FC8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DB63EEB82378146000D96FC8 /* README.md */; };
+		DB63EEBD2378146000D96FC8 /* SwiftPopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB63EEBA2378146000D96FC8 /* SwiftPopMenu.swift */; };
+		DB63EEC223781EF200D96FC8 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB63EEC023781EF200D96FC8 /* TestViewController.swift */; };
+		DB63EEC323781EF200D96FC8 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB63EEC123781EF200D96FC8 /* TestViewController.xib */; };
 		DB6C634C2356F2FE00673584 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C634B2356F2FE00673584 /* UIColorExtension.swift */; };
 		DB6C63512356F54700673584 /* STApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C634F2356F54600673584 /* STApi.swift */; };
 		DB6C63522356F54700673584 /* STApi_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C63502356F54600673584 /* STApi_Extension.swift */; };
 		DB6C6356235817C000673584 /* FishUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C6355235817C000673584 /* FishUserInfo.swift */; };
+		DB90B9892378048C0037054D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DB90B93B2378048C0037054D /* LICENSE */; };
+		DB90B98A2378048C0037054D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DB90B93C2378048C0037054D /* README.md */; };
+		DB90B98B2378048C0037054D /* TabmanBar+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9402378048C0037054D /* TabmanBar+Location.swift */; };
+		DB90B98C2378048C0037054D /* TabmanBar+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9422378048C0037054D /* TabmanBar+Config.swift */; };
+		DB90B98D2378048C0037054D /* TabmanBarConfigHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9432378048C0037054D /* TabmanBarConfigHandler.swift */; };
+		DB90B98E2378048C0037054D /* TabmanBar+Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9442378048C0037054D /* TabmanBar+Indicator.swift */; };
+		DB90B98F2378048C0037054D /* TabmanBar+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9452378048C0037054D /* TabmanBar+Styles.swift */; };
+		DB90B9902378048C0037054D /* TabmanBar+Construction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9462378048C0037054D /* TabmanBar+Construction.swift */; };
+		DB90B9912378048C0037054D /* TabmanBar+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9472378048C0037054D /* TabmanBar+Item.swift */; };
+		DB90B9922378048C0037054D /* TabmanPositionalUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9492378048C0037054D /* TabmanPositionalUtil.swift */; };
+		DB90B9932378048C0037054D /* TabmanStaticButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B94C2378048C0037054D /* TabmanStaticButtonBar.swift */; };
+		DB90B9942378048C0037054D /* TabmanButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B94D2378048C0037054D /* TabmanButtonBar.swift */; };
+		DB90B9952378048C0037054D /* TabmanBlockTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B94E2378048C0037054D /* TabmanBlockTabBar.swift */; };
+		DB90B9962378048C0037054D /* TabmanFixedButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B94F2378048C0037054D /* TabmanFixedButtonBar.swift */; };
+		DB90B9972378048C0037054D /* TabmanLineBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9502378048C0037054D /* TabmanLineBar.swift */; };
+		DB90B9982378048C0037054D /* TabmanScrollingButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9512378048C0037054D /* TabmanScrollingButtonBar.swift */; };
+		DB90B9992378048C0037054D /* TabmanBar+BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9542378048C0037054D /* TabmanBar+BackgroundView.swift */; };
+		DB90B99A2378048C0037054D /* TabmanIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9562378048C0037054D /* TabmanIndicator.swift */; };
+		DB90B99B2378048C0037054D /* TabmanBlockIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9582378048C0037054D /* TabmanBlockIndicator.swift */; };
+		DB90B99C2378048C0037054D /* TabmanChevronIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9592378048C0037054D /* TabmanChevronIndicator.swift */; };
+		DB90B99D2378048C0037054D /* TabmanLineIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B95A2378048C0037054D /* TabmanLineIndicator.swift */; };
+		DB90B99E2378048C0037054D /* TabmanClearIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B95B2378048C0037054D /* TabmanClearIndicator.swift */; };
+		DB90B99F2378048C0037054D /* TabmanDotIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B95C2378048C0037054D /* TabmanDotIndicator.swift */; };
+		DB90B9A02378048C0037054D /* ChevronView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B95E2378048C0037054D /* ChevronView.swift */; };
+		DB90B9A12378048C0037054D /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B95F2378048C0037054D /* CircularView.swift */; };
+		DB90B9A22378048C0037054D /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9612378048C0037054D /* SeparatorView.swift */; };
+		DB90B9A32378048C0037054D /* TabmanBar+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9622378048C0037054D /* TabmanBar+Appearance.swift */; };
+		DB90B9A42378048C0037054D /* TabmanBar+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9632378048C0037054D /* TabmanBar+Protocols.swift */; };
+		DB90B9A52378048C0037054D /* BarBehaviorEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9652378048C0037054D /* BarBehaviorEngine.swift */; };
+		DB90B9A62378048C0037054D /* TabmanBar+Behaviors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9662378048C0037054D /* TabmanBar+Behaviors.swift */; };
+		DB90B9A72378048C0037054D /* BarBehaviorActivist.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9672378048C0037054D /* BarBehaviorActivist.swift */; };
+		DB90B9A82378048C0037054D /* AutoHideBarBehaviorActivist.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9692378048C0037054D /* AutoHideBarBehaviorActivist.swift */; };
+		DB90B9A92378048C0037054D /* TabmanStaticBarIndicatorTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B96C2378048C0037054D /* TabmanStaticBarIndicatorTransition.swift */; };
+		DB90B9AA2378048C0037054D /* TabmanScrollingBarIndicatorTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B96D2378048C0037054D /* TabmanScrollingBarIndicatorTransition.swift */; };
+		DB90B9AB2378048C0037054D /* TabmanIndicatorTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B96E2378048C0037054D /* TabmanIndicatorTransition.swift */; };
+		DB90B9AC2378048C0037054D /* TabmanItemColorCrossfadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9702378048C0037054D /* TabmanItemColorCrossfadeTransition.swift */; };
+		DB90B9AD2378048C0037054D /* TabmanItemMaskTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9712378048C0037054D /* TabmanItemMaskTransition.swift */; };
+		DB90B9AE2378048C0037054D /* TabmanItemTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9722378048C0037054D /* TabmanItemTransition.swift */; };
+		DB90B9AF2378048C0037054D /* TabmanBarTransitionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9732378048C0037054D /* TabmanBarTransitionStore.swift */; };
+		DB90B9B02378048C0037054D /* TabmanTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9742378048C0037054D /* TabmanTransition.swift */; };
+		DB90B9B12378048C0037054D /* TabmanBar+Insets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9752378048C0037054D /* TabmanBar+Insets.swift */; };
+		DB90B9B22378048C0037054D /* TabmanBar+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9762378048C0037054D /* TabmanBar+Layout.swift */; };
+		DB90B9B32378048C0037054D /* TabmanBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9772378048C0037054D /* TabmanBar.swift */; };
+		DB90B9B42378048C0037054D /* TabmanViewController+Embedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9782378048C0037054D /* TabmanViewController+Embedding.swift */; };
+		DB90B9B52378048C0037054D /* TabmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9792378048C0037054D /* TabmanViewController.swift */; };
+		DB90B9B62378048C0037054D /* UIView+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B97D2378048C0037054D /* UIView+Localization.swift */; };
+		DB90B9B72378048C0037054D /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B97E2378048C0037054D /* UIImage+Resize.swift */; };
+		DB90B9B82378048C0037054D /* UIScrollView+Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B97F2378048C0037054D /* UIScrollView+Interaction.swift */; };
+		DB90B9B92378048C0037054D /* UIView+DefaultTintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9802378048C0037054D /* UIView+DefaultTintColor.swift */; };
+		DB90B9BA2378048C0037054D /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9812378048C0037054D /* UIView+Layout.swift */; };
+		DB90B9BB2378048C0037054D /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9822378048C0037054D /* ColorUtils.swift */; };
+		DB90B9BC2378048C0037054D /* ContentViewScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9832378048C0037054D /* ContentViewScrollView.swift */; };
+		DB90B9BD2378048C0037054D /* AutoInsetEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9852378048C0037054D /* AutoInsetEngine.swift */; };
+		DB90B9BE2378048C0037054D /* UIViewController+AutoInsetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9872378048C0037054D /* UIViewController+AutoInsetting.swift */; };
+		DB90B9BF2378048C0037054D /* TabmanViewController+AutoInsetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9882378048C0037054D /* TabmanViewController+AutoInsetting.swift */; };
+		DB9E7098236E933400CAFBEA /* PondSceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E7097236E933400CAFBEA /* PondSceneModel.swift */; };
+		DB9E709A236EA3C900CAFBEA /* PondIOInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E7099236EA3C900CAFBEA /* PondIOInfoModel.swift */; };
+		DB9E709C236EAAF800CAFBEA /* FishWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E709B236EAAF800CAFBEA /* FishWebSocket.swift */; };
+		DB9E709E236EB56400CAFBEA /* FishPondDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E709D236EB56400CAFBEA /* FishPondDataManager.swift */; };
+		DB9E70A0236EB67A00CAFBEA /* PondSocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E709F236EB67A00CAFBEA /* PondSocketModel.swift */; };
 		DBA9D1F42369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9D1F22369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.swift */; };
 		DBA9D1F52369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA9D1F32369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.xib */; };
 		DBA9D1F92369866A00C32A7B /* TimerClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9D1F72369866A00C32A7B /* TimerClockViewController.swift */; };
@@ -63,6 +129,7 @@
 		6899C252E4F20195CEEE2B0A /* Pods-fish-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fish-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fish-ios/Pods-fish-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		983D90265C84D847D3F1675F /* Pods_fish_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fish_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A691BA0FFD068A850B9889EC /* Pods-fish-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fish-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-fish-ios/Pods-fish-ios.release.xcconfig"; sourceTree = "<group>"; };
+		DB4C5C4F2377EE1F002C6724 /* FishWebSocketDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishWebSocketDataHelper.swift; sourceTree = "<group>"; };
 		DB5433C62367E21D00F05D17 /* PondContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondContentViewController.swift; sourceTree = "<group>"; };
 		DB5433C72367E21D00F05D17 /* PondContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PondContentViewController.xib; sourceTree = "<group>"; };
 		DB5433CA236814E600F05D17 /* PondDeviceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondDeviceCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -80,10 +147,76 @@
 		DB5FFC1F2362C9BF00E4E8D7 /* FishAlamofireLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishAlamofireLogger.swift; sourceTree = "<group>"; };
 		DB5FFC232362CE2B00E4E8D7 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		DB5FFC252362D96600E4E8D7 /* FishHttpResponseModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishHttpResponseModelProtocol.swift; sourceTree = "<group>"; };
+		DB63EEB72378146000D96FC8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DB63EEB82378146000D96FC8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DB63EEBA2378146000D96FC8 /* SwiftPopMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPopMenu.swift; sourceTree = "<group>"; };
+		DB63EEC023781EF200D96FC8 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		DB63EEC123781EF200D96FC8 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		DB6C634B2356F2FE00673584 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		DB6C634F2356F54600673584 /* STApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STApi.swift; sourceTree = "<group>"; };
 		DB6C63502356F54600673584 /* STApi_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STApi_Extension.swift; sourceTree = "<group>"; };
 		DB6C6355235817C000673584 /* FishUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishUserInfo.swift; sourceTree = "<group>"; };
+		DB90B93B2378048C0037054D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DB90B93C2378048C0037054D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DB90B9402378048C0037054D /* TabmanBar+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanBar+Location.swift"; sourceTree = "<group>"; };
+		DB90B9422378048C0037054D /* TabmanBar+Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanBar+Config.swift"; sourceTree = "<group>"; };
+		DB90B9432378048C0037054D /* TabmanBarConfigHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanBarConfigHandler.swift; sourceTree = "<group>"; };
+		DB90B9442378048C0037054D /* TabmanBar+Indicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanBar+Indicator.swift"; sourceTree = "<group>"; };
+		DB90B9452378048C0037054D /* TabmanBar+Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanBar+Styles.swift"; sourceTree = "<group>"; };
+		DB90B9462378048C0037054D /* TabmanBar+Construction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanBar+Construction.swift"; sourceTree = "<group>"; };
+		DB90B9472378048C0037054D /* TabmanBar+Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanBar+Item.swift"; sourceTree = "<group>"; };
+		DB90B9492378048C0037054D /* TabmanPositionalUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanPositionalUtil.swift; sourceTree = "<group>"; };
+		DB90B94C2378048C0037054D /* TabmanStaticButtonBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanStaticButtonBar.swift; sourceTree = "<group>"; };
+		DB90B94D2378048C0037054D /* TabmanButtonBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanButtonBar.swift; sourceTree = "<group>"; };
+		DB90B94E2378048C0037054D /* TabmanBlockTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanBlockTabBar.swift; sourceTree = "<group>"; };
+		DB90B94F2378048C0037054D /* TabmanFixedButtonBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanFixedButtonBar.swift; sourceTree = "<group>"; };
+		DB90B9502378048C0037054D /* TabmanLineBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanLineBar.swift; sourceTree = "<group>"; };
+		DB90B9512378048C0037054D /* TabmanScrollingButtonBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanScrollingButtonBar.swift; sourceTree = "<group>"; };
+		DB90B9542378048C0037054D /* TabmanBar+BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanBar+BackgroundView.swift"; sourceTree = "<group>"; };
+		DB90B9562378048C0037054D /* TabmanIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanIndicator.swift; sourceTree = "<group>"; };
+		DB90B9582378048C0037054D /* TabmanBlockIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanBlockIndicator.swift; sourceTree = "<group>"; };
+		DB90B9592378048C0037054D /* TabmanChevronIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanChevronIndicator.swift; sourceTree = "<group>"; };
+		DB90B95A2378048C0037054D /* TabmanLineIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanLineIndicator.swift; sourceTree = "<group>"; };
+		DB90B95B2378048C0037054D /* TabmanClearIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanClearIndicator.swift; sourceTree = "<group>"; };
+		DB90B95C2378048C0037054D /* TabmanDotIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanDotIndicator.swift; sourceTree = "<group>"; };
+		DB90B95E2378048C0037054D /* ChevronView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChevronView.swift; sourceTree = "<group>"; };
+		DB90B95F2378048C0037054D /* CircularView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
+		DB90B9612378048C0037054D /* SeparatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
+		DB90B9622378048C0037054D /* TabmanBar+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanBar+Appearance.swift"; sourceTree = "<group>"; };
+		DB90B9632378048C0037054D /* TabmanBar+Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanBar+Protocols.swift"; sourceTree = "<group>"; };
+		DB90B9652378048C0037054D /* BarBehaviorEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarBehaviorEngine.swift; sourceTree = "<group>"; };
+		DB90B9662378048C0037054D /* TabmanBar+Behaviors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanBar+Behaviors.swift"; sourceTree = "<group>"; };
+		DB90B9672378048C0037054D /* BarBehaviorActivist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarBehaviorActivist.swift; sourceTree = "<group>"; };
+		DB90B9692378048C0037054D /* AutoHideBarBehaviorActivist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoHideBarBehaviorActivist.swift; sourceTree = "<group>"; };
+		DB90B96C2378048C0037054D /* TabmanStaticBarIndicatorTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanStaticBarIndicatorTransition.swift; sourceTree = "<group>"; };
+		DB90B96D2378048C0037054D /* TabmanScrollingBarIndicatorTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanScrollingBarIndicatorTransition.swift; sourceTree = "<group>"; };
+		DB90B96E2378048C0037054D /* TabmanIndicatorTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanIndicatorTransition.swift; sourceTree = "<group>"; };
+		DB90B9702378048C0037054D /* TabmanItemColorCrossfadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanItemColorCrossfadeTransition.swift; sourceTree = "<group>"; };
+		DB90B9712378048C0037054D /* TabmanItemMaskTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanItemMaskTransition.swift; sourceTree = "<group>"; };
+		DB90B9722378048C0037054D /* TabmanItemTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanItemTransition.swift; sourceTree = "<group>"; };
+		DB90B9732378048C0037054D /* TabmanBarTransitionStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanBarTransitionStore.swift; sourceTree = "<group>"; };
+		DB90B9742378048C0037054D /* TabmanTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanTransition.swift; sourceTree = "<group>"; };
+		DB90B9752378048C0037054D /* TabmanBar+Insets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanBar+Insets.swift"; sourceTree = "<group>"; };
+		DB90B9762378048C0037054D /* TabmanBar+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanBar+Layout.swift"; sourceTree = "<group>"; };
+		DB90B9772378048C0037054D /* TabmanBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanBar.swift; sourceTree = "<group>"; };
+		DB90B9782378048C0037054D /* TabmanViewController+Embedding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanViewController+Embedding.swift"; sourceTree = "<group>"; };
+		DB90B9792378048C0037054D /* TabmanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanViewController.swift; sourceTree = "<group>"; };
+		DB90B97A2378048C0037054D /* Tabman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tabman.h; sourceTree = "<group>"; };
+		DB90B97D2378048C0037054D /* UIView+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Localization.swift"; sourceTree = "<group>"; };
+		DB90B97E2378048C0037054D /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		DB90B97F2378048C0037054D /* UIScrollView+Interaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Interaction.swift"; sourceTree = "<group>"; };
+		DB90B9802378048C0037054D /* UIView+DefaultTintColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+DefaultTintColor.swift"; sourceTree = "<group>"; };
+		DB90B9812378048C0037054D /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		DB90B9822378048C0037054D /* ColorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		DB90B9832378048C0037054D /* ContentViewScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewScrollView.swift; sourceTree = "<group>"; };
+		DB90B9852378048C0037054D /* AutoInsetEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoInsetEngine.swift; sourceTree = "<group>"; };
+		DB90B9872378048C0037054D /* UIViewController+AutoInsetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AutoInsetting.swift"; sourceTree = "<group>"; };
+		DB90B9882378048C0037054D /* TabmanViewController+AutoInsetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanViewController+AutoInsetting.swift"; sourceTree = "<group>"; };
+		DB9E7097236E933400CAFBEA /* PondSceneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondSceneModel.swift; sourceTree = "<group>"; };
+		DB9E7099236EA3C900CAFBEA /* PondIOInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondIOInfoModel.swift; sourceTree = "<group>"; };
+		DB9E709B236EAAF800CAFBEA /* FishWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishWebSocket.swift; sourceTree = "<group>"; };
+		DB9E709D236EB56400CAFBEA /* FishPondDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishPondDataManager.swift; sourceTree = "<group>"; };
+		DB9E709F236EB67A00CAFBEA /* PondSocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondSocketModel.swift; sourceTree = "<group>"; };
 		DBA9D1F22369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondDeviceHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		DBA9D1F32369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PondDeviceHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		DBA9D1F72369866A00C32A7B /* TimerClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerClockViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +279,9 @@
 				DB5433CB236814E600F05D17 /* PondDeviceCollectionViewCell.xib */,
 				DBA9D1F22369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.swift */,
 				DBA9D1F32369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.xib */,
+				DB9E709D236EB56400CAFBEA /* FishPondDataManager.swift */,
+				DB63EEC023781EF200D96FC8 /* TestViewController.swift */,
+				DB63EEC123781EF200D96FC8 /* TestViewController.xib */,
 			);
 			path = ContentViewController;
 			sourceTree = "<group>";
@@ -156,6 +292,8 @@
 				DB5FFC042361A30600E4E8D7 /* Model */,
 				DB5FFC0123618C8800E4E8D7 /* FishMainApi.swift */,
 				DB5FFC252362D96600E4E8D7 /* FishHttpResponseModelProtocol.swift */,
+				DB9E709B236EAAF800CAFBEA /* FishWebSocket.swift */,
+				DB4C5C4F2377EE1F002C6724 /* FishWebSocketDataHelper.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -164,6 +302,9 @@
 			isa = PBXGroup;
 			children = (
 				DB5FFC052361A31500E4E8D7 /* FishCodeMsgResponseAnyModel.swift */,
+				DB9E7097236E933400CAFBEA /* PondSceneModel.swift */,
+				DB9E7099236EA3C900CAFBEA /* PondIOInfoModel.swift */,
+				DB9E709F236EB67A00CAFBEA /* PondSocketModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +312,8 @@
 		DB5FFC072361AA9E00E4E8D7 /* PrivatePods */ = {
 			isa = PBXGroup;
 			children = (
+				DB63EEB62378146000D96FC8 /* SwiftPopMenu */,
+				DB90B93A2378048C0037054D /* Tabman */,
 				DB5FFC082361AA9E00E4E8D7 /* KKHint */,
 			);
 			path = PrivatePods;
@@ -210,6 +353,24 @@
 				DB5FFC232362CE2B00E4E8D7 /* Logger.swift */,
 			);
 			path = Logger;
+			sourceTree = "<group>";
+		};
+		DB63EEB62378146000D96FC8 /* SwiftPopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DB63EEB72378146000D96FC8 /* LICENSE */,
+				DB63EEB82378146000D96FC8 /* README.md */,
+				DB63EEB92378146000D96FC8 /* SwiftPopMenu */,
+			);
+			path = SwiftPopMenu;
+			sourceTree = "<group>";
+		};
+		DB63EEB92378146000D96FC8 /* SwiftPopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DB63EEBA2378146000D96FC8 /* SwiftPopMenu.swift */,
+			);
+			path = SwiftPopMenu;
 			sourceTree = "<group>";
 		};
 		DB6C63482356F2E100673584 /* Libs */ = {
@@ -272,6 +433,245 @@
 				DB6C6355235817C000673584 /* FishUserInfo.swift */,
 			);
 			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		DB90B93A2378048C0037054D /* Tabman */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B93B2378048C0037054D /* LICENSE */,
+				DB90B93C2378048C0037054D /* README.md */,
+				DB90B93D2378048C0037054D /* Sources */,
+			);
+			path = Tabman;
+			sourceTree = "<group>";
+		};
+		DB90B93D2378048C0037054D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B93E2378048C0037054D /* Tabman */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DB90B93E2378048C0037054D /* Tabman */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B93F2378048C0037054D /* TabmanBar */,
+				DB90B9782378048C0037054D /* TabmanViewController+Embedding.swift */,
+				DB90B9792378048C0037054D /* TabmanViewController.swift */,
+				DB90B97A2378048C0037054D /* Tabman.h */,
+				DB90B97B2378048C0037054D /* Utilities */,
+				DB90B9842378048C0037054D /* AutoInset */,
+			);
+			path = Tabman;
+			sourceTree = "<group>";
+		};
+		DB90B93F2378048C0037054D /* TabmanBar */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B9402378048C0037054D /* TabmanBar+Location.swift */,
+				DB90B9412378048C0037054D /* Configuration */,
+				DB90B9442378048C0037054D /* TabmanBar+Indicator.swift */,
+				DB90B9452378048C0037054D /* TabmanBar+Styles.swift */,
+				DB90B9462378048C0037054D /* TabmanBar+Construction.swift */,
+				DB90B9472378048C0037054D /* TabmanBar+Item.swift */,
+				DB90B9482378048C0037054D /* Utilities */,
+				DB90B94A2378048C0037054D /* Styles */,
+				DB90B9522378048C0037054D /* Components */,
+				DB90B9622378048C0037054D /* TabmanBar+Appearance.swift */,
+				DB90B9632378048C0037054D /* TabmanBar+Protocols.swift */,
+				DB90B9642378048C0037054D /* Behaviors */,
+				DB90B96A2378048C0037054D /* Transitioning */,
+				DB90B9752378048C0037054D /* TabmanBar+Insets.swift */,
+				DB90B9762378048C0037054D /* TabmanBar+Layout.swift */,
+				DB90B9772378048C0037054D /* TabmanBar.swift */,
+			);
+			path = TabmanBar;
+			sourceTree = "<group>";
+		};
+		DB90B9412378048C0037054D /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B9422378048C0037054D /* TabmanBar+Config.swift */,
+				DB90B9432378048C0037054D /* TabmanBarConfigHandler.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		DB90B9482378048C0037054D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B9492378048C0037054D /* TabmanPositionalUtil.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DB90B94A2378048C0037054D /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B94B2378048C0037054D /* Abstract */,
+				DB90B94E2378048C0037054D /* TabmanBlockTabBar.swift */,
+				DB90B94F2378048C0037054D /* TabmanFixedButtonBar.swift */,
+				DB90B9502378048C0037054D /* TabmanLineBar.swift */,
+				DB90B9512378048C0037054D /* TabmanScrollingButtonBar.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		DB90B94B2378048C0037054D /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B94C2378048C0037054D /* TabmanStaticButtonBar.swift */,
+				DB90B94D2378048C0037054D /* TabmanButtonBar.swift */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		DB90B9522378048C0037054D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B9532378048C0037054D /* Background */,
+				DB90B9552378048C0037054D /* Indicator */,
+				DB90B9602378048C0037054D /* Separator */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DB90B9532378048C0037054D /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B9542378048C0037054D /* TabmanBar+BackgroundView.swift */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		DB90B9552378048C0037054D /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B9562378048C0037054D /* TabmanIndicator.swift */,
+				DB90B9572378048C0037054D /* Styles */,
+				DB90B95D2378048C0037054D /* Views */,
+			);
+			path = Indicator;
+			sourceTree = "<group>";
+		};
+		DB90B9572378048C0037054D /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B9582378048C0037054D /* TabmanBlockIndicator.swift */,
+				DB90B9592378048C0037054D /* TabmanChevronIndicator.swift */,
+				DB90B95A2378048C0037054D /* TabmanLineIndicator.swift */,
+				DB90B95B2378048C0037054D /* TabmanClearIndicator.swift */,
+				DB90B95C2378048C0037054D /* TabmanDotIndicator.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		DB90B95D2378048C0037054D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B95E2378048C0037054D /* ChevronView.swift */,
+				DB90B95F2378048C0037054D /* CircularView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB90B9602378048C0037054D /* Separator */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B9612378048C0037054D /* SeparatorView.swift */,
+			);
+			path = Separator;
+			sourceTree = "<group>";
+		};
+		DB90B9642378048C0037054D /* Behaviors */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B9652378048C0037054D /* BarBehaviorEngine.swift */,
+				DB90B9662378048C0037054D /* TabmanBar+Behaviors.swift */,
+				DB90B9672378048C0037054D /* BarBehaviorActivist.swift */,
+				DB90B9682378048C0037054D /* Activists */,
+			);
+			path = Behaviors;
+			sourceTree = "<group>";
+		};
+		DB90B9682378048C0037054D /* Activists */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B9692378048C0037054D /* AutoHideBarBehaviorActivist.swift */,
+			);
+			path = Activists;
+			sourceTree = "<group>";
+		};
+		DB90B96A2378048C0037054D /* Transitioning */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B96B2378048C0037054D /* IndicatorTransition */,
+				DB90B96F2378048C0037054D /* ItemTransition */,
+				DB90B9732378048C0037054D /* TabmanBarTransitionStore.swift */,
+				DB90B9742378048C0037054D /* TabmanTransition.swift */,
+			);
+			path = Transitioning;
+			sourceTree = "<group>";
+		};
+		DB90B96B2378048C0037054D /* IndicatorTransition */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B96C2378048C0037054D /* TabmanStaticBarIndicatorTransition.swift */,
+				DB90B96D2378048C0037054D /* TabmanScrollingBarIndicatorTransition.swift */,
+				DB90B96E2378048C0037054D /* TabmanIndicatorTransition.swift */,
+			);
+			path = IndicatorTransition;
+			sourceTree = "<group>";
+		};
+		DB90B96F2378048C0037054D /* ItemTransition */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B9702378048C0037054D /* TabmanItemColorCrossfadeTransition.swift */,
+				DB90B9712378048C0037054D /* TabmanItemMaskTransition.swift */,
+				DB90B9722378048C0037054D /* TabmanItemTransition.swift */,
+			);
+			path = ItemTransition;
+			sourceTree = "<group>";
+		};
+		DB90B97B2378048C0037054D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B97C2378048C0037054D /* Extensions */,
+				DB90B9822378048C0037054D /* ColorUtils.swift */,
+				DB90B9832378048C0037054D /* ContentViewScrollView.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DB90B97C2378048C0037054D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B97D2378048C0037054D /* UIView+Localization.swift */,
+				DB90B97E2378048C0037054D /* UIImage+Resize.swift */,
+				DB90B97F2378048C0037054D /* UIScrollView+Interaction.swift */,
+				DB90B9802378048C0037054D /* UIView+DefaultTintColor.swift */,
+				DB90B9812378048C0037054D /* UIView+Layout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DB90B9842378048C0037054D /* AutoInset */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B9852378048C0037054D /* AutoInsetEngine.swift */,
+				DB90B9862378048C0037054D /* Extensions */,
+			);
+			path = AutoInset;
+			sourceTree = "<group>";
+		};
+		DB90B9862378048C0037054D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB90B9872378048C0037054D /* UIViewController+AutoInsetting.swift */,
+				DB90B9882378048C0037054D /* TabmanViewController+AutoInsetting.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		DBA9D1F62369864A00C32A7B /* ContentViewContoller */ = {
@@ -482,19 +882,24 @@
 			files = (
 				DBB913F32355753D001C20E4 /* UserViewController.xib in Resources */,
 				DBB913EF23557531001C20E4 /* TimerViewController.xib in Resources */,
+				DB63EEBC2378146000D96FC8 /* README.md in Resources */,
 				DBA9D1FE23698D0500C32A7B /* TimerClockTableViewCell.xib in Resources */,
 				DBB913DC23545C2E001C20E4 /* LoginViewController.xib in Resources */,
 				DBE5445B2354282C005ECA14 /* LaunchScreen.storyboard in Resources */,
 				DBA9D1F52369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.xib in Resources */,
+				DB90B98A2378048C0037054D /* README.md in Resources */,
 				DBA9D20823698F5500C32A7B /* TimerTriggerTableViewCell.xib in Resources */,
 				DBE54463235450DA005ECA14 /* launchNew.png in Resources */,
+				DB90B9892378048C0037054D /* LICENSE in Resources */,
 				DBB913E12354605C001C20E4 /* Assets.xcassets in Resources */,
+				DB63EEBB2378146000D96FC8 /* LICENSE in Resources */,
 				DBB913EB235574FB001C20E4 /* PondViewController.xib in Resources */,
 				DB5433C92367E21D00F05D17 /* PondContentViewController.xib in Resources */,
 				DBA9D20423698F4700C32A7B /* TimerTriggerViewController.xib in Resources */,
 				DBB913F72355754A001C20E4 /* AlertViewController.xib in Resources */,
 				DBA9D1FA2369866A00C32A7B /* TimerClockViewController.xib in Resources */,
 				DB5433CD236814E600F05D17 /* PondDeviceCollectionViewCell.xib in Resources */,
+				DB63EEC323781EF200D96FC8 /* TestViewController.xib in Resources */,
 				DB5FFC0E2361AA9E00E4E8D7 /* KKHintResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,7 +923,7 @@
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Tabman/Tabman.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -532,7 +937,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tabman.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebViewJavascriptBridge.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,39 +970,100 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB63EEC223781EF200D96FC8 /* TestViewController.swift in Sources */,
+				DB90B9A02378048C0037054D /* ChevronView.swift in Sources */,
+				DB90B99D2378048C0037054D /* TabmanLineIndicator.swift in Sources */,
 				DB5FFC0D2361AA9E00E4E8D7 /* KKHint.swift in Sources */,
+				DB90B9A92378048C0037054D /* TabmanStaticBarIndicatorTransition.swift in Sources */,
+				DB90B9AC2378048C0037054D /* TabmanItemColorCrossfadeTransition.swift in Sources */,
 				DB5FFC062361A31500E4E8D7 /* FishCodeMsgResponseAnyModel.swift in Sources */,
+				DB90B9932378048C0037054D /* TabmanStaticButtonBar.swift in Sources */,
 				DB6C63522356F54700673584 /* STApi_Extension.swift in Sources */,
+				DB90B98E2378048C0037054D /* TabmanBar+Indicator.swift in Sources */,
+				DB90B9AF2378048C0037054D /* TabmanBarTransitionStore.swift in Sources */,
 				DBA9D1FD23698D0500C32A7B /* TimerClockTableViewCell.swift in Sources */,
 				DBB913DB23545C2E001C20E4 /* LoginViewController.swift in Sources */,
+				DB9E70A0236EB67A00CAFBEA /* PondSocketModel.swift in Sources */,
 				DBB913F22355753D001C20E4 /* UserViewController.swift in Sources */,
 				DB5433C82367E21D00F05D17 /* PondContentViewController.swift in Sources */,
+				DB90B9B52378048C0037054D /* TabmanViewController.swift in Sources */,
 				DBE544532354282B005ECA14 /* SecondViewController.swift in Sources */,
 				DB6C63512356F54700673584 /* STApi.swift in Sources */,
 				DB5FFC172361AC6000E4E8D7 /* Tool.swift in Sources */,
+				DB90B9BB2378048C0037054D /* ColorUtils.swift in Sources */,
+				DB90B99C2378048C0037054D /* TabmanChevronIndicator.swift in Sources */,
+				DB90B9AE2378048C0037054D /* TabmanItemTransition.swift in Sources */,
+				DB90B9AD2378048C0037054D /* TabmanItemMaskTransition.swift in Sources */,
+				DB90B9A42378048C0037054D /* TabmanBar+Protocols.swift in Sources */,
+				DB90B9B02378048C0037054D /* TabmanTransition.swift in Sources */,
+				DB90B9AA2378048C0037054D /* TabmanScrollingBarIndicatorTransition.swift in Sources */,
+				DB90B9BD2378048C0037054D /* AutoInsetEngine.swift in Sources */,
+				DB90B99A2378048C0037054D /* TabmanIndicator.swift in Sources */,
 				DBB913F62355754A001C20E4 /* AlertViewController.swift in Sources */,
 				DBB913E3235561DA001C20E4 /* FishTabBarController.swift in Sources */,
+				DB90B9A12378048C0037054D /* CircularView.swift in Sources */,
+				DB90B99E2378048C0037054D /* TabmanClearIndicator.swift in Sources */,
+				DB90B99B2378048C0037054D /* TabmanBlockIndicator.swift in Sources */,
 				DB5FFC1C2361B71400E4E8D7 /* AlamofireLoggers.swift in Sources */,
 				DB5FFC0F2361AA9E00E4E8D7 /* KKHintView.swift in Sources */,
+				DB90B9962378048C0037054D /* TabmanFixedButtonBar.swift in Sources */,
+				DB90B9922378048C0037054D /* TabmanPositionalUtil.swift in Sources */,
+				DB90B9B32378048C0037054D /* TabmanBar.swift in Sources */,
 				DB5FFC262362D96600E4E8D7 /* FishHttpResponseModelProtocol.swift in Sources */,
 				DBB913DF23545F20001C20E4 /* FishNavigationController.swift in Sources */,
+				DB90B99F2378048C0037054D /* TabmanDotIndicator.swift in Sources */,
 				DBA9D1F42369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.swift in Sources */,
 				DB5FFC122361AAFF00E4E8D7 /* FishBaseViewController.swift in Sources */,
+				DB90B98F2378048C0037054D /* TabmanBar+Styles.swift in Sources */,
+				DB90B9B12378048C0037054D /* TabmanBar+Insets.swift in Sources */,
+				DB90B98C2378048C0037054D /* TabmanBar+Config.swift in Sources */,
+				DB90B9BF2378048C0037054D /* TabmanViewController+AutoInsetting.swift in Sources */,
+				DB9E709A236EA3C900CAFBEA /* PondIOInfoModel.swift in Sources */,
+				DB90B9A82378048C0037054D /* AutoHideBarBehaviorActivist.swift in Sources */,
+				DB90B9902378048C0037054D /* TabmanBar+Construction.swift in Sources */,
 				DB5FFC202362C9BF00E4E8D7 /* FishAlamofireLogger.swift in Sources */,
 				DB5433CC236814E600F05D17 /* PondDeviceCollectionViewCell.swift in Sources */,
 				DBB913EE23557531001C20E4 /* TimerViewController.swift in Sources */,
 				DBE5444F2354282B005ECA14 /* AppDelegate.swift in Sources */,
 				DB5FFC0223618C8800E4E8D7 /* FishMainApi.swift in Sources */,
+				DB63EEBD2378146000D96FC8 /* SwiftPopMenu.swift in Sources */,
+				DB90B9B22378048C0037054D /* TabmanBar+Layout.swift in Sources */,
+				DB90B9B62378048C0037054D /* UIView+Localization.swift in Sources */,
 				DB6C634C2356F2FE00673584 /* UIColorExtension.swift in Sources */,
+				DB90B9952378048C0037054D /* TabmanBlockTabBar.swift in Sources */,
 				DBA9D20723698F5500C32A7B /* TimerTriggerTableViewCell.swift in Sources */,
+				DB90B9A72378048C0037054D /* BarBehaviorActivist.swift in Sources */,
+				DB90B9B82378048C0037054D /* UIScrollView+Interaction.swift in Sources */,
+				DB90B9B92378048C0037054D /* UIView+DefaultTintColor.swift in Sources */,
+				DB9E7098236E933400CAFBEA /* PondSceneModel.swift in Sources */,
+				DB9E709C236EAAF800CAFBEA /* FishWebSocket.swift in Sources */,
+				DB90B9A22378048C0037054D /* SeparatorView.swift in Sources */,
 				DBA9D1F92369866A00C32A7B /* TimerClockViewController.swift in Sources */,
+				DB90B98D2378048C0037054D /* TabmanBarConfigHandler.swift in Sources */,
+				DB90B9BE2378048C0037054D /* UIViewController+AutoInsetting.swift in Sources */,
+				DB90B9912378048C0037054D /* TabmanBar+Item.swift in Sources */,
+				DB4C5C502377EE1F002C6724 /* FishWebSocketDataHelper.swift in Sources */,
+				DB90B9A62378048C0037054D /* TabmanBar+Behaviors.swift in Sources */,
+				DB90B9BA2378048C0037054D /* UIView+Layout.swift in Sources */,
+				DB90B98B2378048C0037054D /* TabmanBar+Location.swift in Sources */,
+				DB90B9BC2378048C0037054D /* ContentViewScrollView.swift in Sources */,
 				DB6C6356235817C000673584 /* FishUserInfo.swift in Sources */,
 				DB5FFC242362CE2B00E4E8D7 /* Logger.swift in Sources */,
+				DB90B9942378048C0037054D /* TabmanButtonBar.swift in Sources */,
+				DB90B9B42378048C0037054D /* TabmanViewController+Embedding.swift in Sources */,
+				DB90B9A52378048C0037054D /* BarBehaviorEngine.swift in Sources */,
+				DB90B9AB2378048C0037054D /* TabmanIndicatorTransition.swift in Sources */,
 				DBB913EA235574FB001C20E4 /* PondViewController.swift in Sources */,
+				DB90B9972378048C0037054D /* TabmanLineBar.swift in Sources */,
+				DB90B9A32378048C0037054D /* TabmanBar+Appearance.swift in Sources */,
+				DB90B9992378048C0037054D /* TabmanBar+BackgroundView.swift in Sources */,
+				DB90B9B72378048C0037054D /* UIImage+Resize.swift in Sources */,
 				DB5FFC102361AA9E00E4E8D7 /* UIViewHintExtension.swift in Sources */,
+				DB90B9982378048C0037054D /* TabmanScrollingButtonBar.swift in Sources */,
 				DBE544512354282B005ECA14 /* FirstViewController.swift in Sources */,
 				DBA9D20323698F4700C32A7B /* TimerTriggerViewController.swift in Sources */,
 				DB5FFC142361AB6D00E4E8D7 /* AppDelegate+extension.swift in Sources */,
+				DB9E709E236EB56400CAFBEA /* FishPondDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

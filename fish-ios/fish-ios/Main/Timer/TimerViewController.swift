@@ -8,7 +8,7 @@
 
 import UIKit
 import Pageboy
-import Tabman
+//import Tabman
 
 class TimerViewController:  TabmanViewController, PageboyViewControllerDataSource {
 

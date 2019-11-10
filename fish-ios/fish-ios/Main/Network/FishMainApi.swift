@@ -34,4 +34,19 @@ class FishMainApi: STJSONApi {
         self.post(path: safeJoinURL(pre: baseURL(), suf: "api/user/login"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
     }
     
+    /// 获取用户基本信息
+    func userInfo(params: [String: Any], callBack: ((FishCodeMsgResponseAnyModel<String>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/user/load"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+    
+    /// 获取用户场景列表
+    func getAllScene(callBack: ((FishCodeMsgResponseArrayTypeModel<PondSceneModel>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/scene/get_all_scene"), params: getParams(), callBack: callBack)
+    }
+    
+    /// 获取设备状态列表
+    func getIOInfo(params: [String: Any], callBack: ((FishCodeMsgResponseArrayTypeModel<PondIOInfoModel>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/device/get_io_info"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+    
 }

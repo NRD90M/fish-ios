@@ -13,30 +13,75 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PondDeviceCollectionViewCell" customModule="fish_ios" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="178" height="198"/>
+            <rect key="frame" x="0.0" y="0.0" width="112" height="149"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="178" height="198"/>
+                <rect key="frame" x="0.0" y="0.0" width="112" height="149"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchNew.png" translatesAutoresizingMaskIntoConstraints="NO" id="sgZ-GJ-a9E">
-                        <rect key="frame" x="0.0" y="0.0" width="178" height="198"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AwI-rS-f5T">
+                        <rect key="frame" x="0.0" y="0.0" width="112" height="149"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_aerator" translatesAutoresizingMaskIntoConstraints="NO" id="ZBw-RC-36s">
+                        <rect key="frame" x="21" y="5" width="70" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="cuT-x0-rYh"/>
+                            <constraint firstAttribute="height" constant="40" id="lge-6E-jyU"/>
+                        </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="水泵" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2s-d2-Vax">
+                        <rect key="frame" x="0.0" y="50" width="112" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" red="0.4392156862745098" green="0.53725490196078429" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15:20:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw7-0E-kSd">
+                        <rect key="frame" x="0.0" y="76" width="112" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.4392156862745098" green="0.53725490196078429" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p4Y-UG-BYu">
+                        <rect key="frame" x="31.5" y="98" width="51" height="31"/>
+                        <color key="onTintColor" red="0.47058823529411764" green="0.81568627450980391" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </switch>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="sgZ-GJ-a9E" secondAttribute="bottom" id="CBN-S0-L2p"/>
-                <constraint firstAttribute="trailing" secondItem="sgZ-GJ-a9E" secondAttribute="trailing" id="VTy-JN-QVH"/>
-                <constraint firstItem="sgZ-GJ-a9E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="b8l-vP-f37"/>
-                <constraint firstItem="sgZ-GJ-a9E" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="f4k-Lq-Pzp"/>
+                <constraint firstItem="c2s-d2-Vax" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="02o-HS-bi8"/>
+                <constraint firstItem="ZBw-RC-36s" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="1d9-2l-4Hk"/>
+                <constraint firstItem="p4Y-UG-BYu" firstAttribute="top" secondItem="yw7-0E-kSd" secondAttribute="bottom" constant="5" id="7Xm-RR-Xi9"/>
+                <constraint firstItem="yw7-0E-kSd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="H8F-SU-WqB"/>
+                <constraint firstItem="c2s-d2-Vax" firstAttribute="top" secondItem="ZBw-RC-36s" secondAttribute="bottom" constant="5" id="LZb-IN-oSA"/>
+                <constraint firstItem="AwI-rS-f5T" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ngn-GZ-maG"/>
+                <constraint firstAttribute="trailing" secondItem="AwI-rS-f5T" secondAttribute="trailing" id="QU5-xS-04Z"/>
+                <constraint firstAttribute="trailing" secondItem="yw7-0E-kSd" secondAttribute="trailing" id="RHx-0Z-nwn"/>
+                <constraint firstAttribute="bottom" secondItem="AwI-rS-f5T" secondAttribute="bottom" id="ROg-dC-wtJ"/>
+                <constraint firstItem="AwI-rS-f5T" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jDm-h5-WRz"/>
+                <constraint firstItem="yw7-0E-kSd" firstAttribute="top" secondItem="c2s-d2-Vax" secondAttribute="bottom" constant="5" id="jRK-uM-Xuj"/>
+                <constraint firstItem="ZBw-RC-36s" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="sE6-yr-4K6"/>
+                <constraint firstAttribute="trailing" secondItem="c2s-d2-Vax" secondAttribute="trailing" id="sOm-cX-PhW"/>
+                <constraint firstItem="p4Y-UG-BYu" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="vVf-cR-iU6"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="178" height="198"/>
-            <point key="canvasLocation" x="-28" y="-9"/>
+            <connections>
+                <outlet property="descLabel" destination="yw7-0E-kSd" id="Vpa-Yc-wGj"/>
+                <outlet property="imgView" destination="ZBw-RC-36s" id="5D0-CM-hbL"/>
+                <outlet property="nameLabel" destination="c2s-d2-Vax" id="zz8-9j-Lt3"/>
+                <outlet property="statusSwitch" destination="p4Y-UG-BYu" id="rTj-pc-yxJ"/>
+            </connections>
+            <point key="canvasLocation" x="-28.5" y="-9.5"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="launchNew.png" width="1125" height="2001"/>
+        <image name="icon_aerator" width="57" height="34"/>
     </resources>
 </document>
