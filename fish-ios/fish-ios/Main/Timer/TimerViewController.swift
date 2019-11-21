@@ -21,6 +21,14 @@ class TimerViewController:  TabmanViewController, PageboyViewControllerDataSourc
         return viewControllers
     }()
     
+    var popMenu:SwiftPopMenu!
+    
+    var titleItemView:HorizontalTitleItemView = HorizontalTitleItemView.titleItemView()
+    
+    var client: FishMainApi = FishMainApi()
+    
+    var sceneList:[PondSceneModel] = [];
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,23 +37,68 @@ class TimerViewController:  TabmanViewController, PageboyViewControllerDataSourc
         self.dataSource = self
         self.automaticallyAdjustsChildScrollViewInsets = true
         // configure the bar
-        self.bar.items = [Item(title: "Page 1"),
-                          Item(title: "Page 2")]
+        self.bar.items = [Item(title: "定时"),
+                          Item(title: "触发")]
         
         self.bar.style = .buttonBar
         self.bar.location = .top
         
         self.bar.appearance = TabmanBar.Appearance({ (appearance) in
 
-            // customise appearance here
-            //            appearance.text.
-            //            appearance.text.color = UIColor.red
             appearance.style.background = .solid(color: UIColor.white)
-            //            appearance.indicator.isProgressive = true
         })
         
-//        self.embedBar(in: (self.navigationController?.navigationBar)!)
-        //        self.embeddingView =
+       titleItemView.delegate = self
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: titleItemView)
+        
+        titleItemView.isHidden = true
+        // 获取鱼塘列表
+        self.loadAllScene()
+    }
+    
+    func showMenuBtnClick(view:UIView) {
+        
+        let point = view.convert(CGPoint(x: 0, y: 0), to: FishKeyWindow())
+        //数据源（icon可不填）
+        
+        var popData:[String]  = []
+        for scene in self.sceneList {
+            popData.append(scene.sceneName ?? "-")
+        }
+        
+        //设置Parameter（可不写）
+        popMenu = SwiftPopMenu(frame:  CGRect(x: SCREEN_WIDTH - 105, y: point.y + 40, width: 100, height: 126))
+        popMenu.popTextColor = UIColor.colorWithHexString("#FFFFFF")!
+        popMenu.popMenuBgColor = UIColor.colorWithHexString("#1F1F1F")!
+        popMenu.popData = popData
+        
+        //click
+        popMenu.didSelectMenuBlock = { [weak self](index:Int)->Void in
+            print("block select \(index)")
+            self?.popMenu.dismiss()
+            self?.popMenu = nil
+            
+            if let model = self?.sceneList[index] {
+                 self?.titleItemView.isHidden = false
+                self?.titleItemView.reloadSelectedPond(model: model)
+                
+                if self?.currentViewController is TimerClockViewController {
+                    let timerClock = self?.currentViewController as! TimerClockViewController
+                    timerClock.refreshSelectedSceneModel(model: model)
+                }
+                
+                if self?.currentViewController is TimerTriggerViewController {
+                    let timerTrigger = self?.currentViewController as! TimerTriggerViewController
+                    timerTrigger.refreshSelectedSceneModel(model: model)
+                }
+                
+            }
+
+            
+        }
+        
+        //show
+        popMenu.show()
     }
     
     override func didReceiveMemoryWarning() {
@@ -53,7 +106,41 @@ class TimerViewController:  TabmanViewController, PageboyViewControllerDataSourc
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: Net Request
     
+    func loadAllScene() {
+        
+        self.client.getAllScene() { (data, error) in
+            
+            if let err = Parse.parseResponse(data, error) {
+                self.view.makeHint(err.showMessage)
+                return
+            }
+            
+            if let d = data?.data, !d.isEmpty {
+                self.sceneList = d
+                if (self.sceneList.count > 0) {
+                    self.titleItemView.isHidden = false
+                    self.titleItemView.reloadSelectedPond(model: self.sceneList[0])
+                    
+                    if self.currentViewController is TimerClockViewController {
+                        let timerClock = self.currentViewController as! TimerClockViewController
+                        timerClock.refreshSelectedSceneModel(model: self.sceneList[0])
+                    }
+                    
+                    if self.currentViewController is TimerTriggerViewController {
+                        let timerTrigger = self.currentViewController as! TimerTriggerViewController
+                        timerTrigger.refreshSelectedSceneModel(model: self.sceneList[0])
+                    }
+                    
+                }
+            } else {
+                self.view.makeHint("数据获取失败，请稍后再试")
+            }
+        }
+    }
+    
+    // MARK : PageboyViewController
     
     func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
         return viewControllers.count
@@ -77,3 +164,13 @@ class TimerViewController:  TabmanViewController, PageboyViewControllerDataSourc
     */
 
 }
+
+//开启右滑返回手势:
+extension TimerViewController:HorizontalTitleItemViewDelegate {
+   
+    func showMore() {
+        self.showMenuBtnClick(view: self.titleItemView)
+    }
+    
+}
+

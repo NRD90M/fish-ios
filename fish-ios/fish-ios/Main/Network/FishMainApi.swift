@@ -49,4 +49,14 @@ class FishMainApi: STJSONApi {
         self.post(path: safeJoinURL(pre: baseURL(), suf: "api/device/get_io_info"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
     }
     
+    ///------计划模块-----------
+    /// 获取定时任务列表
+    func getAllPlan(params: [String: String], callBack: ((FishCodeMsgResponseArrayTypeModel<PlanInfoModel>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/plan/get_all_plan"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+    
+    /// 获取触发任务列表
+    func getAllTrigger(params: [String: String], callBack: ((FishCodeMsgResponseArrayTypeModel<TriggerInfoModel>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/trigger/get_all_trigger"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
 }

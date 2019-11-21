@@ -83,7 +83,7 @@ class FishTabBarController: UITabBarController {
                 vcs.append(pond)
             } else {
                 let mall: PondViewController = PondViewController()
-                setupChildViewController(mall, title: "首页", image: "icon_tabbar_timer", selectedImage: "icon_tabbar_timer")
+                setupChildViewController(mall, title: "鱼塘", image: "icon_tabbar_pond", selectedImage: "icon_tabbar_pond_selected")
                 let mallNa = FishNavigationController(rootViewController: mall)
                 vcs.append(mallNa)
                 self.pond = mallNa
@@ -94,7 +94,7 @@ class FishTabBarController: UITabBarController {
             vcs.append(timer)
         } else {
             let shopCart: TimerViewController = TimerViewController()
-            setupChildViewController(shopCart, title: "计划", image: "icon_tabbar_timer", selectedImage: "icon_tabbar_timer")
+            setupChildViewController(shopCart, title: "计划", image: "icon_tabbar_timer", selectedImage: "icon_tabbar_timer_selected")
             let shopCartNa = FishNavigationController(rootViewController: shopCart)
             vcs.append(shopCartNa)
             self.timer = shopCartNa
@@ -104,7 +104,7 @@ class FishTabBarController: UITabBarController {
             vcs.append(alertNa)
         } else {
             let alertVC: AlertViewController = AlertViewController()
-            setupChildViewController(alertVC, title: "店管家", image: "icon_tabbar_timer", selectedImage: "icon_tabbar_timer")
+            setupChildViewController(alertVC, title: "预警", image: "icon_tabbar_alert", selectedImage: "icon_tabbar_alert_selected")
             let homeNa = FishNavigationController(rootViewController: alertVC)
             vcs.append(homeNa)
             self.alert = homeNa
@@ -114,7 +114,7 @@ class FishTabBarController: UITabBarController {
             vcs.append(userNa)
         } else {
             let user: UserViewController = UserViewController()
-            setupChildViewController(user, title: "我的", image: "icon_tabbar_timer", selectedImage: "icon_tabbar_timer")
+            setupChildViewController(user, title: "我的", image: "icon_tabbar_user", selectedImage: "icon_tabbar_user_selected")
             let userNa = FishNavigationController(rootViewController: user)
             vcs.append(userNa)
             self.user = userNa

@@ -35,6 +35,12 @@
 		DB6C63512356F54700673584 /* STApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C634F2356F54600673584 /* STApi.swift */; };
 		DB6C63522356F54700673584 /* STApi_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C63502356F54600673584 /* STApi_Extension.swift */; };
 		DB6C6356235817C000673584 /* FishUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C6355235817C000673584 /* FishUserInfo.swift */; };
+		DB901A6323853980007618FA /* VerifyCodeTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB901A6223853980007618FA /* VerifyCodeTimer.swift */; };
+		DB901A6523853C04007618FA /* FishCheckUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB901A6423853C04007618FA /* FishCheckUtils.swift */; };
+		DB901A6723853FA0007618FA /* PlanInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB901A6623853FA0007618FA /* PlanInfoModel.swift */; };
+		DB901A69238540D2007618FA /* TriggerInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB901A68238540D2007618FA /* TriggerInfoModel.swift */; };
+		DB901A6B23854F31007618FA /* HorizontalTitleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB901A6A23854F31007618FA /* HorizontalTitleItemView.swift */; };
+		DB901A6D23854F4B007618FA /* HorizontalTitleItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB901A6C23854F4B007618FA /* HorizontalTitleItemView.xib */; };
 		DB90B9892378048C0037054D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DB90B93B2378048C0037054D /* LICENSE */; };
 		DB90B98A2378048C0037054D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DB90B93C2378048C0037054D /* README.md */; };
 		DB90B98B2378048C0037054D /* TabmanBar+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9402378048C0037054D /* TabmanBar+Location.swift */; };
@@ -156,6 +162,12 @@
 		DB6C634F2356F54600673584 /* STApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STApi.swift; sourceTree = "<group>"; };
 		DB6C63502356F54600673584 /* STApi_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STApi_Extension.swift; sourceTree = "<group>"; };
 		DB6C6355235817C000673584 /* FishUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishUserInfo.swift; sourceTree = "<group>"; };
+		DB901A6223853980007618FA /* VerifyCodeTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyCodeTimer.swift; sourceTree = "<group>"; };
+		DB901A6423853C04007618FA /* FishCheckUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishCheckUtils.swift; sourceTree = "<group>"; };
+		DB901A6623853FA0007618FA /* PlanInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanInfoModel.swift; sourceTree = "<group>"; };
+		DB901A68238540D2007618FA /* TriggerInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerInfoModel.swift; sourceTree = "<group>"; };
+		DB901A6A23854F31007618FA /* HorizontalTitleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalTitleItemView.swift; sourceTree = "<group>"; };
+		DB901A6C23854F4B007618FA /* HorizontalTitleItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalTitleItemView.xib; sourceTree = "<group>"; };
 		DB90B93B2378048C0037054D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DB90B93C2378048C0037054D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DB90B9402378048C0037054D /* TabmanBar+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanBar+Location.swift"; sourceTree = "<group>"; };
@@ -305,6 +317,8 @@
 				DB9E7097236E933400CAFBEA /* PondSceneModel.swift */,
 				DB9E7099236EA3C900CAFBEA /* PondIOInfoModel.swift */,
 				DB9E709F236EB67A00CAFBEA /* PondSocketModel.swift */,
+				DB901A6623853FA0007618FA /* PlanInfoModel.swift */,
+				DB901A68238540D2007618FA /* TriggerInfoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -376,6 +390,7 @@
 		DB6C63482356F2E100673584 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				DB901A6123853972007618FA /* VerifyCodeTimer */,
 				DB5FFC1A2361B71400E4E8D7 /* AlamofireLoggers */,
 				DB5FFC072361AA9E00E4E8D7 /* PrivatePods */,
 				DB6C63492356F2E100673584 /* Extension */,
@@ -406,6 +421,7 @@
 				DB5FFC1E2362C9A700E4E8D7 /* Logger */,
 				DB6C63532356FA8A00673584 /* FishGlobalManager */,
 				DB6C634E2356F53400673584 /* FishApi */,
+				DB901A6423853C04007618FA /* FishCheckUtils.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -433,6 +449,14 @@
 				DB6C6355235817C000673584 /* FishUserInfo.swift */,
 			);
 			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		DB901A6123853972007618FA /* VerifyCodeTimer */ = {
+			isa = PBXGroup;
+			children = (
+				DB901A6223853980007618FA /* VerifyCodeTimer.swift */,
+			);
+			path = VerifyCodeTimer;
 			sourceTree = "<group>";
 		};
 		DB90B93A2378048C0037054D /* Tabman */ = {
@@ -758,6 +782,8 @@
 		DBB913E6235574AB001C20E4 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				DB901A6A23854F31007618FA /* HorizontalTitleItemView.swift */,
+				DB901A6C23854F4B007618FA /* HorizontalTitleItemView.xib */,
 				DBA9D1F62369864A00C32A7B /* ContentViewContoller */,
 				DBB913EC23557531001C20E4 /* TimerViewController.swift */,
 				DBB913ED23557531001C20E4 /* TimerViewController.xib */,
@@ -886,6 +912,7 @@
 				DBA9D1FE23698D0500C32A7B /* TimerClockTableViewCell.xib in Resources */,
 				DBB913DC23545C2E001C20E4 /* LoginViewController.xib in Resources */,
 				DBE5445B2354282C005ECA14 /* LaunchScreen.storyboard in Resources */,
+				DB901A6D23854F4B007618FA /* HorizontalTitleItemView.xib in Resources */,
 				DBA9D1F52369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.xib in Resources */,
 				DB90B98A2378048C0037054D /* README.md in Resources */,
 				DBA9D20823698F5500C32A7B /* TimerTriggerTableViewCell.xib in Resources */,
@@ -1013,6 +1040,7 @@
 				DBB913DF23545F20001C20E4 /* FishNavigationController.swift in Sources */,
 				DB90B99F2378048C0037054D /* TabmanDotIndicator.swift in Sources */,
 				DBA9D1F42369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.swift in Sources */,
+				DB901A6723853FA0007618FA /* PlanInfoModel.swift in Sources */,
 				DB5FFC122361AAFF00E4E8D7 /* FishBaseViewController.swift in Sources */,
 				DB90B98F2378048C0037054D /* TabmanBar+Styles.swift in Sources */,
 				DB90B9B12378048C0037054D /* TabmanBar+Insets.swift in Sources */,
@@ -1029,11 +1057,13 @@
 				DB63EEBD2378146000D96FC8 /* SwiftPopMenu.swift in Sources */,
 				DB90B9B22378048C0037054D /* TabmanBar+Layout.swift in Sources */,
 				DB90B9B62378048C0037054D /* UIView+Localization.swift in Sources */,
+				DB901A69238540D2007618FA /* TriggerInfoModel.swift in Sources */,
 				DB6C634C2356F2FE00673584 /* UIColorExtension.swift in Sources */,
 				DB90B9952378048C0037054D /* TabmanBlockTabBar.swift in Sources */,
 				DBA9D20723698F5500C32A7B /* TimerTriggerTableViewCell.swift in Sources */,
 				DB90B9A72378048C0037054D /* BarBehaviorActivist.swift in Sources */,
 				DB90B9B82378048C0037054D /* UIScrollView+Interaction.swift in Sources */,
+				DB901A6B23854F31007618FA /* HorizontalTitleItemView.swift in Sources */,
 				DB90B9B92378048C0037054D /* UIView+DefaultTintColor.swift in Sources */,
 				DB9E7098236E933400CAFBEA /* PondSceneModel.swift in Sources */,
 				DB9E709C236EAAF800CAFBEA /* FishWebSocket.swift in Sources */,
@@ -1042,6 +1072,7 @@
 				DB90B98D2378048C0037054D /* TabmanBarConfigHandler.swift in Sources */,
 				DB90B9BE2378048C0037054D /* UIViewController+AutoInsetting.swift in Sources */,
 				DB90B9912378048C0037054D /* TabmanBar+Item.swift in Sources */,
+				DB901A6523853C04007618FA /* FishCheckUtils.swift in Sources */,
 				DB4C5C502377EE1F002C6724 /* FishWebSocketDataHelper.swift in Sources */,
 				DB90B9A62378048C0037054D /* TabmanBar+Behaviors.swift in Sources */,
 				DB90B9BA2378048C0037054D /* UIView+Layout.swift in Sources */,
@@ -1061,6 +1092,7 @@
 				DB5FFC102361AA9E00E4E8D7 /* UIViewHintExtension.swift in Sources */,
 				DB90B9982378048C0037054D /* TabmanScrollingButtonBar.swift in Sources */,
 				DBE544512354282B005ECA14 /* FirstViewController.swift in Sources */,
+				DB901A6323853980007618FA /* VerifyCodeTimer.swift in Sources */,
 				DBA9D20323698F4700C32A7B /* TimerTriggerViewController.swift in Sources */,
 				DB5FFC142361AB6D00E4E8D7 /* AppDelegate+extension.swift in Sources */,
 				DB9E709E236EB56400CAFBEA /* FishPondDataManager.swift in Sources */,

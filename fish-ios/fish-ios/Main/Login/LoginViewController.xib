@@ -37,11 +37,10 @@
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="tad-2H-K3f"/>
+                    </connections>
                 </textField>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launchNew.png" translatesAutoresizingMaskIntoConstraints="NO" id="tQl-uZ-OQC">
-                    <rect key="frame" x="67" y="65" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qg0-iW-rbv">
                     <rect key="frame" x="219" y="276" width="77" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -58,13 +57,17 @@
                         <action selector="loginButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="CJk-2W-ce9"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="tQl-uZ-OQC">
+                    <rect key="frame" x="139" y="106" width="97" height="97"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.24705882352941178" green="0.59215686274509804" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="-284" y="-25"/>
+            <point key="canvasLocation" x="-399" y="-45"/>
         </view>
     </objects>
     <resources>
-        <image name="launchNew.png" width="1125" height="2001"/>
+        <image name="icon_logo" width="97" height="97"/>
     </resources>
 </document>
