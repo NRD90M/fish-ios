@@ -104,7 +104,7 @@ class FishTabBarController: UITabBarController {
             vcs.append(alertNa)
         } else {
             let alertVC: AlertViewController = AlertViewController()
-            setupChildViewController(alertVC, title: "预警", image: "icon_tabbar_alert", selectedImage: "icon_tabbar_alert_selected")
+            setupChildViewController(alertVC, title: "消息", image: "icon_tabbar_alert", selectedImage: "icon_tabbar_alert_selected")
             let homeNa = FishNavigationController(rootViewController: alertVC)
             vcs.append(homeNa)
             self.alert = homeNa

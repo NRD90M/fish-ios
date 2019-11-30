@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2E6C029788C421EB798F8D52 /* Pods_fish_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983D90265C84D847D3F1675F /* Pods_fish_ios.framework */; };
+		DB16C18F23923FFA00B29AE0 /* AddOrEditTimerClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB16C18D23923FFA00B29AE0 /* AddOrEditTimerClockViewController.swift */; };
+		DB16C19023923FFA00B29AE0 /* AddOrEditTimerClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB16C18E23923FFA00B29AE0 /* AddOrEditTimerClockViewController.xib */; };
 		DB4C5C502377EE1F002C6724 /* FishWebSocketDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C5C4F2377EE1F002C6724 /* FishWebSocketDataHelper.swift */; };
 		DB5433C82367E21D00F05D17 /* PondContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5433C62367E21D00F05D17 /* PondContentViewController.swift */; };
 		DB5433C92367E21D00F05D17 /* PondContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB5433C72367E21D00F05D17 /* PondContentViewController.xib */; };
@@ -135,6 +137,8 @@
 		6899C252E4F20195CEEE2B0A /* Pods-fish-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fish-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fish-ios/Pods-fish-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		983D90265C84D847D3F1675F /* Pods_fish_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fish_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A691BA0FFD068A850B9889EC /* Pods-fish-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fish-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-fish-ios/Pods-fish-ios.release.xcconfig"; sourceTree = "<group>"; };
+		DB16C18D23923FFA00B29AE0 /* AddOrEditTimerClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrEditTimerClockViewController.swift; sourceTree = "<group>"; };
+		DB16C18E23923FFA00B29AE0 /* AddOrEditTimerClockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddOrEditTimerClockViewController.xib; sourceTree = "<group>"; };
 		DB4C5C4F2377EE1F002C6724 /* FishWebSocketDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishWebSocketDataHelper.swift; sourceTree = "<group>"; };
 		DB5433C62367E21D00F05D17 /* PondContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondContentViewController.swift; sourceTree = "<group>"; };
 		DB5433C72367E21D00F05D17 /* PondContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PondContentViewController.xib; sourceTree = "<group>"; };
@@ -280,6 +284,15 @@
 				A691BA0FFD068A850B9889EC /* Pods-fish-ios.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB16C18C23923FB500B29AE0 /* create */ = {
+			isa = PBXGroup;
+			children = (
+				DB16C18D23923FFA00B29AE0 /* AddOrEditTimerClockViewController.swift */,
+				DB16C18E23923FFA00B29AE0 /* AddOrEditTimerClockViewController.xib */,
+			);
+			path = create;
 			sourceTree = "<group>";
 		};
 		DB5433C52367E1FF00F05D17 /* ContentViewController */ = {
@@ -710,6 +723,7 @@
 		DBA9D1FF23698F0B00C32A7B /* Clock */ = {
 			isa = PBXGroup;
 			children = (
+				DB16C18C23923FB500B29AE0 /* create */,
 				DBA9D1F72369866A00C32A7B /* TimerClockViewController.swift */,
 				DBA9D1F82369866A00C32A7B /* TimerClockViewController.xib */,
 				DBA9D1FB23698D0500C32A7B /* TimerClockTableViewCell.swift */,
@@ -928,6 +942,7 @@
 				DB5433CD236814E600F05D17 /* PondDeviceCollectionViewCell.xib in Resources */,
 				DB63EEC323781EF200D96FC8 /* TestViewController.xib in Resources */,
 				DB5FFC0E2361AA9E00E4E8D7 /* KKHintResource.bundle in Resources */,
+				DB16C19023923FFA00B29AE0 /* AddOrEditTimerClockViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1015,6 +1030,7 @@
 				DB5433C82367E21D00F05D17 /* PondContentViewController.swift in Sources */,
 				DB90B9B52378048C0037054D /* TabmanViewController.swift in Sources */,
 				DBE544532354282B005ECA14 /* SecondViewController.swift in Sources */,
+				DB16C18F23923FFA00B29AE0 /* AddOrEditTimerClockViewController.swift in Sources */,
 				DB6C63512356F54700673584 /* STApi.swift in Sources */,
 				DB5FFC172361AC6000E4E8D7 /* Tool.swift in Sources */,
 				DB90B9BB2378048C0037054D /* ColorUtils.swift in Sources */,

@@ -55,6 +55,14 @@ class FishMainApi: STJSONApi {
         self.post(path: safeJoinURL(pre: baseURL(), suf: "api/plan/get_all_plan"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
     }
     
+    func disablePlan(params: [String: String], callBack: ((FishCodeMsgResponseAnyModel<String>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/plan/disable_plan"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+    
+    func enablePlan(params: [String: String], callBack: ((FishCodeMsgResponseAnyModel<String>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/plan/enable_plan"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+    
     /// 获取触发任务列表
     func getAllTrigger(params: [String: String], callBack: ((FishCodeMsgResponseArrayTypeModel<TriggerInfoModel>?, NSError?)->Void)?) {
         self.post(path: safeJoinURL(pre: baseURL(), suf: "api/trigger/get_all_trigger"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)

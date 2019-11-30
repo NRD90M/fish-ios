@@ -9,7 +9,7 @@
 import UIKit
 import MJRefresh
 
-class TimerClockViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TimerClockViewController: FishPreViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView:UITableView!
     
@@ -40,8 +40,11 @@ class TimerClockViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func loadData() -> Void {
         
+        self.makeActivity(nil)
+        
         self.client.getAllPlan(params: ["device_mac":self.selectedSceneModel?.deviceMac ?? "-"], callBack: { (data, error) in
             
+            self.hiddenActivity()
             self.tableView?.mj_header?.endRefreshing()
             
             if let err = Parse.parseResponse(data, error) {
@@ -64,23 +67,37 @@ class TimerClockViewController: UIViewController, UITableViewDelegate, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: Actions
+    @IBAction func createButtonTouchUpInside(_ sender: Any) {
+        
+        self.navigationController?.pushViewController(AddOrEditTimerClockViewController(), animated: true)
+    }
+    
+    
+    
+    // MARK: Tableview Delegate
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.planList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell: UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: TimerClockTableViewCellReuseID)
+        let cell: UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: TimerClockTableViewCellReuseID)
         
+        guard let eCell = cell as? TimerClockTableViewCell else {
+            return cell
+        }
+        eCell.delegate = self
+        eCell.showData(model: self.planList[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 160
     }
     
     
@@ -98,4 +115,61 @@ class TimerClockViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     */
 
+}
+
+extension TimerClockViewController : TimerClockTableViewCellDelegate {
+    func disableOrEnablePlan(enable: Bool, id: String) {
+        
+        
+        let param = ["device_mac":self.selectedSceneModel?.deviceMac ?? "-",
+                     "id":id]
+        
+        if enable {
+            self.makeActivity(nil)
+            
+            self.client.disablePlan(params: param) { (data, error) in
+                
+                self.hiddenActivity()
+                
+                if let err = Parse.parseResponse(data, error) {
+                    self.view.makeHint(err.showMessage)
+                    return
+                }
+                
+                if let code = data?.code {
+                    if code == 1000 {
+                         self.loadData()
+                        return
+                    }
+                }
+                
+                self.view.makeHint("操作失败，请稍后再试")
+                
+            }
+        } else {
+            self.makeActivity(nil)
+            
+            self.client.enablePlan(params: param) { (data, error) in
+                
+                self.hiddenActivity()
+                
+                if let err = Parse.parseResponse(data, error) {
+                    self.view.makeHint(err.showMessage)
+                    return
+                }
+                
+                if let code = data?.code {
+                    if code == 1000 {
+                        self.loadData()
+                        return
+                    }
+                }
+                
+                self.view.makeHint("操作失败，请稍后再试")
+                
+            }
+        }
+    }
+    
+    
 }

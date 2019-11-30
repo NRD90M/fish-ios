@@ -20,6 +20,8 @@ open class PlanInfoModel: Mappable {
     open var minute: Int?
     open var second: Int?
     open var io_code: String?
+    open var io_type: String?
+    open var io_name: String?
     open var duration: Int?
     open var enabled: Bool?
     open var weight: Int?
@@ -38,6 +40,8 @@ open class PlanInfoModel: Mappable {
         minute <- map["minute"]
         second <- map["second"]
         io_code <- map["io_code"]
+        io_type <- map["io_type"]
+        io_name <- map["io_name"]
         duration <- map["duration"]
         enabled <- map["enabled"]
         weight <- map["weight"]
