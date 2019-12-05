@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2E6C029788C421EB798F8D52 /* Pods_fish_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983D90265C84D847D3F1675F /* Pods_fish_ios.framework */; };
+		DB167AEF2399025B00FC14CF /* FishDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB167AEE2399025B00FC14CF /* FishDefine.swift */; };
+		DB167AF3239904C700FC14CF /* DevicePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB167AF1239904C700FC14CF /* DevicePickerViewController.swift */; };
+		DB167AF4239904C700FC14CF /* DevicePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB167AF2239904C700FC14CF /* DevicePickerViewController.xib */; };
+		DB167AF6239904D700FC14CF /* DevicePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB167AF5239904D700FC14CF /* DevicePickerView.swift */; };
 		DB16C18F23923FFA00B29AE0 /* AddOrEditTimerClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB16C18D23923FFA00B29AE0 /* AddOrEditTimerClockViewController.swift */; };
 		DB16C19023923FFA00B29AE0 /* AddOrEditTimerClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB16C18E23923FFA00B29AE0 /* AddOrEditTimerClockViewController.xib */; };
 		DB4C5C502377EE1F002C6724 /* FishWebSocketDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4C5C4F2377EE1F002C6724 /* FishWebSocketDataHelper.swift */; };
@@ -131,12 +135,24 @@
 		DBE544532354282B005ECA14 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE544522354282B005ECA14 /* SecondViewController.swift */; };
 		DBE5445B2354282C005ECA14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE544592354282C005ECA14 /* LaunchScreen.storyboard */; };
 		DBE54463235450DA005ECA14 /* launchNew.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE54462235450DA005ECA14 /* launchNew.png */; };
+		DBF32C722396028A0034D583 /* KKInputExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF32C702396028A0034D583 /* KKInputExtension.swift */; };
+		DBF32C732396028A0034D583 /* KKInputAvoidKeyBoardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF32C712396028A0034D583 /* KKInputAvoidKeyBoardManager.swift */; };
+		DBF32C832397B5510034D583 /* FishHourMinPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF32C802397B5510034D583 /* FishHourMinPickerViewController.xib */; };
+		DBF32C842397B5510034D583 /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF32C812397B5510034D583 /* TimePickerView.swift */; };
+		DBF32C852397B5510034D583 /* FishHourMinPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF32C822397B5510034D583 /* FishHourMinPickerViewController.swift */; };
+		DBF32C882397B5820034D583 /* SinglePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF32C872397B5820034D583 /* SinglePickerView.swift */; };
+		DBF32C8B2397B6F60034D583 /* SinglePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF32C892397B6F60034D583 /* SinglePickerViewController.swift */; };
+		DBF32C8C2397B6F60034D583 /* SinglePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF32C8A2397B6F60034D583 /* SinglePickerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6899C252E4F20195CEEE2B0A /* Pods-fish-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fish-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fish-ios/Pods-fish-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		983D90265C84D847D3F1675F /* Pods_fish_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fish_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A691BA0FFD068A850B9889EC /* Pods-fish-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fish-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-fish-ios/Pods-fish-ios.release.xcconfig"; sourceTree = "<group>"; };
+		DB167AEE2399025B00FC14CF /* FishDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDefine.swift; sourceTree = "<group>"; };
+		DB167AF1239904C700FC14CF /* DevicePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicePickerViewController.swift; sourceTree = "<group>"; };
+		DB167AF2239904C700FC14CF /* DevicePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevicePickerViewController.xib; sourceTree = "<group>"; };
+		DB167AF5239904D700FC14CF /* DevicePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicePickerView.swift; sourceTree = "<group>"; };
 		DB16C18D23923FFA00B29AE0 /* AddOrEditTimerClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrEditTimerClockViewController.swift; sourceTree = "<group>"; };
 		DB16C18E23923FFA00B29AE0 /* AddOrEditTimerClockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddOrEditTimerClockViewController.xib; sourceTree = "<group>"; };
 		DB4C5C4F2377EE1F002C6724 /* FishWebSocketDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishWebSocketDataHelper.swift; sourceTree = "<group>"; };
@@ -263,6 +279,14 @@
 		DBE5445A2354282C005ECA14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBE5445C2354282C005ECA14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBE54462235450DA005ECA14 /* launchNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchNew.png; sourceTree = "<group>"; };
+		DBF32C702396028A0034D583 /* KKInputExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKInputExtension.swift; sourceTree = "<group>"; };
+		DBF32C712396028A0034D583 /* KKInputAvoidKeyBoardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKInputAvoidKeyBoardManager.swift; sourceTree = "<group>"; };
+		DBF32C802397B5510034D583 /* FishHourMinPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FishHourMinPickerViewController.xib; sourceTree = "<group>"; };
+		DBF32C812397B5510034D583 /* TimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
+		DBF32C822397B5510034D583 /* FishHourMinPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishHourMinPickerViewController.swift; sourceTree = "<group>"; };
+		DBF32C872397B5820034D583 /* SinglePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePickerView.swift; sourceTree = "<group>"; };
+		DBF32C892397B6F60034D583 /* SinglePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePickerViewController.swift; sourceTree = "<group>"; };
+		DBF32C8A2397B6F60034D583 /* SinglePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SinglePickerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +308,16 @@
 				A691BA0FFD068A850B9889EC /* Pods-fish-ios.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB167AF02399049E00FC14CF /* DevicePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				DB167AF1239904C700FC14CF /* DevicePickerViewController.swift */,
+				DB167AF2239904C700FC14CF /* DevicePickerViewController.xib */,
+				DB167AF5239904D700FC14CF /* DevicePickerView.swift */,
+			);
+			path = DevicePickerView;
 			sourceTree = "<group>";
 		};
 		DB16C18C23923FB500B29AE0 /* create */ = {
@@ -339,6 +373,7 @@
 		DB5FFC072361AA9E00E4E8D7 /* PrivatePods */ = {
 			isa = PBXGroup;
 			children = (
+				DBF32C6F2396026E0034D583 /* KKInputAvoidKeyBoard */,
 				DB63EEB62378146000D96FC8 /* SwiftPopMenu */,
 				DB90B93A2378048C0037054D /* Tabman */,
 				DB5FFC082361AA9E00E4E8D7 /* KKHint */,
@@ -403,6 +438,7 @@
 		DB6C63482356F2E100673584 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				DBF32C7E2397B28F0034D583 /* PickerView */,
 				DB901A6123853972007618FA /* VerifyCodeTimer */,
 				DB5FFC1A2361B71400E4E8D7 /* AlamofireLoggers */,
 				DB5FFC072361AA9E00E4E8D7 /* PrivatePods */,
@@ -435,6 +471,7 @@
 				DB6C63532356FA8A00673584 /* FishGlobalManager */,
 				DB6C634E2356F53400673584 /* FishApi */,
 				DB901A6423853C04007618FA /* FishCheckUtils.swift */,
+				DB167AEE2399025B00FC14CF /* FishDefine.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -852,6 +889,45 @@
 			path = "fish-ios";
 			sourceTree = "<group>";
 		};
+		DBF32C6F2396026E0034D583 /* KKInputAvoidKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				DBF32C712396028A0034D583 /* KKInputAvoidKeyBoardManager.swift */,
+				DBF32C702396028A0034D583 /* KKInputExtension.swift */,
+			);
+			path = KKInputAvoidKeyBoard;
+			sourceTree = "<group>";
+		};
+		DBF32C7E2397B28F0034D583 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				DB167AF02399049E00FC14CF /* DevicePickerView */,
+				DBF32C862397B5540034D583 /* Single */,
+				DBF32C7F2397B3EB0034D583 /* HourMin */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		DBF32C7F2397B3EB0034D583 /* HourMin */ = {
+			isa = PBXGroup;
+			children = (
+				DBF32C822397B5510034D583 /* FishHourMinPickerViewController.swift */,
+				DBF32C802397B5510034D583 /* FishHourMinPickerViewController.xib */,
+				DBF32C812397B5510034D583 /* TimePickerView.swift */,
+			);
+			path = HourMin;
+			sourceTree = "<group>";
+		};
+		DBF32C862397B5540034D583 /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				DBF32C872397B5820034D583 /* SinglePickerView.swift */,
+				DBF32C892397B6F60034D583 /* SinglePickerViewController.swift */,
+				DBF32C8A2397B6F60034D583 /* SinglePickerViewController.xib */,
+			);
+			path = Single;
+			sourceTree = "<group>";
+		};
 		FEEC6AF5D5093FD1F996C414 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -934,13 +1010,16 @@
 				DB90B9892378048C0037054D /* LICENSE in Resources */,
 				DBB913E12354605C001C20E4 /* Assets.xcassets in Resources */,
 				DB63EEBB2378146000D96FC8 /* LICENSE in Resources */,
+				DB167AF4239904C700FC14CF /* DevicePickerViewController.xib in Resources */,
 				DBB913EB235574FB001C20E4 /* PondViewController.xib in Resources */,
 				DB5433C92367E21D00F05D17 /* PondContentViewController.xib in Resources */,
 				DBA9D20423698F4700C32A7B /* TimerTriggerViewController.xib in Resources */,
 				DBB913F72355754A001C20E4 /* AlertViewController.xib in Resources */,
 				DBA9D1FA2369866A00C32A7B /* TimerClockViewController.xib in Resources */,
 				DB5433CD236814E600F05D17 /* PondDeviceCollectionViewCell.xib in Resources */,
+				DBF32C8C2397B6F60034D583 /* SinglePickerViewController.xib in Resources */,
 				DB63EEC323781EF200D96FC8 /* TestViewController.xib in Resources */,
+				DBF32C832397B5510034D583 /* FishHourMinPickerViewController.xib in Resources */,
 				DB5FFC0E2361AA9E00E4E8D7 /* KKHintResource.bundle in Resources */,
 				DB16C19023923FFA00B29AE0 /* AddOrEditTimerClockViewController.xib in Resources */,
 			);
@@ -1018,11 +1097,13 @@
 				DB5FFC0D2361AA9E00E4E8D7 /* KKHint.swift in Sources */,
 				DB90B9A92378048C0037054D /* TabmanStaticBarIndicatorTransition.swift in Sources */,
 				DB90B9AC2378048C0037054D /* TabmanItemColorCrossfadeTransition.swift in Sources */,
+				DBF32C8B2397B6F60034D583 /* SinglePickerViewController.swift in Sources */,
 				DB5FFC062361A31500E4E8D7 /* FishCodeMsgResponseAnyModel.swift in Sources */,
 				DB90B9932378048C0037054D /* TabmanStaticButtonBar.swift in Sources */,
 				DB6C63522356F54700673584 /* STApi_Extension.swift in Sources */,
 				DB90B98E2378048C0037054D /* TabmanBar+Indicator.swift in Sources */,
 				DB90B9AF2378048C0037054D /* TabmanBarTransitionStore.swift in Sources */,
+				DBF32C842397B5510034D583 /* TimePickerView.swift in Sources */,
 				DBA9D1FD23698D0500C32A7B /* TimerClockTableViewCell.swift in Sources */,
 				DBB913DB23545C2E001C20E4 /* LoginViewController.swift in Sources */,
 				DB9E70A0236EB67A00CAFBEA /* PondSocketModel.swift in Sources */,
@@ -1061,6 +1142,7 @@
 				DB90B98F2378048C0037054D /* TabmanBar+Styles.swift in Sources */,
 				DB90B9B12378048C0037054D /* TabmanBar+Insets.swift in Sources */,
 				DB90B98C2378048C0037054D /* TabmanBar+Config.swift in Sources */,
+				DBF32C732396028A0034D583 /* KKInputAvoidKeyBoardManager.swift in Sources */,
 				DB90B9BF2378048C0037054D /* TabmanViewController+AutoInsetting.swift in Sources */,
 				DB9E709A236EA3C900CAFBEA /* PondIOInfoModel.swift in Sources */,
 				DB90B9A82378048C0037054D /* AutoHideBarBehaviorActivist.swift in Sources */,
@@ -1070,9 +1152,11 @@
 				DBB913EE23557531001C20E4 /* TimerViewController.swift in Sources */,
 				DBE5444F2354282B005ECA14 /* AppDelegate.swift in Sources */,
 				DB5FFC0223618C8800E4E8D7 /* FishMainApi.swift in Sources */,
+				DB167AF6239904D700FC14CF /* DevicePickerView.swift in Sources */,
 				DB63EEBD2378146000D96FC8 /* SwiftPopMenu.swift in Sources */,
 				DB90B9B22378048C0037054D /* TabmanBar+Layout.swift in Sources */,
 				DB90B9B62378048C0037054D /* UIView+Localization.swift in Sources */,
+				DB167AF3239904C700FC14CF /* DevicePickerViewController.swift in Sources */,
 				DB901A69238540D2007618FA /* TriggerInfoModel.swift in Sources */,
 				DB6C634C2356F2FE00673584 /* UIColorExtension.swift in Sources */,
 				DB90B9952378048C0037054D /* TabmanBlockTabBar.swift in Sources */,
@@ -1095,6 +1179,8 @@
 				DB90B98B2378048C0037054D /* TabmanBar+Location.swift in Sources */,
 				DB90B9BC2378048C0037054D /* ContentViewScrollView.swift in Sources */,
 				DB6C6356235817C000673584 /* FishUserInfo.swift in Sources */,
+				DBF32C852397B5510034D583 /* FishHourMinPickerViewController.swift in Sources */,
+				DBF32C722396028A0034D583 /* KKInputExtension.swift in Sources */,
 				DB5FFC242362CE2B00E4E8D7 /* Logger.swift in Sources */,
 				DB90B9942378048C0037054D /* TabmanButtonBar.swift in Sources */,
 				DB90B9B42378048C0037054D /* TabmanViewController+Embedding.swift in Sources */,
@@ -1106,9 +1192,11 @@
 				DB90B9992378048C0037054D /* TabmanBar+BackgroundView.swift in Sources */,
 				DB90B9B72378048C0037054D /* UIImage+Resize.swift in Sources */,
 				DB5FFC102361AA9E00E4E8D7 /* UIViewHintExtension.swift in Sources */,
+				DB167AEF2399025B00FC14CF /* FishDefine.swift in Sources */,
 				DB90B9982378048C0037054D /* TabmanScrollingButtonBar.swift in Sources */,
 				DBE544512354282B005ECA14 /* FirstViewController.swift in Sources */,
 				DB901A6323853980007618FA /* VerifyCodeTimer.swift in Sources */,
+				DBF32C882397B5820034D583 /* SinglePickerView.swift in Sources */,
 				DBA9D20323698F4700C32A7B /* TimerTriggerViewController.swift in Sources */,
 				DB5FFC142361AB6D00E4E8D7 /* AppDelegate+extension.swift in Sources */,
 				DB9E709E236EB56400CAFBEA /* FishPondDataManager.swift in Sources */,

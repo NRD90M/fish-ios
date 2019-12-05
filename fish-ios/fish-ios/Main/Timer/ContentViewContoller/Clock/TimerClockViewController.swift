@@ -70,7 +70,10 @@ class TimerClockViewController: FishPreViewController, UITableViewDelegate, UITa
     // MARK: Actions
     @IBAction func createButtonTouchUpInside(_ sender: Any) {
         
-        self.navigationController?.pushViewController(AddOrEditTimerClockViewController(), animated: true)
+        let addOrEditVC = AddOrEditTimerClockViewController()
+        addOrEditVC.selectedSceneModel = self.selectedSceneModel
+        self.navigationController?.pushViewController(addOrEditVC, animated: true)
+        
     }
     
     

@@ -75,7 +75,7 @@ class PondContentViewController: FishPreViewController, UICollectionViewDelegate
     
     func loadData() -> Void {
         
-        self.client.getIOInfo(params: ["device_mac":pondSceneModel?.deviceMac], callBack: { (data, error) in
+        self.client.getIOInfo(params: ["device_mac":pondSceneModel?.deviceMac ?? "-"], callBack: { (data, error) in
             
             if let err = Parse.parseResponse(data, error) {
                 self.view.makeHint(err.showMessage)

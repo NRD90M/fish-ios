@@ -59,6 +59,37 @@ class LoginViewController: FishPreViewController {
             self.verifyTextInput.resignFirstResponder()
         }
         
+        
+//        let pickerVC = DevicePickerViewController()
+//        pickerVC.modalTransitionStyle = .coverVertical
+//        pickerVC.modalPresentationStyle = .overFullScreen
+//
+//        pickerVC.reset(code: "feeder1")
+//
+//        pickerVC.confirmCallBack = { (val :PondIOInfoModel) in
+//            //确定按钮回调
+//            print(val.name)
+//        }
+//
+//        self.view.makeActivity()
+//
+//        pickerVC.startLoadingData(deviceMac:"b827eb170977") { (success, error) in
+//
+//            self.view.hiddenActivity()
+//
+//            if success {
+//                self.present(pickerVC, animated: true, completion: nil)
+//            } else {
+//                self.view.makeHint(error)
+//            }
+//        }
+        
+        
+//        let share = FishHourMinPickerViewController()
+//        share.modalTransitionStyle = .coverVertical
+//        share.modalPresentationStyle = .overFullScreen
+//        self.present(share, animated: true, completion: nil)
+        
         loginRequest()
     }
     

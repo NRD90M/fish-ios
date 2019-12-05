@@ -104,7 +104,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="1" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.89019607840000003" green="0.8980392157" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="64" id="OkN-Wl-nvf"/>
                                                         <constraint firstItem="3ye-wE-sM1" firstAttribute="centerY" secondItem="utD-i8-m6x" secondAttribute="centerY" id="Tc0-mC-TPu"/>
@@ -404,7 +404,7 @@
                 <constraint firstAttribute="trailing" secondItem="VSM-Sa-ww4" secondAttribute="trailing" id="tF1-xw-nxg"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="24.5" y="51.5"/>
+            <point key="canvasLocation" x="833" y="87"/>
         </view>
     </objects>
     <resources>

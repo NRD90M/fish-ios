@@ -25,6 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Logger 配置
         Logger.shared.setUpConfig()
         
+        // 单例化键盘遮挡组件
+        KKInputAvoidKeyboardManager.setup()
+        
         /// 配置网络日志收集
         AlamofireLoggers.shareInstance.addLogger(logger: FishAlamofireLogger())
         AlamofireLoggers.shareInstance.startLogging()
