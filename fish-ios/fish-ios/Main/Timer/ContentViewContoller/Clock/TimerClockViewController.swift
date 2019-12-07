@@ -30,17 +30,23 @@ class TimerClockViewController: FishPreViewController, UITableViewDelegate, UITa
 //        self.tableView.mj_header.beginRefreshing()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.tableView.mj_header.beginRefreshing()
+    }
+    
     func refreshSelectedSceneModel(model:PondSceneModel) {
         
         if self.selectedSceneModel?.deviceMac != model.deviceMac {
                 self.selectedSceneModel = model
-                self.tableView.mj_header.beginRefreshing()
         }
     }
     
     func loadData() -> Void {
         
         self.makeActivity(nil)
+        
+        self.planList = []
+        self.tableView.reloadData()
         
         self.client.getAllPlan(params: ["device_mac":self.selectedSceneModel?.deviceMac ?? "-"], callBack: { (data, error) in
             
@@ -172,6 +178,14 @@ extension TimerClockViewController : TimerClockTableViewCellDelegate {
                 
             }
         }
+    }
+    
+    
+    func editPlan(data:PlanInfoModel) {
+        let addOrEditVC = AddOrEditTimerClockViewController()
+        addOrEditVC.selectedSceneModel = self.selectedSceneModel
+        addOrEditVC.resetPlanInfoModel(data, .edit)
+        self.navigationController?.pushViewController(addOrEditVC, animated: true)
     }
     
     

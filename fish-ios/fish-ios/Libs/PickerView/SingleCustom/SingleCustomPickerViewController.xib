@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SingleCustomPickerViewController" customModule="fish_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="singleCustomPickerView" destination="pIM-VW-6SD" id="4NB-g7-yVW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWC-7u-dku">
+                    <rect key="frame" x="0.0" y="423" width="375" height="244"/>
+                    <subviews>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c33-Xv-fIO">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <items>
+                                <barButtonItem title="取消" id="avE-tE-pZb">
+                                    <connections>
+                                        <action selector="cancelButtonTouchUpInSide:" destination="-1" id="d7v-kd-sK0"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="xju-3F-hyr"/>
+                                <barButtonItem title="确定" id="D8h-Mm-a0V">
+                                    <connections>
+                                        <action selector="confirmButtonTouchUpInSide:" destination="-1" id="J4I-SJ-3uI"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pIM-VW-6SD" customClass="SingleCustomPickerView" customModule="fish_ios" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="44" width="375" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="skE-Je-ezV"/>
+                            </constraints>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="pIM-VW-6SD" secondAttribute="trailing" id="9Yf-Ts-R6T"/>
+                        <constraint firstItem="pIM-VW-6SD" firstAttribute="leading" secondItem="xWC-7u-dku" secondAttribute="leading" id="LJr-Df-ery"/>
+                        <constraint firstItem="c33-Xv-fIO" firstAttribute="top" secondItem="xWC-7u-dku" secondAttribute="top" id="VZo-GP-MkS"/>
+                        <constraint firstItem="pIM-VW-6SD" firstAttribute="top" secondItem="c33-Xv-fIO" secondAttribute="bottom" id="gYm-gS-39X"/>
+                        <constraint firstAttribute="trailing" secondItem="c33-Xv-fIO" secondAttribute="trailing" id="gdN-N0-SeA"/>
+                        <constraint firstItem="c33-Xv-fIO" firstAttribute="leading" secondItem="xWC-7u-dku" secondAttribute="leading" id="iQh-cR-QB6"/>
+                        <constraint firstAttribute="bottom" secondItem="pIM-VW-6SD" secondAttribute="bottom" id="vQ8-cL-5jF"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ4-RI-un5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="423"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="bgButtonTouchUpInSide:" destination="-1" eventType="touchUpInside" id="iBY-jk-ge1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xWC-7u-dku" firstAttribute="top" secondItem="bQ4-RI-un5" secondAttribute="bottom" id="5Ih-8d-H0Q"/>
+                <constraint firstAttribute="trailing" secondItem="bQ4-RI-un5" secondAttribute="trailing" id="RfA-zz-0hg"/>
+                <constraint firstItem="bQ4-RI-un5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZY5-u7-Dgz"/>
+                <constraint firstItem="xWC-7u-dku" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="es1-Z6-Jrc"/>
+                <constraint firstItem="bQ4-RI-un5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lDw-0f-j6b"/>
+                <constraint firstAttribute="bottom" secondItem="xWC-7u-dku" secondAttribute="bottom" id="rVW-lh-EW9"/>
+                <constraint firstAttribute="trailing" secondItem="xWC-7u-dku" secondAttribute="trailing" id="ydT-de-2Yv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-144" y="24"/>
+        </view>
+    </objects>
+</document>

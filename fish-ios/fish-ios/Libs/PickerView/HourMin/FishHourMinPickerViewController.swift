@@ -17,8 +17,12 @@ class FishHourMinPickerViewController: UIViewController {
     
     @IBOutlet weak var pickerView:TimePickerView!
     
+    var selectedHour:Int = 0
+    var selectedMinute:Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.pickerView.resetSelected(hour: self.selectedHour,minute: self.selectedMinute)
     }
     
     override func didReceiveMemoryWarning() {
@@ -27,7 +31,8 @@ class FishHourMinPickerViewController: UIViewController {
     }
     
     func reset(hour :Int, minute:Int) {
-        self.pickerView.resetSelected(hour: hour,minute: minute)
+        self.selectedHour = hour
+        self.selectedMinute = minute
     }
     
     // MARK: Actions

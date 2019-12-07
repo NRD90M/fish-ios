@@ -49,10 +49,12 @@ class SinglePickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
         if select > 0 {
             select = val - 1
         }
+        self.selectedVal = val
         self.selectRow(select, inComponent: 0, animated: true)
     }
     
     func getSelectedVal() -> Int {
+        self.selectedVal = self.selectedRow(inComponent: 0) + 1
         return self.selectedVal
     }
     

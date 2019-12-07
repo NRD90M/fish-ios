@@ -36,3 +36,13 @@ struct FishDefine {
 
 
 
+public struct PickViewItem {
+    public var code: String?
+    public var name: String?
+    
+    public init(code: String, name: String) {
+        self.code = code
+        self.name = name
+    }
+}
+

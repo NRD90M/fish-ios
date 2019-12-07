@@ -32,6 +32,11 @@
 		DB5FFC202362C9BF00E4E8D7 /* FishAlamofireLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC1F2362C9BF00E4E8D7 /* FishAlamofireLogger.swift */; };
 		DB5FFC242362CE2B00E4E8D7 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC232362CE2B00E4E8D7 /* Logger.swift */; };
 		DB5FFC262362D96600E4E8D7 /* FishHttpResponseModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC252362D96600E4E8D7 /* FishHttpResponseModelProtocol.swift */; };
+		DB6357E9239A3C2D00A0F969 /* AddOrEditTimerTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6357E7239A3C2D00A0F969 /* AddOrEditTimerTriggerViewController.swift */; };
+		DB6357EA239A3C2D00A0F969 /* AddOrEditTimerTriggerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6357E8239A3C2D00A0F969 /* AddOrEditTimerTriggerViewController.xib */; };
+		DB6357EE239A524200A0F969 /* SingleCustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6357EC239A524200A0F969 /* SingleCustomPickerViewController.swift */; };
+		DB6357EF239A524200A0F969 /* SingleCustomPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6357ED239A524200A0F969 /* SingleCustomPickerViewController.xib */; };
+		DB6357F1239A524E00A0F969 /* SingleCustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6357F0239A524E00A0F969 /* SingleCustomPickerView.swift */; };
 		DB63EEBB2378146000D96FC8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DB63EEB72378146000D96FC8 /* LICENSE */; };
 		DB63EEBC2378146000D96FC8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DB63EEB82378146000D96FC8 /* README.md */; };
 		DB63EEBD2378146000D96FC8 /* SwiftPopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB63EEBA2378146000D96FC8 /* SwiftPopMenu.swift */; };
@@ -173,6 +178,11 @@
 		DB5FFC1F2362C9BF00E4E8D7 /* FishAlamofireLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishAlamofireLogger.swift; sourceTree = "<group>"; };
 		DB5FFC232362CE2B00E4E8D7 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		DB5FFC252362D96600E4E8D7 /* FishHttpResponseModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishHttpResponseModelProtocol.swift; sourceTree = "<group>"; };
+		DB6357E7239A3C2D00A0F969 /* AddOrEditTimerTriggerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrEditTimerTriggerViewController.swift; sourceTree = "<group>"; };
+		DB6357E8239A3C2D00A0F969 /* AddOrEditTimerTriggerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddOrEditTimerTriggerViewController.xib; sourceTree = "<group>"; };
+		DB6357EC239A524200A0F969 /* SingleCustomPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCustomPickerViewController.swift; sourceTree = "<group>"; };
+		DB6357ED239A524200A0F969 /* SingleCustomPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleCustomPickerViewController.xib; sourceTree = "<group>"; };
+		DB6357F0239A524E00A0F969 /* SingleCustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCustomPickerView.swift; sourceTree = "<group>"; };
 		DB63EEB72378146000D96FC8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DB63EEB82378146000D96FC8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DB63EEBA2378146000D96FC8 /* SwiftPopMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPopMenu.swift; sourceTree = "<group>"; };
@@ -415,6 +425,25 @@
 				DB5FFC232362CE2B00E4E8D7 /* Logger.swift */,
 			);
 			path = Logger;
+			sourceTree = "<group>";
+		};
+		DB6357E6239A2CFC00A0F969 /* create */ = {
+			isa = PBXGroup;
+			children = (
+				DB6357E7239A3C2D00A0F969 /* AddOrEditTimerTriggerViewController.swift */,
+				DB6357E8239A3C2D00A0F969 /* AddOrEditTimerTriggerViewController.xib */,
+			);
+			path = create;
+			sourceTree = "<group>";
+		};
+		DB6357EB239A50EF00A0F969 /* SingleCustom */ = {
+			isa = PBXGroup;
+			children = (
+				DB6357EC239A524200A0F969 /* SingleCustomPickerViewController.swift */,
+				DB6357ED239A524200A0F969 /* SingleCustomPickerViewController.xib */,
+				DB6357F0239A524E00A0F969 /* SingleCustomPickerView.swift */,
+			);
+			path = SingleCustom;
 			sourceTree = "<group>";
 		};
 		DB63EEB62378146000D96FC8 /* SwiftPopMenu */ = {
@@ -772,6 +801,7 @@
 		DBA9D20023698F1F00C32A7B /* Trigger */ = {
 			isa = PBXGroup;
 			children = (
+				DB6357E6239A2CFC00A0F969 /* create */,
 				DBA9D20123698F4700C32A7B /* TimerTriggerViewController.swift */,
 				DBA9D20223698F4700C32A7B /* TimerTriggerViewController.xib */,
 				DBA9D20523698F5500C32A7B /* TimerTriggerTableViewCell.swift */,
@@ -901,6 +931,7 @@
 		DBF32C7E2397B28F0034D583 /* PickerView */ = {
 			isa = PBXGroup;
 			children = (
+				DB6357EB239A50EF00A0F969 /* SingleCustom */,
 				DB167AF02399049E00FC14CF /* DevicePickerView */,
 				DBF32C862397B5540034D583 /* Single */,
 				DBF32C7F2397B3EB0034D583 /* HourMin */,
@@ -1003,6 +1034,7 @@
 				DBB913DC23545C2E001C20E4 /* LoginViewController.xib in Resources */,
 				DBE5445B2354282C005ECA14 /* LaunchScreen.storyboard in Resources */,
 				DB901A6D23854F4B007618FA /* HorizontalTitleItemView.xib in Resources */,
+				DB6357EF239A524200A0F969 /* SingleCustomPickerViewController.xib in Resources */,
 				DBA9D1F52369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.xib in Resources */,
 				DB90B98A2378048C0037054D /* README.md in Resources */,
 				DBA9D20823698F5500C32A7B /* TimerTriggerTableViewCell.xib in Resources */,
@@ -1021,6 +1053,7 @@
 				DB63EEC323781EF200D96FC8 /* TestViewController.xib in Resources */,
 				DBF32C832397B5510034D583 /* FishHourMinPickerViewController.xib in Resources */,
 				DB5FFC0E2361AA9E00E4E8D7 /* KKHintResource.bundle in Resources */,
+				DB6357EA239A3C2D00A0F969 /* AddOrEditTimerTriggerViewController.xib in Resources */,
 				DB16C19023923FFA00B29AE0 /* AddOrEditTimerClockViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1103,6 +1136,7 @@
 				DB6C63522356F54700673584 /* STApi_Extension.swift in Sources */,
 				DB90B98E2378048C0037054D /* TabmanBar+Indicator.swift in Sources */,
 				DB90B9AF2378048C0037054D /* TabmanBarTransitionStore.swift in Sources */,
+				DB6357EE239A524200A0F969 /* SingleCustomPickerViewController.swift in Sources */,
 				DBF32C842397B5510034D583 /* TimePickerView.swift in Sources */,
 				DBA9D1FD23698D0500C32A7B /* TimerClockTableViewCell.swift in Sources */,
 				DBB913DB23545C2E001C20E4 /* LoginViewController.swift in Sources */,
@@ -1119,6 +1153,7 @@
 				DB90B9AE2378048C0037054D /* TabmanItemTransition.swift in Sources */,
 				DB90B9AD2378048C0037054D /* TabmanItemMaskTransition.swift in Sources */,
 				DB90B9A42378048C0037054D /* TabmanBar+Protocols.swift in Sources */,
+				DB6357F1239A524E00A0F969 /* SingleCustomPickerView.swift in Sources */,
 				DB90B9B02378048C0037054D /* TabmanTransition.swift in Sources */,
 				DB90B9AA2378048C0037054D /* TabmanScrollingBarIndicatorTransition.swift in Sources */,
 				DB90B9BD2378048C0037054D /* AutoInsetEngine.swift in Sources */,
@@ -1179,6 +1214,7 @@
 				DB90B98B2378048C0037054D /* TabmanBar+Location.swift in Sources */,
 				DB90B9BC2378048C0037054D /* ContentViewScrollView.swift in Sources */,
 				DB6C6356235817C000673584 /* FishUserInfo.swift in Sources */,
+				DB6357E9239A3C2D00A0F969 /* AddOrEditTimerTriggerViewController.swift in Sources */,
 				DBF32C852397B5510034D583 /* FishHourMinPickerViewController.swift in Sources */,
 				DBF32C722396028A0034D583 /* KKInputExtension.swift in Sources */,
 				DB5FFC242362CE2B00E4E8D7 /* Logger.swift in Sources */,

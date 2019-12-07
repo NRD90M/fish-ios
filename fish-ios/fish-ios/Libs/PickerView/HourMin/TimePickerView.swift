@@ -52,6 +52,10 @@ class TimePickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelegate
     }
     
     func resetSelected(hour:Int, minute:Int) {
+        
+        self.hour = hour
+        self.minute = minute
+        
         self.selectRow(hour, inComponent: 0, animated: true)
         self.selectRow(minute, inComponent: 1, animated: true)
     }

@@ -73,6 +73,7 @@ class TimerViewController:  TabmanViewController, PageboyViewControllerDataSourc
         popMenu.popData = popData
         
         //click
+        
         popMenu.didSelectMenuBlock = { [weak self](index:Int)->Void in
             print("block select \(index)")
             self?.popMenu.dismiss()
@@ -82,15 +83,32 @@ class TimerViewController:  TabmanViewController, PageboyViewControllerDataSourc
                  self?.titleItemView.isHidden = false
                 self?.titleItemView.reloadSelectedPond(model: model)
                 
-                if self?.currentViewController is TimerClockViewController {
-                    let timerClock = self?.currentViewController as! TimerClockViewController
-                    timerClock.refreshSelectedSceneModel(model: model)
+                if let controllers = self?.viewControllers {
+                    for vc in controllers {
+                        if vc is TimerClockViewController {
+                            let timerClock = vc as! TimerClockViewController
+                            timerClock.refreshSelectedSceneModel(model: model)
+                            timerClock.loadData()
+                        }
+                        
+                        if vc is TimerTriggerViewController {
+                            let timerTrigger = vc as! TimerTriggerViewController
+                            timerTrigger.refreshSelectedSceneModel(model: model)
+                             timerTrigger.loadData()
+                        }
+                    }
                 }
                 
-                if self?.currentViewController is TimerTriggerViewController {
-                    let timerTrigger = self?.currentViewController as! TimerTriggerViewController
-                    timerTrigger.refreshSelectedSceneModel(model: model)
-                }
+                
+//                if self?.currentViewController is TimerClockViewController {
+//                    let timerClock = self?.currentViewController as! TimerClockViewController
+//                    timerClock.refreshSelectedSceneModel(model: model)
+//                }
+//
+//                if self?.currentViewController is TimerTriggerViewController {
+//                    let timerTrigger = self?.currentViewController as! TimerTriggerViewController
+//                    timerTrigger.refreshSelectedSceneModel(model: model)
+//                }
                 
             }
 
@@ -123,14 +141,17 @@ class TimerViewController:  TabmanViewController, PageboyViewControllerDataSourc
                     self.titleItemView.isHidden = false
                     self.titleItemView.reloadSelectedPond(model: self.sceneList[0])
                     
-                    if self.currentViewController is TimerClockViewController {
-                        let timerClock = self.currentViewController as! TimerClockViewController
-                        timerClock.refreshSelectedSceneModel(model: self.sceneList[0])
-                    }
                     
-                    if self.currentViewController is TimerTriggerViewController {
-                        let timerTrigger = self.currentViewController as! TimerTriggerViewController
-                        timerTrigger.refreshSelectedSceneModel(model: self.sceneList[0])
+                    for vc in self.viewControllers {
+                        if vc is TimerClockViewController {
+                            let timerClock = vc as! TimerClockViewController
+                            timerClock.refreshSelectedSceneModel(model: self.sceneList[0])
+                        }
+                        
+                        if vc is TimerTriggerViewController {
+                            let timerTrigger = vc as! TimerTriggerViewController
+                            timerTrigger.refreshSelectedSceneModel(model: self.sceneList[0])
+                        }
                     }
                     
                 }

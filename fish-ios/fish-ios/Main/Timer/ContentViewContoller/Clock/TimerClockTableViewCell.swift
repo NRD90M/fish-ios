@@ -11,6 +11,7 @@ import UIKit
 
 protocol TimerClockTableViewCellDelegate : class {
     func disableOrEnablePlan(enable:Bool, id:String)
+    func editPlan(data:PlanInfoModel)
 }
 
 let TimerClockTableViewCellReuseID = "TimerClockTableViewCellReuseID"
@@ -122,6 +123,12 @@ class TimerClockTableViewCell: UITableViewCell {
     }
     
     @IBAction func editButtonTouchUpInside(_ sender: Any) {
+        
+        guard let unpackedData = self.data else {
+            return
+        }
+        
+        self.delegate?.editPlan(data:unpackedData)
         
     }
     

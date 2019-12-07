@@ -15,6 +15,8 @@ class SinglePickerViewController: UIViewController {
     //创建block变量
     var confirmCallBack:confirmBlock?
     
+    var selectedVal:Int = 0
+    
     
     @IBOutlet weak var singlePickerView:SinglePickerView!
     
@@ -24,6 +26,8 @@ class SinglePickerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.singlePickerView.resetSelected(val: self.selectedVal, type: self.pickerType)
     }
     
     override func didReceiveMemoryWarning() {
@@ -33,7 +37,7 @@ class SinglePickerViewController: UIViewController {
     
     func reset(val :Int, type:SinglePickerType) {
         self.pickerType = type
-        self.singlePickerView.resetSelected(val: val, type: type)
+        self.selectedVal = val
     }
     
     // MARK: Actions

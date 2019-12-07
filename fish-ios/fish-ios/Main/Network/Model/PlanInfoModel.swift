@@ -27,7 +27,11 @@ open class PlanInfoModel: Mappable {
     open var weight: Int?
     
     init() {
-        
+        self.second = 0
+        self.enabled = true
+        self.day_of_month = nil
+        self.day_of_week = nil
+        self.weight = nil
     }
     
     open func mapping(map: Map) {
@@ -51,4 +55,5 @@ open class PlanInfoModel: Mappable {
         self.mapping(map: map)
         
     }
+    
 }

@@ -71,8 +71,34 @@ class FishMainApi: STJSONApi {
         self.post(path: safeJoinURL(pre: baseURL(), suf: "api/plan/edit_plan"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
     }
     
+    func removePlan(params: [String: String], callBack: ((FishCodeMsgResponseAnyModel<String>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/plan/remove_plan"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+    
     /// 获取触发任务列表
     func getAllTrigger(params: [String: String], callBack: ((FishCodeMsgResponseArrayTypeModel<TriggerInfoModel>?, NSError?)->Void)?) {
         self.post(path: safeJoinURL(pre: baseURL(), suf: "api/trigger/get_all_trigger"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
     }
+    
+    func disableTrigger(params: [String: String], callBack: ((FishCodeMsgResponseAnyModel<String>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/trigger/disable_trigger"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+    
+    func enableTrigger(params: [String: String], callBack: ((FishCodeMsgResponseAnyModel<String>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/trigger/enable_trigger"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+    
+    func addTrigger(params: [String: Any], callBack: ((FishCodeMsgResponseAnyModel<String>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/trigger/add_trigger"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+    
+    func editTrigger(params: [String: Any], callBack: ((FishCodeMsgResponseAnyModel<String>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/trigger/edit_trigger"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+
+    func removeTrigger(params: [String: String], callBack: ((FishCodeMsgResponseAnyModel<String>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/trigger/remove_trigger"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+    
+    
 }
