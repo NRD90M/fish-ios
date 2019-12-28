@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReportPowerViewController" customModule="fish_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="monthLabelView" destination="mxS-A6-6NI" id="riC-5d-EnC"/>
+                <outlet property="tableView" destination="Ewh-AB-9MM" id="vPC-d8-q9g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnl-FF-PMe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Um4-pv-9Le">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urK-v0-zgu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                    <connections>
+                                        <action selector="monthButtonTouchUpInSide:" destination="-1" eventType="touchUpInside" id="7Lo-HV-J3g"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOB-mh-jpz">
+                                    <rect key="frame" x="15" y="16" width="345" height="22"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                    <color key="textColor" red="0.086274509799999996" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_enter" translatesAutoresizingMaskIntoConstraints="NO" id="ysZ-f0-pWi">
+                                    <rect key="frame" x="353" y="19" width="7" height="16"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019年8月" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxS-A6-6NI">
+                                    <rect key="frame" x="249.5" y="16.5" width="88.5" height="21"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <color key="textColor" red="0.086274509799999996" green="0.090196078430000007" blue="0.090196078430000007" alpha="0.70999999999999996" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="urK-v0-zgu" firstAttribute="leading" secondItem="Um4-pv-9Le" secondAttribute="leading" id="4Z5-At-z8N"/>
+                                <constraint firstItem="mxS-A6-6NI" firstAttribute="centerY" secondItem="Um4-pv-9Le" secondAttribute="centerY" id="5zp-IN-d5o"/>
+                                <constraint firstItem="ysZ-f0-pWi" firstAttribute="leading" secondItem="mxS-A6-6NI" secondAttribute="trailing" constant="15" id="8gG-gB-cDy"/>
+                                <constraint firstAttribute="trailing" secondItem="ysZ-f0-pWi" secondAttribute="trailing" constant="15" id="BaD-4b-SRy"/>
+                                <constraint firstItem="urK-v0-zgu" firstAttribute="top" secondItem="Um4-pv-9Le" secondAttribute="top" id="KyM-oT-JkM"/>
+                                <constraint firstItem="AOB-mh-jpz" firstAttribute="leading" secondItem="Um4-pv-9Le" secondAttribute="leading" constant="15" id="N0m-nh-eBi"/>
+                                <constraint firstAttribute="bottom" secondItem="urK-v0-zgu" secondAttribute="bottom" id="OuB-VA-abl"/>
+                                <constraint firstItem="ysZ-f0-pWi" firstAttribute="centerY" secondItem="Um4-pv-9Le" secondAttribute="centerY" id="aZo-8R-Ase"/>
+                                <constraint firstItem="AOB-mh-jpz" firstAttribute="centerX" secondItem="Um4-pv-9Le" secondAttribute="centerX" id="e1t-b0-lOB"/>
+                                <constraint firstAttribute="height" constant="54" id="pRA-32-Hko"/>
+                                <constraint firstItem="AOB-mh-jpz" firstAttribute="centerY" secondItem="Um4-pv-9Le" secondAttribute="centerY" id="w2o-Od-iS7"/>
+                                <constraint firstAttribute="trailing" secondItem="urK-v0-zgu" secondAttribute="trailing" id="zU5-b2-bBF"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="JVj-ko-SmD"/>
+                        <constraint firstAttribute="trailing" secondItem="Um4-pv-9Le" secondAttribute="trailing" id="gag-ZL-ooz"/>
+                        <constraint firstItem="Um4-pv-9Le" firstAttribute="top" secondItem="wnl-FF-PMe" secondAttribute="top" id="kLF-Wc-bZU"/>
+                        <constraint firstItem="Um4-pv-9Le" firstAttribute="leading" secondItem="wnl-FF-PMe" secondAttribute="leading" id="xzd-4e-vUa"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ewh-AB-9MM">
+                    <rect key="frame" x="0.0" y="63" width="375" height="604"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="dew-0v-jex"/>
+                        <outlet property="delegate" destination="-1" id="rol-tJ-2lo"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ewh-AB-9MM" secondAttribute="bottom" id="57i-Cs-jkg"/>
+                <constraint firstItem="wnl-FF-PMe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7y5-Sd-wGt"/>
+                <constraint firstAttribute="trailing" secondItem="Ewh-AB-9MM" secondAttribute="trailing" id="EmP-gV-khJ"/>
+                <constraint firstAttribute="trailing" secondItem="wnl-FF-PMe" secondAttribute="trailing" id="KBK-ld-olq"/>
+                <constraint firstItem="wnl-FF-PMe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ymf-ex-HEn"/>
+                <constraint firstItem="Ewh-AB-9MM" firstAttribute="top" secondItem="wnl-FF-PMe" secondAttribute="bottom" constant="8" id="fyY-Lo-iJU"/>
+                <constraint firstItem="Ewh-AB-9MM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="og8-bp-lcJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_enter" width="7" height="16"/>
+    </resources>
+</document>

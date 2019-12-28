@@ -80,6 +80,9 @@
                                 <segment title="酸碱度"/>
                             </segments>
                             <color key="tintColor" red="0.24705882352941178" green="0.59215686274509804" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="segmentValueChange:" destination="-1" eventType="valueChanged" id="D0a-YY-KFZ"/>
+                            </connections>
                         </segmentedControl>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

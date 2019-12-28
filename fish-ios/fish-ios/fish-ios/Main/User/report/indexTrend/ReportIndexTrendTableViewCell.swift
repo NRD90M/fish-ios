@@ -14,7 +14,9 @@ class ReportIndexTrendTableViewCell: UITableViewCell {
 
     
     @IBOutlet weak var reportTitleLabel:UILabel!
-    @IBOutlet weak var reportValueLabel:UILabel!
+    @IBOutlet weak var reportMinLabel:UILabel!
+    @IBOutlet weak var reportMaxLabel:UILabel!
+    @IBOutlet weak var reportAvgLabel:UILabel!
     
     var itemData:ReportDetailItem?
     
@@ -33,8 +35,10 @@ class ReportIndexTrendTableViewCell: UITableViewCell {
         self.itemData = model
 //
 //
-        self.reportTitleLabel.text = self.itemData?.item1
-        self.reportValueLabel.text = self.itemData?.item2
+        self.reportTitleLabel.text = self.itemData?.date
+        self.reportMinLabel.text = self.itemData?.min
+        self.reportMaxLabel.text = self.itemData?.max
+        self.reportAvgLabel.text = self.itemData?.avg
 //
 //        if let icon = self.itemData?["icon"] {
 //            self.reportImageView.image = UIImage(named: icon)

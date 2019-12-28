@@ -43,21 +43,22 @@ class ReportLineChartView: UIView, ChartViewDelegate {
         
         let yAxis:YAxis = self.chartView.leftAxis
         yAxis.labelFont = UIFont.systemFont(ofSize: 12.0)
-        yAxis.setLabelCount(6, force: false)
-        yAxis.labelTextColor = UIColor.blue
+        yAxis.setLabelCount(4, force: false)
+        yAxis.labelTextColor = UIColor.colorWithHexString("#979797")!
         yAxis.labelPosition = .outsideChart
         yAxis.drawGridLinesEnabled = false
-        yAxis.axisLineColor = UIColor.red
-        
+        yAxis.axisLineColor = UIColor.colorWithHexString("#979797")!
         
         let xAxis:XAxis = self.chartView.xAxis
         xAxis.labelFont = UIFont.systemFont(ofSize: 12.0)
-        xAxis.setLabelCount(6, force: false)
-        xAxis.labelTextColor = UIColor.blue
+        xAxis.setLabelCount(4, force: false)
+        xAxis.labelTextColor = UIColor.colorWithHexString("#979797")!
         xAxis.labelPosition = .bottom
         xAxis.drawGridLinesEnabled = false
-        xAxis.axisLineColor = UIColor.red
+        xAxis.axisLineColor = UIColor.colorWithHexString("#979797")!
         xAxis.centerAxisLabelsEnabled = true
+//        xAxis.valueFormatter = MonthValueFormatter.init();
+//        xAxis.axisMinimum = 0
         
         self.chartView.rightAxis.enabled = false
         self.chartView.legend.enabled = true
@@ -66,10 +67,10 @@ class ReportLineChartView: UIView, ChartViewDelegate {
 //        xAxis.valueFormatter =
         
         
-        setDataCount()
+//        setDataCount()
     }
     
-    func setDataCount(){
+    func setDataCount(dataEntrys:[[ChartDataEntry]], label:[String], title:[String]) {
         
 //        let colors = [ChartColorTemplates.vordiplom()[0],
 //                      ChartColorTemplates.vordiplom()[1],
@@ -77,18 +78,9 @@ class ReportLineChartView: UIView, ChartViewDelegate {
         
         var dataSets:[IChartDataSet] = []
         
-        for i in 0...2 {
+        for (index, element) in dataEntrys.enumerated() {
             
-            var values:[ChartDataEntry] = []
-            
-            for j in 0..<30 {
-                
-                let val = arc4random_uniform(100) + 3
-                values.append(ChartDataEntry.init(x: Double(j), y: Double(val)))
-            }
-            
-            let label = "DataSet"
-            let d:LineChartDataSet = LineChartDataSet.init(values: values, label: label)
+            let d:LineChartDataSet = LineChartDataSet.init(values: element, label: title[index])
             
             d.cubicIntensity = 0.2
             d.drawCirclesEnabled = true
@@ -96,7 +88,7 @@ class ReportLineChartView: UIView, ChartViewDelegate {
             d.circleRadius = 4.0
             d.circleHoleRadius = 2.0
             
-            d.setCircleColor(UIColor.red)
+            d.setCircleColor(ChartColorTemplates.vordiplom()[index])
             d.highlightColor = UIColor.init(red: 244/255.0, green: 117/255.0, blue: 117/255.0, alpha: 1.0)
             d.setColor(UIColor.init(red: 216/255.0, green: 216/255.0, blue: 216/255.0, alpha: 1.0))
             d.fillColor =  UIColor.init(red: 151/255.0, green: 151/255.0, blue: 151/255.0, alpha: 1.0)
@@ -105,16 +97,20 @@ class ReportLineChartView: UIView, ChartViewDelegate {
             
             d.highlightColor = UIColor.purple
             d.highlightLineWidth = 1.0
-            d.setColor(ChartColorTemplates.vordiplom()[i])
+            d.setColor(ChartColorTemplates.vordiplom()[index])
             
             dataSets.append(d)
+            
         }
         
         let data:LineChartData = LineChartData.init(dataSets:dataSets)
         data.setDrawValues(false)
         
-        self.chartView.data = data
+        let xAxis:XAxis = self.chartView.xAxis
+        xAxis.valueFormatter = MonthValueFormatter.init(monthList: label);
         
+        self.chartView.data = data
+      
     }
     
     

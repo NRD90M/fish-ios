@@ -41,6 +41,8 @@
 		DB5433C92367E21D00F05D17 /* PondContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB5433C72367E21D00F05D17 /* PondContentViewController.xib */; };
 		DB5433CC236814E600F05D17 /* PondDeviceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5433CA236814E600F05D17 /* PondDeviceCollectionViewCell.swift */; };
 		DB5433CD236814E600F05D17 /* PondDeviceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB5433CB236814E600F05D17 /* PondDeviceCollectionViewCell.xib */; };
+		DB56760023AE3425002D6C8E /* ReportPowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5675FE23AE3425002D6C8E /* ReportPowerViewController.swift */; };
+		DB56760123AE3425002D6C8E /* ReportPowerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB5675FF23AE3425002D6C8E /* ReportPowerViewController.xib */; };
 		DB5FFC0223618C8800E4E8D7 /* FishMainApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC0123618C8800E4E8D7 /* FishMainApi.swift */; };
 		DB5FFC062361A31500E4E8D7 /* FishCodeMsgResponseAnyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC052361A31500E4E8D7 /* FishCodeMsgResponseAnyModel.swift */; };
 		DB5FFC0D2361AA9E00E4E8D7 /* KKHint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFC092361AA9E00E4E8D7 /* KKHint.swift */; };
@@ -78,6 +80,7 @@
 		DB86060323AB7F78001879D3 /* UserModifyPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB86060123AB7F78001879D3 /* UserModifyPhoneViewController.xib */; };
 		DB86060623AB9576001879D3 /* UserReportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB86060423AB9576001879D3 /* UserReportCollectionViewCell.swift */; };
 		DB86060723AB9576001879D3 /* UserReportCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB86060523AB9576001879D3 /* UserReportCollectionViewCell.xib */; };
+		DB8F688C23B744B8009F04E0 /* MonthValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8F688B23B744B8009F04E0 /* MonthValueFormatter.swift */; };
 		DB901A6323853980007618FA /* VerifyCodeTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB901A6223853980007618FA /* VerifyCodeTimer.swift */; };
 		DB901A6523853C04007618FA /* FishCheckUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB901A6423853C04007618FA /* FishCheckUtils.swift */; };
 		DB901A6723853FA0007618FA /* PlanInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB901A6623853FA0007618FA /* PlanInfoModel.swift */; };
@@ -168,6 +171,12 @@
 		DBB913F62355754A001C20E4 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB913F42355754A001C20E4 /* AlertViewController.swift */; };
 		DBB913F72355754A001C20E4 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB913F52355754A001C20E4 /* AlertViewController.xib */; };
 		DBBDC84923AE002A0032C36B /* UserNavigatorBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBDC84823AE002A0032C36B /* UserNavigatorBarView.swift */; };
+		DBBFB36923B7026B005E6222 /* MonthSensorDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBFB36823B7026B005E6222 /* MonthSensorDataModel.swift */; };
+		DBBFB36B23B7044D005E6222 /* SensorDataDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBFB36A23B7044D005E6222 /* SensorDataDetailModel.swift */; };
+		DBD178F623B75FCD00166C0D /* ReportIndexTrendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD178F423B75FCD00166C0D /* ReportIndexTrendDetailViewController.swift */; };
+		DBD178F723B75FCD00166C0D /* ReportIndexTrendDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBD178F523B75FCD00166C0D /* ReportIndexTrendDetailViewController.xib */; };
+		DBD178F923B7638E00166C0D /* ReportPowerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD178F823B7638E00166C0D /* ReportPowerHeaderView.swift */; };
+		DBD178FB23B7639700166C0D /* ReportPowerHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBD178FA23B7639700166C0D /* ReportPowerHeaderView.xib */; };
 		DBD90C9723ACDA050049D141 /* ReportIndexTrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD90C9523ACDA050049D141 /* ReportIndexTrendViewController.swift */; };
 		DBD90C9823ACDA050049D141 /* ReportIndexTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBD90C9623ACDA050049D141 /* ReportIndexTrendViewController.xib */; };
 		DBD90C9B23ADED890049D141 /* ReportIndexTrendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD90C9923ADED890049D141 /* ReportIndexTrendTableViewCell.swift */; };
@@ -228,6 +237,8 @@
 		DB5433C72367E21D00F05D17 /* PondContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PondContentViewController.xib; sourceTree = "<group>"; };
 		DB5433CA236814E600F05D17 /* PondDeviceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondDeviceCollectionViewCell.swift; sourceTree = "<group>"; };
 		DB5433CB236814E600F05D17 /* PondDeviceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PondDeviceCollectionViewCell.xib; sourceTree = "<group>"; };
+		DB5675FE23AE3425002D6C8E /* ReportPowerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportPowerViewController.swift; sourceTree = "<group>"; };
+		DB5675FF23AE3425002D6C8E /* ReportPowerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportPowerViewController.xib; sourceTree = "<group>"; };
 		DB5FFC0123618C8800E4E8D7 /* FishMainApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishMainApi.swift; sourceTree = "<group>"; };
 		DB5FFC052361A31500E4E8D7 /* FishCodeMsgResponseAnyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishCodeMsgResponseAnyModel.swift; sourceTree = "<group>"; };
 		DB5FFC092361AA9E00E4E8D7 /* KKHint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKHint.swift; sourceTree = "<group>"; };
@@ -265,6 +276,7 @@
 		DB86060123AB7F78001879D3 /* UserModifyPhoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserModifyPhoneViewController.xib; sourceTree = "<group>"; };
 		DB86060423AB9576001879D3 /* UserReportCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReportCollectionViewCell.swift; sourceTree = "<group>"; };
 		DB86060523AB9576001879D3 /* UserReportCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserReportCollectionViewCell.xib; sourceTree = "<group>"; };
+		DB8F688B23B744B8009F04E0 /* MonthValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthValueFormatter.swift; sourceTree = "<group>"; };
 		DB901A6223853980007618FA /* VerifyCodeTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyCodeTimer.swift; sourceTree = "<group>"; };
 		DB901A6423853C04007618FA /* FishCheckUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishCheckUtils.swift; sourceTree = "<group>"; };
 		DB901A6623853FA0007618FA /* PlanInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanInfoModel.swift; sourceTree = "<group>"; };
@@ -356,6 +368,12 @@
 		DBB913F42355754A001C20E4 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		DBB913F52355754A001C20E4 /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
 		DBBDC84823AE002A0032C36B /* UserNavigatorBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNavigatorBarView.swift; sourceTree = "<group>"; };
+		DBBFB36823B7026B005E6222 /* MonthSensorDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthSensorDataModel.swift; sourceTree = "<group>"; };
+		DBBFB36A23B7044D005E6222 /* SensorDataDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataDetailModel.swift; sourceTree = "<group>"; };
+		DBD178F423B75FCD00166C0D /* ReportIndexTrendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportIndexTrendDetailViewController.swift; sourceTree = "<group>"; };
+		DBD178F523B75FCD00166C0D /* ReportIndexTrendDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportIndexTrendDetailViewController.xib; sourceTree = "<group>"; };
+		DBD178F823B7638E00166C0D /* ReportPowerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportPowerHeaderView.swift; sourceTree = "<group>"; };
+		DBD178FA23B7639700166C0D /* ReportPowerHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportPowerHeaderView.xib; sourceTree = "<group>"; };
 		DBD90C9523ACDA050049D141 /* ReportIndexTrendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportIndexTrendViewController.swift; sourceTree = "<group>"; };
 		DBD90C9623ACDA050049D141 /* ReportIndexTrendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportIndexTrendViewController.xib; sourceTree = "<group>"; };
 		DBD90C9923ADED890049D141 /* ReportIndexTrendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportIndexTrendTableViewCell.swift; sourceTree = "<group>"; };
@@ -472,6 +490,17 @@
 			path = ContentViewController;
 			sourceTree = "<group>";
 		};
+		DB5675FD23AE340B002D6C8E /* power */ = {
+			isa = PBXGroup;
+			children = (
+				DB5675FE23AE3425002D6C8E /* ReportPowerViewController.swift */,
+				DB5675FF23AE3425002D6C8E /* ReportPowerViewController.xib */,
+				DBD178F823B7638E00166C0D /* ReportPowerHeaderView.swift */,
+				DBD178FA23B7639700166C0D /* ReportPowerHeaderView.xib */,
+			);
+			path = power;
+			sourceTree = "<group>";
+		};
 		DB5FFC0323618CC200E4E8D7 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -495,6 +524,8 @@
 				DB901A68238540D2007618FA /* TriggerInfoModel.swift */,
 				DB79BD8023A1069400D1E35F /* CameraInfoModel.swift */,
 				DB8605F823AB5D72001879D3 /* UserInfoModel.swift */,
+				DBBFB36823B7026B005E6222 /* MonthSensorDataModel.swift */,
+				DBBFB36A23B7044D005E6222 /* SensorDataDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -653,6 +684,7 @@
 		DB8605FA23AB72DF001879D3 /* report */ = {
 			isa = PBXGroup;
 			children = (
+				DB5675FD23AE340B002D6C8E /* power */,
 				DBD90C9423ACD9E50049D141 /* indexTrend */,
 				DB8605FC23AB7F64001879D3 /* UserReportViewController.swift */,
 				DB8605FD23AB7F64001879D3 /* UserReportViewController.xib */,
@@ -1042,6 +1074,9 @@
 				DBD90C9F23ADF1AD0049D141 /* ReportLineChartView.xib */,
 				DBD90CA123ADF1C00049D141 /* ReportPieChartView.swift */,
 				DBD90CA523ADF1DA0049D141 /* ReportPieChartView.xib */,
+				DB8F688B23B744B8009F04E0 /* MonthValueFormatter.swift */,
+				DBD178F423B75FCD00166C0D /* ReportIndexTrendDetailViewController.swift */,
+				DBD178F523B75FCD00166C0D /* ReportIndexTrendDetailViewController.xib */,
 			);
 			path = indexTrend;
 			sourceTree = "<group>";
@@ -1209,6 +1244,7 @@
 				DBB913EF23557531001C20E4 /* TimerViewController.xib in Resources */,
 				DB63EEBC2378146000D96FC8 /* README.md in Resources */,
 				DBA9D1FE23698D0500C32A7B /* TimerClockTableViewCell.xib in Resources */,
+				DBD178F723B75FCD00166C0D /* ReportIndexTrendDetailViewController.xib in Resources */,
 				DB17555923AB20B10071534C /* UserTableViewCell.xib in Resources */,
 				DBB913DC23545C2E001C20E4 /* LoginViewController.xib in Resources */,
 				DBD90C9C23ADED890049D141 /* ReportIndexTrendTableViewCell.xib in Resources */,
@@ -1218,6 +1254,7 @@
 				DB901A6D23854F4B007618FA /* HorizontalTitleItemView.xib in Resources */,
 				DB6357EF239A524200A0F969 /* SingleCustomPickerViewController.xib in Resources */,
 				DBA9D1F52369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.xib in Resources */,
+				DBD178FB23B7639700166C0D /* ReportPowerHeaderView.xib in Resources */,
 				DB8605F723AB4F57001879D3 /* UserHeaderView.xib in Resources */,
 				DBD90C9823ACDA050049D141 /* ReportIndexTrendViewController.xib in Resources */,
 				DB90B98A2378048C0037054D /* README.md in Resources */,
@@ -1242,6 +1279,7 @@
 				DB86060323AB7F78001879D3 /* UserModifyPhoneViewController.xib in Resources */,
 				DB5FFC0E2361AA9E00E4E8D7 /* KKHintResource.bundle in Resources */,
 				DB6357EA239A3C2D00A0F969 /* AddOrEditTimerTriggerViewController.xib in Resources */,
+				DB56760123AE3425002D6C8E /* ReportPowerViewController.xib in Resources */,
 				DB16C19023923FFA00B29AE0 /* AddOrEditTimerClockViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1325,6 +1363,7 @@
 				DB90B9932378048C0037054D /* TabmanStaticButtonBar.swift in Sources */,
 				DB6C63522356F54700673584 /* STApi_Extension.swift in Sources */,
 				DB79BD8123A1069400D1E35F /* CameraInfoModel.swift in Sources */,
+				DB56760023AE3425002D6C8E /* ReportPowerViewController.swift in Sources */,
 				DB90B98E2378048C0037054D /* TabmanBar+Indicator.swift in Sources */,
 				DB90B9AF2378048C0037054D /* TabmanBarTransitionStore.swift in Sources */,
 				DB6357EE239A524200A0F969 /* SingleCustomPickerViewController.swift in Sources */,
@@ -1358,7 +1397,9 @@
 				DB90B9A12378048C0037054D /* CircularView.swift in Sources */,
 				DB90B99E2378048C0037054D /* TabmanClearIndicator.swift in Sources */,
 				DB90B99B2378048C0037054D /* TabmanBlockIndicator.swift in Sources */,
+				DBBFB36B23B7044D005E6222 /* SensorDataDetailModel.swift in Sources */,
 				DB5FFC1C2361B71400E4E8D7 /* AlamofireLoggers.swift in Sources */,
+				DBD178F923B7638E00166C0D /* ReportPowerHeaderView.swift in Sources */,
 				DB5FFC0F2361AA9E00E4E8D7 /* KKHintView.swift in Sources */,
 				DB90B9962378048C0037054D /* TabmanFixedButtonBar.swift in Sources */,
 				DB90B9922378048C0037054D /* TabmanPositionalUtil.swift in Sources */,
@@ -1366,6 +1407,7 @@
 				DB5FFC262362D96600E4E8D7 /* FishHttpResponseModelProtocol.swift in Sources */,
 				DBB913DF23545F20001C20E4 /* FishNavigationController.swift in Sources */,
 				DB17555823AB20B10071534C /* UserTableViewCell.swift in Sources */,
+				DBD178F623B75FCD00166C0D /* ReportIndexTrendDetailViewController.swift in Sources */,
 				DB90B99F2378048C0037054D /* TabmanDotIndicator.swift in Sources */,
 				DBA9D1F42369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.swift in Sources */,
 				DB901A6723853FA0007618FA /* PlanInfoModel.swift in Sources */,
@@ -1407,6 +1449,7 @@
 				DB90B9BE2378048C0037054D /* UIViewController+AutoInsetting.swift in Sources */,
 				DB90B9912378048C0037054D /* TabmanBar+Item.swift in Sources */,
 				DB901A6523853C04007618FA /* FishCheckUtils.swift in Sources */,
+				DB8F688C23B744B8009F04E0 /* MonthValueFormatter.swift in Sources */,
 				DB4C5C502377EE1F002C6724 /* FishWebSocketDataHelper.swift in Sources */,
 				DBD90C9B23ADED890049D141 /* ReportIndexTrendTableViewCell.swift in Sources */,
 				DB8605F523AB4F4B001879D3 /* UserHeaderView.swift in Sources */,
@@ -1435,6 +1478,7 @@
 				DB167AEF2399025B00FC14CF /* FishDefine.swift in Sources */,
 				DB8605FE23AB7F64001879D3 /* UserReportViewController.swift in Sources */,
 				DB90B9982378048C0037054D /* TabmanScrollingButtonBar.swift in Sources */,
+				DBBFB36923B7026B005E6222 /* MonthSensorDataModel.swift in Sources */,
 				DBE544512354282B005ECA14 /* FirstViewController.swift in Sources */,
 				DB8605F923AB5D73001879D3 /* UserInfoModel.swift in Sources */,
 				DB901A6323853980007618FA /* VerifyCodeTimer.swift in Sources */,

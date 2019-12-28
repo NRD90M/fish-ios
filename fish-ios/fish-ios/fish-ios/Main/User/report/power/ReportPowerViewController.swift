@@ -1,29 +1,15 @@
 //
-//  ReportIndexTrendViewController.swift
+//  ReportPowerViewController.swift
 //  fish-ios
 //
-//  Created by caiwenshu on 2019/12/20.
+//  Created by caiwenshu on 2019/12/21.
 //  Copyright © 2019 caiwenshu. All rights reserved.
 //
 
 import UIKit
 import Charts
 
-public struct ReportDetailItem {
-    public var date: String?
-    public var min: String?
-    public var max: String?
-    public var avg: String?
-    
-    public init(date:String, min: String, max: String, avg: String) {
-        self.date = date
-        self.min = min
-        self.max = max
-        self.avg = avg
-    }
-}
-
-class ReportIndexTrendViewController:  FishPreViewController , UITableViewDelegate, UITableViewDataSource {
+class ReportPowerViewController: FishPreViewController , UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView:UITableView!
     
@@ -38,7 +24,7 @@ class ReportIndexTrendViewController:  FishPreViewController , UITableViewDelega
     
     var responseData:[MonthSensorDataModel] = []
     
-//    var userInfoModel:UserInfoModel?
+    //    var userInfoModel:UserInfoModel?
     
     var selectedMonthCode:String = ""
     
@@ -47,8 +33,6 @@ class ReportIndexTrendViewController:  FishPreViewController , UITableViewDelega
     var detailItems:[ReportDetailItem] = []
     
     var selectedSceneModel:PondSceneModel?
-    
-    var selectedSegmentIndex = 0 // 默认
     
     
     override func viewDidLoad() {
@@ -92,9 +76,9 @@ class ReportIndexTrendViewController:  FishPreViewController , UITableViewDelega
         self.monthInitList = formatterDates.reversed()
         
         
-//        self.detailItems = [ReportDetailItem.init(item1: "日期", item2: "时长"),
-//                            ReportDetailItem.init(item1: "2019-08-10", item2: "2013"),
-//                            ReportDetailItem.init(item1: "2019-08-10", item2: "2014")]
+        //        self.detailItems = [ReportDetailItem.init(item1: "日期", item2: "时长"),
+        //                            ReportDetailItem.init(item1: "2019-08-10", item2: "2013"),
+        //                            ReportDetailItem.init(item1: "2019-08-10", item2: "2014")]
         
         
         // 获取鱼塘列表
@@ -105,60 +89,60 @@ class ReportIndexTrendViewController:  FishPreViewController , UITableViewDelega
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
- 
+    
     func loadData() -> Void {
         
-//        self.client.userInfo(callBack:  { (data, error) in
-//
-//            self.tableView?.mj_header?.endRefreshing()
-//
-//            if let err = Parse.parseResponse(data, error) {
-//                self.view.makeHint(err.showMessage)
-//                return
-//            }
-//            if let d = data?.data {
-//                self.userInfoModel = d
-//                self.tableView.reloadData()
-//                //                self.alertList = d
-//                //                self.tableView.reloadData()
-//            } else {
-//                self.view.makeHint("数据获取失败，请稍后再试")
-//            }
-//
-//        })
+        //        self.client.userInfo(callBack:  { (data, error) in
+        //
+        //            self.tableView?.mj_header?.endRefreshing()
+        //
+        //            if let err = Parse.parseResponse(data, error) {
+        //                self.view.makeHint(err.showMessage)
+        //                return
+        //            }
+        //            if let d = data?.data {
+        //                self.userInfoModel = d
+        //                self.tableView.reloadData()
+        //                //                self.alertList = d
+        //                //                self.tableView.reloadData()
+        //            } else {
+        //                self.view.makeHint("数据获取失败，请稍后再试")
+        //            }
+        //
+        //        })
         
         self.makeActivity(nil)
         
         self.client.getMonthSensorData(params:["device_mac":self.selectedSceneModel?.deviceMac ?? "-",
                                                "month_of_year":self.selectedMonthCode], callBack: { (data, error) in
-            
-                        self.hiddenActivity()
                                                 
-                        if let err = Parse.parseResponse(data, error) {
-                            self.view.makeHint(err.showMessage)
-                            self.responseData = []
-                            self.buildNetDataToTableData()
-                            self.tableView.reloadData()
-                            return
-                        }
+                                                self.hiddenActivity()
                                                 
-                        if let d = data?.data, !d.isEmpty {
-                           self.responseData = d
-                            
-                            self.buildNetDataToTableData()
-                         
-                            self.tableView.reloadData()
-                        } else {
-                            
-                            self.responseData = []
-                            
-                            self.buildNetDataToTableData()
-                            
-                            self.tableView.reloadData()
-                            
-                            self.view.makeHint("数据获取失败，请稍后再试")
-                        }
-                    })
+                                                if let err = Parse.parseResponse(data, error) {
+                                                    self.view.makeHint(err.showMessage)
+                                                    self.responseData = []
+                                                    self.buildNetDataToTableData()
+                                                    self.tableView.reloadData()
+                                                    return
+                                                }
+                                                
+                                                if let d = data?.data, !d.isEmpty {
+                                                    self.responseData = d
+                                                    
+                                                    self.buildNetDataToTableData()
+                                                    
+                                                    self.tableView.reloadData()
+                                                } else {
+                                                    
+                                                    self.responseData = []
+                                                    
+                                                    self.buildNetDataToTableData()
+                                                    
+                                                    self.tableView.reloadData()
+                                                    
+                                                    self.view.makeHint("数据获取失败，请稍后再试")
+                                                }
+        })
         
         //        self.client.getAllTrigger(params: ["device_mac":self.selectedSceneModel?.deviceMac ?? "-"], callBack: { (data, error) in
         //
@@ -197,7 +181,7 @@ class ReportIndexTrendViewController:  FishPreViewController , UITableViewDelega
         self.selectedSegmentIndex = sender.selectedSegmentIndex
         
         self.buildNetDataToTableData()
-       
+        
         self.tableView.reloadData()
     }
     
@@ -226,7 +210,7 @@ class ReportIndexTrendViewController:  FishPreViewController , UITableViewDelega
         
         let headerView = ReportLineChartView.chartView()
         
-//        headerView.showData(model: self.userInfoModel)
+        //        headerView.showData(model: self.userInfoModel)
         
         self.buildNetDataToChartData(chartView: headerView)
         
@@ -267,19 +251,19 @@ class ReportIndexTrendViewController:  FishPreViewController , UITableViewDelega
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
-//        if let type =  self.tableItemData[index]["type"] {
-//
-//            if type == "report" {
-//                print("report")
-//
-//                let report = UserReportViewController()
-//                self.navigationController?.pushViewController(report, animated: true)
-//
-//            }
-//            if type == "phone" {
-//                print("phone")
-//            }
-//        }
+        //        if let type =  self.tableItemData[index]["type"] {
+        //
+        //            if type == "report" {
+        //                print("report")
+        //
+        //                let report = UserReportViewController()
+        //                self.navigationController?.pushViewController(report, animated: true)
+        //
+        //            }
+        //            if type == "phone" {
+        //                print("phone")
+        //            }
+        //        }
         
         let model = self.detailItems[index]
         
@@ -289,16 +273,16 @@ class ReportIndexTrendViewController:  FishPreViewController , UITableViewDelega
         self.navigationController?.pushViewController(detail, animated: true)
         
     }
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
     
     func buildNetDataToTableData() {
         
@@ -346,7 +330,7 @@ class ReportIndexTrendViewController:  FishPreViewController , UITableViewDelega
             break;
             
         }
-        
+        s
     }
     
     func buildNetDataToChartData(chartView: ReportLineChartView) {
@@ -457,7 +441,7 @@ class ReportIndexTrendViewController:  FishPreViewController , UITableViewDelega
                 self?.titleItemView.reloadSelectedPond(model: model)
                 
                 self?.selectedSceneModel = model
-                 //TODO: 触发数据刷新
+                //TODO: 触发数据刷新
                 self?.loadData()
             }
             
@@ -474,11 +458,10 @@ class ReportIndexTrendViewController:  FishPreViewController , UITableViewDelega
 
 
 //开启右滑返回手势:
-extension ReportIndexTrendViewController:HorizontalTitleItemViewDelegate {
+extension ReportPowerViewController:HorizontalTitleItemViewDelegate {
     
     func showMore() {
         self.showMenuBtnClick(view: self.titleItemView)
     }
     
 }
-
