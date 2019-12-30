@@ -96,9 +96,9 @@
                         <constraint firstItem="5cx-x0-RYE" firstAttribute="leading" secondItem="NtV-1G-a6l" secondAttribute="leading" id="znY-UB-KYo"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8vs-K7-ZsL">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="8vs-K7-ZsL">
                     <rect key="frame" x="0.0" y="134" width="375" height="533"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="mYY-VO-NhJ"/>
                         <outlet property="delegate" destination="-1" id="djy-Mo-Rcf"/>

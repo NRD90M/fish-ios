@@ -142,6 +142,9 @@
 		DB90B9BD2378048C0037054D /* AutoInsetEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9852378048C0037054D /* AutoInsetEngine.swift */; };
 		DB90B9BE2378048C0037054D /* UIViewController+AutoInsetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9872378048C0037054D /* UIViewController+AutoInsetting.swift */; };
 		DB90B9BF2378048C0037054D /* TabmanViewController+AutoInsetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90B9882378048C0037054D /* TabmanViewController+AutoInsetting.swift */; };
+		DB953C6723B9EB61003BE661 /* MonthPowerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB953C6623B9EB61003BE661 /* MonthPowerDataModel.swift */; };
+		DB953C6A23B9F390003BE661 /* ReportPowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB953C6823B9F390003BE661 /* ReportPowerTableViewCell.swift */; };
+		DB953C6B23B9F390003BE661 /* ReportPowerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB953C6923B9F390003BE661 /* ReportPowerTableViewCell.xib */; };
 		DB9E7098236E933400CAFBEA /* PondSceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E7097236E933400CAFBEA /* PondSceneModel.swift */; };
 		DB9E709A236EA3C900CAFBEA /* PondIOInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E7099236EA3C900CAFBEA /* PondIOInfoModel.swift */; };
 		DB9E709C236EAAF800CAFBEA /* FishWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E709B236EAAF800CAFBEA /* FishWebSocket.swift */; };
@@ -339,6 +342,9 @@
 		DB90B9852378048C0037054D /* AutoInsetEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoInsetEngine.swift; sourceTree = "<group>"; };
 		DB90B9872378048C0037054D /* UIViewController+AutoInsetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AutoInsetting.swift"; sourceTree = "<group>"; };
 		DB90B9882378048C0037054D /* TabmanViewController+AutoInsetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanViewController+AutoInsetting.swift"; sourceTree = "<group>"; };
+		DB953C6623B9EB61003BE661 /* MonthPowerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPowerDataModel.swift; sourceTree = "<group>"; };
+		DB953C6823B9F390003BE661 /* ReportPowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportPowerTableViewCell.swift; sourceTree = "<group>"; };
+		DB953C6923B9F390003BE661 /* ReportPowerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportPowerTableViewCell.xib; sourceTree = "<group>"; };
 		DB9E7097236E933400CAFBEA /* PondSceneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondSceneModel.swift; sourceTree = "<group>"; };
 		DB9E7099236EA3C900CAFBEA /* PondIOInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondIOInfoModel.swift; sourceTree = "<group>"; };
 		DB9E709B236EAAF800CAFBEA /* FishWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishWebSocket.swift; sourceTree = "<group>"; };
@@ -497,6 +503,8 @@
 				DB5675FF23AE3425002D6C8E /* ReportPowerViewController.xib */,
 				DBD178F823B7638E00166C0D /* ReportPowerHeaderView.swift */,
 				DBD178FA23B7639700166C0D /* ReportPowerHeaderView.xib */,
+				DB953C6823B9F390003BE661 /* ReportPowerTableViewCell.swift */,
+				DB953C6923B9F390003BE661 /* ReportPowerTableViewCell.xib */,
 			);
 			path = power;
 			sourceTree = "<group>";
@@ -526,6 +534,7 @@
 				DB8605F823AB5D72001879D3 /* UserInfoModel.swift */,
 				DBBFB36823B7026B005E6222 /* MonthSensorDataModel.swift */,
 				DBBFB36A23B7044D005E6222 /* SensorDataDetailModel.swift */,
+				DB953C6623B9EB61003BE661 /* MonthPowerDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1261,6 +1270,7 @@
 				DBA9D20823698F5500C32A7B /* TimerTriggerTableViewCell.xib in Resources */,
 				DBE54463235450DA005ECA14 /* launchNew.png in Resources */,
 				DB4F7ED823A09BBC00D1F912 /* VideoPlayerView.xib in Resources */,
+				DB953C6B23B9F390003BE661 /* ReportPowerTableViewCell.xib in Resources */,
 				DB86060723AB9576001879D3 /* UserReportCollectionViewCell.xib in Resources */,
 				DB90B9892378048C0037054D /* LICENSE in Resources */,
 				DBB913E12354605C001C20E4 /* Assets.xcassets in Resources */,
@@ -1378,6 +1388,7 @@
 				DB90B9B52378048C0037054D /* TabmanViewController.swift in Sources */,
 				DBE544532354282B005ECA14 /* SecondViewController.swift in Sources */,
 				DB4F7ED723A09BBC00D1F912 /* VideoPlayerView.swift in Sources */,
+				DB953C6723B9EB61003BE661 /* MonthPowerDataModel.swift in Sources */,
 				DB16C18F23923FFA00B29AE0 /* AddOrEditTimerClockViewController.swift in Sources */,
 				DB6C63512356F54700673584 /* STApi.swift in Sources */,
 				DB5FFC172361AC6000E4E8D7 /* Tool.swift in Sources */,
@@ -1420,6 +1431,7 @@
 				DB9E709A236EA3C900CAFBEA /* PondIOInfoModel.swift in Sources */,
 				DB90B9A82378048C0037054D /* AutoHideBarBehaviorActivist.swift in Sources */,
 				DB90B9902378048C0037054D /* TabmanBar+Construction.swift in Sources */,
+				DB953C6A23B9F390003BE661 /* ReportPowerTableViewCell.swift in Sources */,
 				DB5FFC202362C9BF00E4E8D7 /* FishAlamofireLogger.swift in Sources */,
 				DB5433CC236814E600F05D17 /* PondDeviceCollectionViewCell.swift in Sources */,
 				DBD90C9E23ADF1A30049D141 /* ReportLineChartView.swift in Sources */,

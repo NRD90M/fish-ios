@@ -126,4 +126,10 @@ class FishMainApi: STJSONApi {
         self.post(path: safeJoinURL(pre: baseURL(), suf: "api/report/get_sensor_data_detail"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
     }
     
+    /// 饼图
+    func getMonthPowerData(params: [String: String], callBack: ((FishCodeMsgResponseObjectModel<MonthPowerDataModel>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/report/get_power_data"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+    
+    
 }

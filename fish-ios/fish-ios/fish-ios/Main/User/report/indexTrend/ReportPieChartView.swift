@@ -32,11 +32,12 @@ class ReportPieChartView: UIView, ChartViewDelegate {
         super.awakeFromNib()
         
         self.chartView.delegate = self
-        self.chartView.setExtraOffsets(left: 40.0, top: 40.0, right: 40.0, bottom: 40.0)
+        self.chartView.setExtraOffsets(left: 0.0, top: 0.0, right: 0.0, bottom: 0.0)
         self.chartView.legend.enabled = false
         
+        self.chartView.chartDescription?.text = "汇总"
         self.chartView.backgroundColor = UIColor.white
-     
+        
         self.chartView.animate(yAxisDuration: 1.4, easingOption: .easeInOutBack)
         
     }
@@ -45,7 +46,9 @@ class ReportPieChartView: UIView, ChartViewDelegate {
         
         let dataSet:PieChartDataSet = PieChartDataSet.init(values: dataEntrys, label: "Results")
         
-        dataSet.setColors(ChartColorTemplates.vordiplom(), alpha: 1.0)
+        var colors = ChartColorTemplates.vordiplom()
+        colors.append(contentsOf: ChartColorTemplates.material())
+        dataSet.setColors(colors, alpha: 1.0)
         
         dataSet.valueLinePart1OffsetPercentage = 0.8
         dataSet.valueLinePart1Length = 0.2

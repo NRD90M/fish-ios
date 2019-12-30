@@ -152,6 +152,11 @@ class UserReportViewController : FishPreViewController, UICollectionViewDelegate
             
         }
         
+        if selectedData["type"] == "weightReport" {
+            let powerVC = ReportPowerViewController()
+            self.navigationController?.pushViewController(powerVC, animated: true)
+        }
+        
     }
     
     /*
