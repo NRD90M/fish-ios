@@ -1,25 +1,16 @@
 //
-//  ReportPowerViewController.swift
+//  ReportO2ViewController.swift
 //  fish-ios
 //
-//  Created by caiwenshu on 2019/12/21.
+//  Created by caiwenshu on 2019/12/31.
 //  Copyright © 2019 caiwenshu. All rights reserved.
 //
 
 import UIKit
 import Charts
 
-public struct ReportPowerDetailItem {
-    public var date: String?
-    public var value: String?
-    
-    public init(date:String, value: String) {
-        self.date = date
-        self.value = value
-    }
-}
 
-class ReportPowerViewController: FishPreViewController , UITableViewDelegate, UITableViewDataSource {
+class ReportO2ViewController:  FishPreViewController , UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView:UITableView!
     
@@ -32,25 +23,21 @@ class ReportPowerViewController: FishPreViewController , UITableViewDelegate, UI
     
     var client: FishMainApi = FishMainApi()
     
+    var responseData:[MonthO2DataModel] = []
     
-    var responseData:MonthPowerDataModel?
-    var responseListData:[MonthPowerListDataModel] = []
-    
-    //    var userInfoModel:UserInfoModel?
     
     var selectedMonthCode:String = ""
     
     var monthInitList:[PickViewItem] = []
     
-    var detailItems:[ReportPowerDetailItem] = []
+    var detailItems:[ReportDateValueDetailItem] = []
     
     var selectedSceneModel:PondSceneModel?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "用电量报表"
+        self.title = "增氧趋势"
         
         titleItemView.delegate = self
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: titleItemView)
@@ -58,7 +45,7 @@ class ReportPowerViewController: FishPreViewController , UITableViewDelegate, UI
         titleItemView.isHidden = true
         
         
-        self.tableView.register(UINib.init(nibName: "ReportPowerTableViewCell", bundle: nil), forCellReuseIdentifier: ReportPowerTableViewCellReuseID)
+        self.tableView.register(UINib.init(nibName: "ReportFeedTableViewCell", bundle: nil), forCellReuseIdentifier: ReportFeedTableViewCellReuseID)
         
         self.tableView.tableFooterView = UIView.init()
         
@@ -87,6 +74,12 @@ class ReportPowerViewController: FishPreViewController , UITableViewDelegate, UI
         //近一年
         self.monthInitList = formatterDates.reversed()
         
+        
+        //        self.detailItems = [ReportDetailItem.init(item1: "日期", item2: "时长"),
+        //                            ReportDetailItem.init(item1: "2019-08-10", item2: "2013"),
+        //                            ReportDetailItem.init(item1: "2019-08-10", item2: "2014")]
+        
+        
         // 获取鱼塘列表
         self.loadAllScene()
     }
@@ -100,33 +93,28 @@ class ReportPowerViewController: FishPreViewController , UITableViewDelegate, UI
         
         self.makeActivity(nil)
         
-        self.client.getMonthPowerData(params:["device_mac":self.selectedSceneModel?.deviceMac ?? "-",
-                                               "month_of_year":self.selectedMonthCode], callBack: { (data, error) in
+        self.client.getMonthO2Data(params:["device_mac":self.selectedSceneModel?.deviceMac ?? "-",
+                                           "month_of_year":self.selectedMonthCode], callBack: { (data, error) in
                                                 
                                                 self.hiddenActivity()
                                                 
                                                 if let err = Parse.parseResponse(data, error) {
                                                     self.view.makeHint(err.showMessage)
-                                                    self.responseData = nil
-                                                    self.responseListData = []
+                                                    self.responseData = []
                                                     self.buildNetDataToTableData()
                                                     self.tableView.reloadData()
                                                     return
                                                 }
                                                 
-                                                if let d = data?.data {
+                                                if let d = data?.data, !d.isEmpty {
                                                     self.responseData = d
-                                                    if let responseList = d.list {
-                                                        self.responseListData = responseList
-                                                    }
                                                     
                                                     self.buildNetDataToTableData()
                                                     
                                                     self.tableView.reloadData()
                                                 } else {
                                                     
-                                                    self.responseData = nil
-                                                    self.responseListData = []
+                                                    self.responseData = []
                                                     
                                                     self.buildNetDataToTableData()
                                                     
@@ -135,6 +123,7 @@ class ReportPowerViewController: FishPreViewController , UITableViewDelegate, UI
                                                     self.view.makeHint("数据获取失败，请稍后再试")
                                                 }
         })
+        
         
     }
     
@@ -151,16 +140,6 @@ class ReportPowerViewController: FishPreViewController , UITableViewDelegate, UI
         })
     }
     
-//    @IBAction func segmentValueChange(_ sender: AnyObject) {
-//
-//
-////        self.selectedSegmentIndex = sender.selectedSegmentIndex
-//
-//        self.buildNetDataToTableData()
-//
-//        self.tableView.reloadData()
-//    }
-//
     
     func showSingleCustomPickerView(selectVal:String?, list:[PickViewItem], callback:@escaping (PickViewItem) ->()) {
         
@@ -184,19 +163,18 @@ class ReportPowerViewController: FishPreViewController , UITableViewDelegate, UI
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let headerView = ReportPowerHeaderView.headerView()
+        let headerView = ReportLineChartView.chartView()
         
         //        headerView.showData(model: self.userInfoModel)
         
-        self.buildNetDataToLineChartData(chartView: headerView.lineChartView)
-        self.buildNetDataToPieChartData(chartView: headerView.pieChartView)
+        self.buildNetDataToChartData(chartView: headerView)
         
         return headerView
         
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 476
+        return 238
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -209,10 +187,10 @@ class ReportPowerViewController: FishPreViewController , UITableViewDelegate, UI
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell: UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: ReportPowerTableViewCellReuseID)
+        let cell: UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: ReportFeedTableViewCellReuseID)
         
         
-        guard let eCell = cell as? ReportPowerTableViewCell else {
+        guard let eCell = cell as? ReportFeedTableViewCell else {
             return cell
         }
         eCell.selectionStyle = .none
@@ -228,13 +206,26 @@ class ReportPowerViewController: FishPreViewController , UITableViewDelegate, UI
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
-
+        //        if let type =  self.tableItemData[index]["type"] {
+        //
+        //            if type == "report" {
+        //                print("report")
+        //
+        //                let report = UserReportViewController()
+        //                self.navigationController?.pushViewController(report, animated: true)
+        //
+        //            }
+        //            if type == "phone" {
+        //                print("phone")
+        //            }
+        //        }
+        
         let model = self.detailItems[index]
-
-        let detail = ReportPowerDetailViewController()
-        detail.selectedModel = model
-        detail.selectedSceneModel = self.selectedSceneModel
-        self.navigationController?.pushViewController(detail, animated: true)
+        
+        //        let detail = ReportIndexTrendDetailViewController()
+        //        detail.selectedModel = model
+        //        detail.selectedSceneModel = self.selectedSceneModel
+        //        self.navigationController?.pushViewController(detail, animated: true)
         
     }
     
@@ -250,69 +241,33 @@ class ReportPowerViewController: FishPreViewController , UITableViewDelegate, UI
     
     func buildNetDataToTableData() {
         
-        var tableList:[ReportPowerDetailItem] = []
-        tableList.append(ReportPowerDetailItem.init(date: "日期",value: "瓦时"))
+        var tableList:[ReportDateValueDetailItem] = []
+        tableList.append(ReportDateValueDetailItem.init(date: "日期", value: "-"))
         
-        for item in self.responseListData {
-            tableList.append(ReportPowerDetailItem.init(date: item.date ?? "-",
-                                                   value: String(item.sum_wh ?? 0)))
+        for item in self.responseData {
+            tableList.append(ReportDateValueDetailItem.init(date: item.date ?? "-",
+                                                            value: String(item.sum_actual_duration ?? 0)))
         }
         
         self.detailItems = tableList
+        
     }
     
-    func buildNetDataToLineChartData(chartView: ReportLineChartView) {
+    func buildNetDataToChartData(chartView: ReportLineChartView) {
         
         var labels:[String] = []
         
         var values:[ChartDataEntry] = []
-        let title:[String] = ["电量"]
+        let title:[String] = ["时长"]
         
-        for (index, element) in self.responseListData.enumerated() {
+        for (index, element) in self.responseData.enumerated() {
             labels.append(element.date ?? "-")
-            values.append(ChartDataEntry.init(x: Double(index), y: element.sum_wh ?? 0))
+            values.append(ChartDataEntry.init(x: Double(index), y: element.sum_actual_duration ?? 0))
         }
         
         chartView.setDataCount(dataEntrys: [values], label: labels, title: title)
         
     }
-    
-    
-    func buildNetDataToPieChartData(chartView: ReportPieChartView) {
-        
-        var values:[PieChartDataEntry] = []
-//        let title:[String] = ["电量"]
-        
-        var totalSum = 0.0
-        
-        if let list = self.responseData?.data_by_device {
-            
-            for (_, element) in list.enumerated() {
-                totalSum += element.sum_wh ?? 0
-            }
-            
-            
-        }
-        
-        if let devicesSum = self.responseData?.data_by_device {
-            
-            for (_, element) in devicesSum.enumerated() {
-                
-                let val = ((element.sum_wh ?? 0) / totalSum ) * 100.0
-                let formatVal = val.roundTo(places: 1)
-                if formatVal > 0.0 {
-                    values.append(PieChartDataEntry.init(value: formatVal , label: element.io_name))
-                }
-                
-            }
-            
-            chartView.setDataCount(dataEntrys: values)
-            
-        }
-        
-    }
-    
-    
     
     // MARK: Net Request
     
@@ -390,7 +345,7 @@ class ReportPowerViewController: FishPreViewController , UITableViewDelegate, UI
 
 
 //开启右滑返回手势:
-extension ReportPowerViewController:HorizontalTitleItemViewDelegate {
+extension ReportO2ViewController:HorizontalTitleItemViewDelegate {
     
     func showMore() {
         self.showMenuBtnClick(view: self.titleItemView)
@@ -398,17 +353,3 @@ extension ReportPowerViewController:HorizontalTitleItemViewDelegate {
     
 }
 
-
-extension Double {
-    
-    /// Rounds the double to decimal places value
-    
-    func roundTo(places:Int) -> Double {
-        
-        let divisor = pow(10.0, Double(places))
-        
-        return (self * divisor).rounded() / divisor
-        
-    }
-    
-}

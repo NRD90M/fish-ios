@@ -70,6 +70,18 @@
 		DB6C63512356F54700673584 /* STApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C634F2356F54600673584 /* STApi.swift */; };
 		DB6C63522356F54700673584 /* STApi_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C63502356F54600673584 /* STApi_Extension.swift */; };
 		DB6C6356235817C000673584 /* FishUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C6355235817C000673584 /* FishUserInfo.swift */; };
+		DB6F168423BB390C00C2D84B /* ReportPowerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F168223BB390C00C2D84B /* ReportPowerDetailViewController.swift */; };
+		DB6F168523BB390C00C2D84B /* ReportPowerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6F168323BB390C00C2D84B /* ReportPowerDetailViewController.xib */; };
+		DB6F168723BB3F1900C2D84B /* MonthFeedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F168623BB3F1900C2D84B /* MonthFeedDataModel.swift */; };
+		DB6F168B23BB3F6700C2D84B /* ReportFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F168923BB3F6700C2D84B /* ReportFeedViewController.swift */; };
+		DB6F168C23BB3F6700C2D84B /* ReportFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6F168A23BB3F6700C2D84B /* ReportFeedViewController.xib */; };
+		DB6F168F23BB407300C2D84B /* ReportFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F168D23BB407300C2D84B /* ReportFeedTableViewCell.swift */; };
+		DB6F169023BB407300C2D84B /* ReportFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6F168E23BB407300C2D84B /* ReportFeedTableViewCell.xib */; };
+		DB6F169423BB430A00C2D84B /* ReportO2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F169223BB430A00C2D84B /* ReportO2ViewController.swift */; };
+		DB6F169523BB430A00C2D84B /* ReportO2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6F169323BB430A00C2D84B /* ReportO2ViewController.xib */; };
+		DB6F169923BB437B00C2D84B /* ReportEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F169723BB437B00C2D84B /* ReportEventsViewController.swift */; };
+		DB6F169A23BB437B00C2D84B /* ReportEventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6F169823BB437B00C2D84B /* ReportEventsViewController.xib */; };
+		DB6F169C23BB466B00C2D84B /* MonthO2DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F169B23BB466B00C2D84B /* MonthO2DataModel.swift */; };
 		DB79BD8123A1069400D1E35F /* CameraInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB79BD8023A1069400D1E35F /* CameraInfoModel.swift */; };
 		DB8605F523AB4F4B001879D3 /* UserHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8605F423AB4F4B001879D3 /* UserHeaderView.swift */; };
 		DB8605F723AB4F57001879D3 /* UserHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB8605F623AB4F57001879D3 /* UserHeaderView.xib */; };
@@ -269,6 +281,18 @@
 		DB6C634F2356F54600673584 /* STApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STApi.swift; sourceTree = "<group>"; };
 		DB6C63502356F54600673584 /* STApi_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STApi_Extension.swift; sourceTree = "<group>"; };
 		DB6C6355235817C000673584 /* FishUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishUserInfo.swift; sourceTree = "<group>"; };
+		DB6F168223BB390C00C2D84B /* ReportPowerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportPowerDetailViewController.swift; sourceTree = "<group>"; };
+		DB6F168323BB390C00C2D84B /* ReportPowerDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportPowerDetailViewController.xib; sourceTree = "<group>"; };
+		DB6F168623BB3F1900C2D84B /* MonthFeedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthFeedDataModel.swift; sourceTree = "<group>"; };
+		DB6F168923BB3F6700C2D84B /* ReportFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportFeedViewController.swift; sourceTree = "<group>"; };
+		DB6F168A23BB3F6700C2D84B /* ReportFeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportFeedViewController.xib; sourceTree = "<group>"; };
+		DB6F168D23BB407300C2D84B /* ReportFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportFeedTableViewCell.swift; sourceTree = "<group>"; };
+		DB6F168E23BB407300C2D84B /* ReportFeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportFeedTableViewCell.xib; sourceTree = "<group>"; };
+		DB6F169223BB430A00C2D84B /* ReportO2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportO2ViewController.swift; sourceTree = "<group>"; };
+		DB6F169323BB430A00C2D84B /* ReportO2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportO2ViewController.xib; sourceTree = "<group>"; };
+		DB6F169723BB437B00C2D84B /* ReportEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportEventsViewController.swift; sourceTree = "<group>"; };
+		DB6F169823BB437B00C2D84B /* ReportEventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportEventsViewController.xib; sourceTree = "<group>"; };
+		DB6F169B23BB466B00C2D84B /* MonthO2DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthO2DataModel.swift; sourceTree = "<group>"; };
 		DB79BD8023A1069400D1E35F /* CameraInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraInfoModel.swift; sourceTree = "<group>"; };
 		DB8605F423AB4F4B001879D3 /* UserHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderView.swift; sourceTree = "<group>"; };
 		DB8605F623AB4F57001879D3 /* UserHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserHeaderView.xib; sourceTree = "<group>"; };
@@ -505,6 +529,8 @@
 				DBD178FA23B7639700166C0D /* ReportPowerHeaderView.xib */,
 				DB953C6823B9F390003BE661 /* ReportPowerTableViewCell.swift */,
 				DB953C6923B9F390003BE661 /* ReportPowerTableViewCell.xib */,
+				DB6F168223BB390C00C2D84B /* ReportPowerDetailViewController.swift */,
+				DB6F168323BB390C00C2D84B /* ReportPowerDetailViewController.xib */,
 			);
 			path = power;
 			sourceTree = "<group>";
@@ -535,6 +561,8 @@
 				DBBFB36823B7026B005E6222 /* MonthSensorDataModel.swift */,
 				DBBFB36A23B7044D005E6222 /* SensorDataDetailModel.swift */,
 				DB953C6623B9EB61003BE661 /* MonthPowerDataModel.swift */,
+				DB6F168623BB3F1900C2D84B /* MonthFeedDataModel.swift */,
+				DB6F169B23BB466B00C2D84B /* MonthO2DataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -690,9 +718,41 @@
 			path = UserInfo;
 			sourceTree = "<group>";
 		};
+		DB6F168823BB3F5200C2D84B /* feed */ = {
+			isa = PBXGroup;
+			children = (
+				DB6F168923BB3F6700C2D84B /* ReportFeedViewController.swift */,
+				DB6F168A23BB3F6700C2D84B /* ReportFeedViewController.xib */,
+				DB6F168D23BB407300C2D84B /* ReportFeedTableViewCell.swift */,
+				DB6F168E23BB407300C2D84B /* ReportFeedTableViewCell.xib */,
+			);
+			path = feed;
+			sourceTree = "<group>";
+		};
+		DB6F169123BB42E500C2D84B /* o2 */ = {
+			isa = PBXGroup;
+			children = (
+				DB6F169223BB430A00C2D84B /* ReportO2ViewController.swift */,
+				DB6F169323BB430A00C2D84B /* ReportO2ViewController.xib */,
+			);
+			path = o2;
+			sourceTree = "<group>";
+		};
+		DB6F169623BB436A00C2D84B /* event */ = {
+			isa = PBXGroup;
+			children = (
+				DB6F169723BB437B00C2D84B /* ReportEventsViewController.swift */,
+				DB6F169823BB437B00C2D84B /* ReportEventsViewController.xib */,
+			);
+			path = event;
+			sourceTree = "<group>";
+		};
 		DB8605FA23AB72DF001879D3 /* report */ = {
 			isa = PBXGroup;
 			children = (
+				DB6F169623BB436A00C2D84B /* event */,
+				DB6F169123BB42E500C2D84B /* o2 */,
+				DB6F168823BB3F5200C2D84B /* feed */,
 				DB5675FD23AE340B002D6C8E /* power */,
 				DBD90C9423ACD9E50049D141 /* indexTrend */,
 				DB8605FC23AB7F64001879D3 /* UserReportViewController.swift */,
@@ -1252,11 +1312,13 @@
 				DBB913F32355753D001C20E4 /* UserViewController.xib in Resources */,
 				DBB913EF23557531001C20E4 /* TimerViewController.xib in Resources */,
 				DB63EEBC2378146000D96FC8 /* README.md in Resources */,
+				DB6F169A23BB437B00C2D84B /* ReportEventsViewController.xib in Resources */,
 				DBA9D1FE23698D0500C32A7B /* TimerClockTableViewCell.xib in Resources */,
 				DBD178F723B75FCD00166C0D /* ReportIndexTrendDetailViewController.xib in Resources */,
 				DB17555923AB20B10071534C /* UserTableViewCell.xib in Resources */,
 				DBB913DC23545C2E001C20E4 /* LoginViewController.xib in Resources */,
 				DBD90C9C23ADED890049D141 /* ReportIndexTrendTableViewCell.xib in Resources */,
+				DB6F168523BB390C00C2D84B /* ReportPowerDetailViewController.xib in Resources */,
 				DBD90CA023ADF1AD0049D141 /* ReportLineChartView.xib in Resources */,
 				DBE5445B2354282C005ECA14 /* LaunchScreen.storyboard in Resources */,
 				DB8605FF23AB7F64001879D3 /* UserReportViewController.xib in Resources */,
@@ -1264,6 +1326,8 @@
 				DB6357EF239A524200A0F969 /* SingleCustomPickerViewController.xib in Resources */,
 				DBA9D1F52369722A00C32A7B /* PondDeviceHeaderCollectionViewCell.xib in Resources */,
 				DBD178FB23B7639700166C0D /* ReportPowerHeaderView.xib in Resources */,
+				DB6F169023BB407300C2D84B /* ReportFeedTableViewCell.xib in Resources */,
+				DB6F169523BB430A00C2D84B /* ReportO2ViewController.xib in Resources */,
 				DB8605F723AB4F57001879D3 /* UserHeaderView.xib in Resources */,
 				DBD90C9823ACDA050049D141 /* ReportIndexTrendViewController.xib in Resources */,
 				DB90B98A2378048C0037054D /* README.md in Resources */,
@@ -1276,6 +1340,7 @@
 				DBB913E12354605C001C20E4 /* Assets.xcassets in Resources */,
 				DBD90CA623ADF1DA0049D141 /* ReportPieChartView.xib in Resources */,
 				DB63EEBB2378146000D96FC8 /* LICENSE in Resources */,
+				DB6F168C23BB3F6700C2D84B /* ReportFeedViewController.xib in Resources */,
 				DB167AF4239904C700FC14CF /* DevicePickerViewController.xib in Resources */,
 				DBB913EB235574FB001C20E4 /* PondViewController.xib in Resources */,
 				DB5433C92367E21D00F05D17 /* PondContentViewController.xib in Resources */,
@@ -1370,6 +1435,7 @@
 				DB90B9AC2378048C0037054D /* TabmanItemColorCrossfadeTransition.swift in Sources */,
 				DBF32C8B2397B6F60034D583 /* SinglePickerViewController.swift in Sources */,
 				DB5FFC062361A31500E4E8D7 /* FishCodeMsgResponseAnyModel.swift in Sources */,
+				DB6F168B23BB3F6700C2D84B /* ReportFeedViewController.swift in Sources */,
 				DB90B9932378048C0037054D /* TabmanStaticButtonBar.swift in Sources */,
 				DB6C63522356F54700673584 /* STApi_Extension.swift in Sources */,
 				DB79BD8123A1069400D1E35F /* CameraInfoModel.swift in Sources */,
@@ -1392,6 +1458,7 @@
 				DB16C18F23923FFA00B29AE0 /* AddOrEditTimerClockViewController.swift in Sources */,
 				DB6C63512356F54700673584 /* STApi.swift in Sources */,
 				DB5FFC172361AC6000E4E8D7 /* Tool.swift in Sources */,
+				DB6F168423BB390C00C2D84B /* ReportPowerDetailViewController.swift in Sources */,
 				DB90B9BB2378048C0037054D /* ColorUtils.swift in Sources */,
 				DBD90CA223ADF1C00049D141 /* ReportPieChartView.swift in Sources */,
 				DB90B99C2378048C0037054D /* TabmanChevronIndicator.swift in Sources */,
@@ -1399,10 +1466,12 @@
 				DB90B9AD2378048C0037054D /* TabmanItemMaskTransition.swift in Sources */,
 				DB90B9A42378048C0037054D /* TabmanBar+Protocols.swift in Sources */,
 				DB6357F1239A524E00A0F969 /* SingleCustomPickerView.swift in Sources */,
+				DB6F169C23BB466B00C2D84B /* MonthO2DataModel.swift in Sources */,
 				DB90B9B02378048C0037054D /* TabmanTransition.swift in Sources */,
 				DB90B9AA2378048C0037054D /* TabmanScrollingBarIndicatorTransition.swift in Sources */,
 				DB90B9BD2378048C0037054D /* AutoInsetEngine.swift in Sources */,
 				DB90B99A2378048C0037054D /* TabmanIndicator.swift in Sources */,
+				DB6F168F23BB407300C2D84B /* ReportFeedTableViewCell.swift in Sources */,
 				DBB913F62355754A001C20E4 /* AlertViewController.swift in Sources */,
 				DBB913E3235561DA001C20E4 /* FishTabBarController.swift in Sources */,
 				DB90B9A12378048C0037054D /* CircularView.swift in Sources */,
@@ -1415,6 +1484,7 @@
 				DB90B9962378048C0037054D /* TabmanFixedButtonBar.swift in Sources */,
 				DB90B9922378048C0037054D /* TabmanPositionalUtil.swift in Sources */,
 				DB90B9B32378048C0037054D /* TabmanBar.swift in Sources */,
+				DB6F168723BB3F1900C2D84B /* MonthFeedDataModel.swift in Sources */,
 				DB5FFC262362D96600E4E8D7 /* FishHttpResponseModelProtocol.swift in Sources */,
 				DBB913DF23545F20001C20E4 /* FishNavigationController.swift in Sources */,
 				DB17555823AB20B10071534C /* UserTableViewCell.swift in Sources */,
@@ -1470,6 +1540,7 @@
 				DB90B98B2378048C0037054D /* TabmanBar+Location.swift in Sources */,
 				DB90B9BC2378048C0037054D /* ContentViewScrollView.swift in Sources */,
 				DB6C6356235817C000673584 /* FishUserInfo.swift in Sources */,
+				DB6F169923BB437B00C2D84B /* ReportEventsViewController.swift in Sources */,
 				DB6357E9239A3C2D00A0F969 /* AddOrEditTimerTriggerViewController.swift in Sources */,
 				DBF32C852397B5510034D583 /* FishHourMinPickerViewController.swift in Sources */,
 				DB86060623AB9576001879D3 /* UserReportCollectionViewCell.swift in Sources */,
@@ -1486,6 +1557,7 @@
 				DB90B9A32378048C0037054D /* TabmanBar+Appearance.swift in Sources */,
 				DB90B9992378048C0037054D /* TabmanBar+BackgroundView.swift in Sources */,
 				DB90B9B72378048C0037054D /* UIImage+Resize.swift in Sources */,
+				DB6F169423BB430A00C2D84B /* ReportO2ViewController.swift in Sources */,
 				DB5FFC102361AA9E00E4E8D7 /* UIViewHintExtension.swift in Sources */,
 				DB167AEF2399025B00FC14CF /* FishDefine.swift in Sources */,
 				DB8605FE23AB7F64001879D3 /* UserReportViewController.swift in Sources */,

@@ -131,5 +131,15 @@ class FishMainApi: STJSONApi {
         self.post(path: safeJoinURL(pre: baseURL(), suf: "api/report/get_power_data"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
     }
     
+    /// 饲料月报表
+    func getMonthFeedData(params: [String: String], callBack: ((FishCodeMsgResponseArrayTypeModel<MonthFeedDataModel>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/report/get_feed_data"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+    
+    
+    /// o2月报表
+    func getMonthO2Data(params: [String: String], callBack: ((FishCodeMsgResponseArrayTypeModel<MonthO2DataModel>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/report/get_aeration_data"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
     
 }

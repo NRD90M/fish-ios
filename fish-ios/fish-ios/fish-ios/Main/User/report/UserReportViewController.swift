@@ -146,15 +146,28 @@ class UserReportViewController : FishPreViewController, UICollectionViewDelegate
         let selectedData = self.itemData[indexPath.row]
         
         if selectedData["type"] == "indexTrend" {
-            
             let indexTrendVC = ReportIndexTrendViewController()
             self.navigationController?.pushViewController(indexTrendVC, animated: true)
-            
+        }
+        
+        if selectedData["type"] == "powerReport" {
+            let powerVC = ReportPowerViewController()
+            self.navigationController?.pushViewController(powerVC, animated: true)
         }
         
         if selectedData["type"] == "weightReport" {
-            let powerVC = ReportPowerViewController()
-            self.navigationController?.pushViewController(powerVC, animated: true)
+            let vc = ReportFeedViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        if selectedData["type"] == "o2Report" {
+            let vc = ReportO2ViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        if selectedData["type"] == "event" {
+            let vc = ReportEventsViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         }
         
     }
