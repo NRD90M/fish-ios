@@ -1720,8 +1720,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shenmajr.ev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "01874ba5-27a1-40ec-b28b-3404b3aebc96";
-				PROVISIONING_PROFILE_SPECIFIER = all_develop;
+				PROVISIONING_PROFILE = "a90c9d57-a999-4b80-972c-f97161a4d1de";
+				PROVISIONING_PROFILE_SPECIFIER = ShenmaEV_develop;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1732,7 +1732,7 @@
 			baseConfigurationReference = A691BA0FFD068A850B9889EC /* Pods-fish-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9Z5827E9LL;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1747,8 +1747,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shenmajr.ev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "01874ba5-27a1-40ec-b28b-3404b3aebc96";
-				PROVISIONING_PROFILE_SPECIFIER = all_develop;
+				PROVISIONING_PROFILE = "2ce40ce8-440f-4159-9706-5568a32154c7";
+				PROVISIONING_PROFILE_SPECIFIER = ShenmaEV_distribution;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

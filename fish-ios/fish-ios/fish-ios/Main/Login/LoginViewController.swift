@@ -16,6 +16,8 @@ class LoginViewController: FishPreViewController {
     @IBOutlet weak var mobileTextInput:UITextField!
     @IBOutlet weak var verifyTextInput:UITextField!
     
+     @IBOutlet weak var gradientView:UIView!
+    
     var client: FishMainApi = FishMainApi()
     
     var timer: VerifyCodeTimer = VerifyCodeTimer.init(uuid: "ST_LOGIN_VERIFYCODE")
@@ -34,6 +36,9 @@ class LoginViewController: FishPreViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.createGradientLayer()
+        
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.mobileTextInput.text  = "18616514687"
         self.verifyTextInput.text  = "805225"
@@ -208,6 +213,21 @@ class LoginViewController: FishPreViewController {
             self.timer.beginVerifyCodeTimer()
         }
     }
+    
+    
+    
+    var gradientLayer: CAGradientLayer!
+    
+    //初始化gradientLayer并设置相关属性
+    func createGradientLayer() {
+        gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.gradientView.bounds
+        //设置渐变的主颜色
+        gradientLayer.colors = [UIColor.colorWithHexString("#65ABEB")!.cgColor, UIColor.colorWithHexString("#3F97E8")!.cgColor]
+        //将gradientLayer作为子layer添加到主layer上
+        self.gradientView.layer.addSublayer(gradientLayer)
+    }
+    
     
     /*
     // MARK: - Navigation
