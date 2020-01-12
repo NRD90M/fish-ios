@@ -28,7 +28,7 @@ internal class TabmanScrollingButtonBar: TabmanButtonBar {
     
     internal var rightView:UIView = {
         let _rightView = UIView()
-        _rightView.backgroundColor = UIColor.red
+        _rightView.backgroundColor = UIColor.clear
         return _rightView
     }()
     

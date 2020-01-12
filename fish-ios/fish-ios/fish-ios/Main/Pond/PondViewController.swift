@@ -52,7 +52,7 @@ class PondViewController:TabmanViewController,PageboyViewControllerDataSource {
             let button = UIButton(type: UIButtonType.custom)
             bar.rightView.addSubview(button)
             button.autoPinEdgesToSuperviewEdges()
-            button.setImage( UIImage(named: "icon_lamp"), for: UIControlState.normal)
+            button.setImage( UIImage(named: "icon_more"), for: UIControlState.normal)
             
             button.addTarget(self, action: #selector(showMenuBtnClick(btn:)), for: UIControlEvents.touchUpInside)
             

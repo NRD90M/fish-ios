@@ -42,28 +42,48 @@ class VideoPlayerView: UIView {
     var client: FishMainApi = FishMainApi()
     var selectCameraInfo:CameraInfoModel?
     
-    var camerasViewArray:[CameraButton] = []
+    var camerasViewArray:[UIView] = []
     var cameraInfos:[CameraInfoModel]? {
         didSet{
             camerasViewArray.removeAll()
             
-            for cameraInfo in cameraInfos! {
+            for (index, cameraInfo) in cameraInfos!.enumerated() {
                 
                 let button = CameraButton.init(type: .custom)
-                button.setImage(UIImage(named: "launchNew.png"), for: .normal)
+                button.tag = 100
+//                button.setImage(UIImage(named: "icon_camera_close.png"), for: .normal)
+                if index == 0 {
+                   button.setBackgroundImage(UIImage(named: "icon_camera_open.png"), for: .normal)
+                } else {
+                    button.setBackgroundImage(UIImage(named: "icon_camera_close.png"), for: .normal)
+                }
                 button.addTarget(self, action: #selector(cameraButtonClick(_:)), for: .touchUpInside)
+                
+                let v = UIView.init()
+                
+                let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 24, height: 24))
+                titleLabel.textColor = UIColor.white
+                titleLabel.textAlignment = .center
+                titleLabel.text = String(index)
+                titleLabel.font = UIFont.systemFont(ofSize: 8.0)
+                titleLabel.tag = 101
+                
+                v.addSubview(button)
+                v.addSubview(titleLabel)
+                
                 var x:Int = 20
                 if camerasViewArray.count > 0 {
                     x = 10 + Int(camerasViewArray.last!.frame.maxX)
                 }
                 
                 button.cameraInfo = cameraInfo
-                button.frame = CGRect(x: x, y: 4, width: 36, height: 36)
+                button.frame = CGRect(x: 0, y: 0, width: 24, height: 29)
+                v.frame = CGRect(x: x, y: 6, width: 24, height: 29)
 //                button.autoresizingMask = UIViewAutoresizing(rawValue: UIViewAutoresizing.flexibleLeftMargin.rawValue)
                 
-                camerasViewArray.append(button)
+                camerasViewArray.append(v)
                 
-                self.viewBottom.addSubview(button)
+                self.viewBottom.addSubview(v)
                 
             }
             
@@ -85,6 +105,14 @@ class VideoPlayerView: UIView {
         if self.selectCameraInfo?.key == sender.cameraInfo?.key {
             return
         }
+        
+        for cameraView in camerasViewArray {
+            let button =  cameraView.viewWithTag(100) as! CameraButton
+            button.isSelected = false
+            button.setBackgroundImage(UIImage(named: "icon_camera_close.png"), for: .normal)
+        }
+        sender.isSelected = true
+        sender.setBackgroundImage(UIImage(named: "icon_camera_open.png"), for: .normal)
         
         self.selectCameraInfo = sender.cameraInfo
         self.player?.stop()
