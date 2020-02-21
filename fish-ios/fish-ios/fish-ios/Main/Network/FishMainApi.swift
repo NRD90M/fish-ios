@@ -48,6 +48,22 @@ class FishMainApi: STJSONApi {
     func getIOInfo(params: [String: Any], callBack: ((FishCodeMsgResponseArrayTypeModel<PondIOInfoModel>?, NSError?)->Void)?) {
         self.post(path: safeJoinURL(pre: baseURL(), suf: "api/device/get_io_info"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
     }
+    // 设备 - 重命名
+    func editDeviceIORename(params: [String: Any], callBack: ((FishCodeMsgResponseAnyModel<String>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/device/io_rename"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+    // 设备 - 启用
+    func editDeviceIOEnable(params: [String: Any], callBack: ((FishCodeMsgResponseAnyModel<String>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/device/io_enable"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+    // 设备 - 禁用
+    func editDeviceIODisable(params: [String: Any], callBack: ((FishCodeMsgResponseAnyModel<String>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/device/io_disable"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
+    // 设备 - 功耗
+    func editDeviceIOPower(params: [String: Any], callBack: ((FishCodeMsgResponseAnyModel<String>?, NSError?)->Void)?) {
+        self.post(path: safeJoinURL(pre: baseURL(), suf: "api/device/power"), params: dictExtend(p1: params, p2: getParams()), callBack: callBack)
+    }
     
     ///实时视频
     func getCamsConfig(params: [String: String], callBack: ((FishCodeMsgResponseObjectModel<CameraRootModel>?, NSError?)->Void)?) {

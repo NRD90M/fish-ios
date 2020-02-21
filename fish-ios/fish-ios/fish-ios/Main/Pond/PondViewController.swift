@@ -108,15 +108,38 @@ class PondViewController:TabmanViewController,PageboyViewControllerDataSource {
         //click
         popMenu.didSelectMenuBlock = { [weak self](index:Int)->Void in
             print("block select \(index)")
+            
             self?.popMenu.dismiss()
             self?.popMenu = nil
             
             
-            
-            let share = TestViewController()
-            share.modalTransitionStyle = .crossDissolve
-            share.modalPresentationStyle = .overFullScreen
-            self?.present(share, animated: true, completion: nil)
+            switch index {
+            case 0:
+                // 添加鱼塘
+                break
+            case 1:
+             // 鱼塘配置
+                let configuration = PondConfigurationViewController()
+                
+                if let val = self?.currentIndex {
+                    configuration.selectedSceneModel = self?.sceneList[val]
+                }
+                
+                let navi:FishNavigationController = FishNavigationController.init(rootViewController:configuration)
+                self?.present(navi, animated: true, completion: nil)
+                
+//                self?.navigationController?.pushViewController(configuration, animated: true)
+                break
+            case 2:
+                break
+            default:
+                let share = TestViewController()
+                share.modalTransitionStyle = .crossDissolve
+                share.modalPresentationStyle = .overFullScreen
+                self?.present(share, animated: true, completion: nil)
+            }
+          
+           
         }
         
         //show
