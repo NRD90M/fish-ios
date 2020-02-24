@@ -31,6 +31,9 @@
                     <rect key="frame" x="146" y="344" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="netConfigButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="J9Z-pf-RoH"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oWi-Ng-3uT">
                     <rect key="frame" x="121" y="266" width="153" height="30"/>

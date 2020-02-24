@@ -36,7 +36,6 @@
 		DB45F9B623FFCEA60057E713 /* AdjustFeederViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB45F9B423FFCEA60057E713 /* AdjustFeederViewController.xib */; };
 		DB45F9BA23FFD2330057E713 /* SetupNetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45F9B823FFD2330057E713 /* SetupNetViewController.swift */; };
 		DB45F9BB23FFD2330057E713 /* SetupNetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB45F9B923FFD2330057E713 /* SetupNetViewController.xib */; };
-		DB45F9BD23FFD2800057E713 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB45F9BC23FFD2800057E713 /* NetworkExtension.framework */; };
 		DB49E0D823FE6BA300D2604C /* PondConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49E0D623FE6BA300D2604C /* PondConfigurationViewController.swift */; };
 		DB49E0D923FE6BA300D2604C /* PondConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB49E0D723FE6BA300D2604C /* PondConfigurationViewController.xib */; };
 		DB49E0DC23FE88D200D2604C /* PondConfigurationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB49E0DA23FE88D200D2604C /* PondConfigurationTableViewCell.swift */; };
@@ -166,6 +165,8 @@
 		DB953C6723B9EB61003BE661 /* MonthPowerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB953C6623B9EB61003BE661 /* MonthPowerDataModel.swift */; };
 		DB953C6A23B9F390003BE661 /* ReportPowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB953C6823B9F390003BE661 /* ReportPowerTableViewCell.swift */; };
 		DB953C6B23B9F390003BE661 /* ReportPowerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB953C6923B9F390003BE661 /* ReportPowerTableViewCell.xib */; };
+		DB979F2B2403C73300B07063 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB979F2A2403C73300B07063 /* ExternalAccessory.framework */; };
+		DB979F2F2403D76100B07063 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB979F2E2403D76000B07063 /* NetworkExtension.framework */; };
 		DB9E7098236E933400CAFBEA /* PondSceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E7097236E933400CAFBEA /* PondSceneModel.swift */; };
 		DB9E709A236EA3C900CAFBEA /* PondIOInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E7099236EA3C900CAFBEA /* PondIOInfoModel.swift */; };
 		DB9E709C236EAAF800CAFBEA /* FishWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E709B236EAAF800CAFBEA /* FishWebSocket.swift */; };
@@ -256,7 +257,6 @@
 		DB45F9B423FFCEA60057E713 /* AdjustFeederViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdjustFeederViewController.xib; sourceTree = "<group>"; };
 		DB45F9B823FFD2330057E713 /* SetupNetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupNetViewController.swift; sourceTree = "<group>"; };
 		DB45F9B923FFD2330057E713 /* SetupNetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetupNetViewController.xib; sourceTree = "<group>"; };
-		DB45F9BC23FFD2800057E713 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		DB45F9BE23FFD2890057E713 /* fish-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "fish-ios.entitlements"; sourceTree = "<group>"; };
 		DB49E0D623FE6BA300D2604C /* PondConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondConfigurationViewController.swift; sourceTree = "<group>"; };
 		DB49E0D723FE6BA300D2604C /* PondConfigurationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PondConfigurationViewController.xib; sourceTree = "<group>"; };
@@ -388,6 +388,8 @@
 		DB953C6623B9EB61003BE661 /* MonthPowerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPowerDataModel.swift; sourceTree = "<group>"; };
 		DB953C6823B9F390003BE661 /* ReportPowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportPowerTableViewCell.swift; sourceTree = "<group>"; };
 		DB953C6923B9F390003BE661 /* ReportPowerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportPowerTableViewCell.xib; sourceTree = "<group>"; };
+		DB979F2A2403C73300B07063 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		DB979F2E2403D76000B07063 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		DB9E7097236E933400CAFBEA /* PondSceneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondSceneModel.swift; sourceTree = "<group>"; };
 		DB9E7099236EA3C900CAFBEA /* PondIOInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondIOInfoModel.swift; sourceTree = "<group>"; };
 		DB9E709B236EAAF800CAFBEA /* FishWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishWebSocket.swift; sourceTree = "<group>"; };
@@ -453,7 +455,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB45F9BD23FFD2800057E713 /* NetworkExtension.framework in Frameworks */,
+				DB979F2B2403C73300B07063 /* ExternalAccessory.framework in Frameworks */,
 				DB09D7AD239F402400249357 /* VideoToolbox.framework in Frameworks */,
 				DB09D7AB239F401B00249357 /* UIKit.framework in Frameworks */,
 				DB09D7A9239F400000249357 /* QuartzCore.framework in Frameworks */,
@@ -466,6 +468,7 @@
 				DB09D79B239F3FCC00249357 /* CoreMedia.framework in Frameworks */,
 				DB09D799239F3FC400249357 /* CoreGraphics.framework in Frameworks */,
 				DB09D797239F3FBC00249357 /* AVFoundation.framework in Frameworks */,
+				DB979F2F2403D76100B07063 /* NetworkExtension.framework in Frameworks */,
 				DB09D795239F3FB500249357 /* AudioToolbox.framework in Frameworks */,
 				DB09D793239F3FAA00249357 /* libstdc++.tbd in Frameworks */,
 				2E6C029788C421EB798F8D52 /* Pods_fish_ios.framework in Frameworks */,
@@ -1283,7 +1286,8 @@
 		FEEC6AF5D5093FD1F996C414 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DB45F9BC23FFD2800057E713 /* NetworkExtension.framework */,
+				DB979F2E2403D76000B07063 /* NetworkExtension.framework */,
+				DB979F2A2403C73300B07063 /* ExternalAccessory.framework */,
 				DB09D7AC239F402400249357 /* VideoToolbox.framework */,
 				DB09D7AA239F401B00249357 /* UIKit.framework */,
 				DB09D7A8239F400000249357 /* QuartzCore.framework */,
@@ -1338,7 +1342,16 @@
 					DBE5444A2354282B005ECA14 = {
 						CreatedOnToolsVersion = 9.4.1;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
 							com.apple.HotspotConfiguration = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 0;
+							};
+							com.apple.WAC = {
 								enabled = 1;
 							};
 						};
@@ -1789,7 +1802,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shenmajr.caiwenshu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b660af22-b002-4c27-ac3e-f1934dcd5313";
+				PROVISIONING_PROFILE = "765f43f7-62fe-4d57-91f9-4e7256180c0a";
 				PROVISIONING_PROFILE_SPECIFIER = caiwenshu_test;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
