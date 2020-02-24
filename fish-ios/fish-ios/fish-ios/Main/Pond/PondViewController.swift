@@ -131,6 +131,11 @@ class PondViewController:TabmanViewController,PageboyViewControllerDataSource {
 //                self?.navigationController?.pushViewController(configuration, animated: true)
                 break
             case 2:
+                
+                let setUpNet = SetupNetViewController()
+                let navi:FishNavigationController = FishNavigationController.init(rootViewController:setUpNet)
+                self?.present(navi, animated: true, completion: nil)
+                
                 break
             default:
                 let share = TestViewController()
